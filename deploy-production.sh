@@ -43,7 +43,6 @@ ssh "$DEPLOY_HOST" "mkdir -p '$REMOTE_DIR'"
 rsync -avz --delete \
     --exclude '.git' \
     --exclude '.env.production' \
-    --exclude 'logo-*.png' \
     ./ "$DEPLOY_HOST:$REMOTE_DIR/"
 
 # Step 2: Build and start container
