@@ -1,4 +1,6 @@
 FROM nginx:alpine
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/bosarsa.conf
 COPY index.html /usr/share/nginx/html/index.html
 COPY logo-web.png /usr/share/nginx/html/logo-web.png
 COPY logo.webp /usr/share/nginx/html/logo.webp
