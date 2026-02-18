@@ -102,4 +102,4 @@ Die Vorstandsdaten befinden sich im Abschnitt `<!-- Vorstand -->` in der `index.
 
 ## Kontakt
 
-Bei Fragen zur Installation: **office@bos-arsa.at**
+Bei Fragen zur Installation: **oe8yml@rednil.at**
