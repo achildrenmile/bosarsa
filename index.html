@@ -290,6 +290,21 @@
     }
     .section--dark .section__intro { color: var(--gray-300); }
 
+    /* ===== Video ===== */
+    .video-wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 8px 32px rgba(15,26,46,.12);
+      border: 1px solid var(--gray-100);
+      background: var(--polizei-dark);
+    }
+    .video-player {
+      width: 100%;
+      display: block;
+    }
+
     /* ===== Feature Cards (Über uns) ===== */
     .features { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
     .feature-card {
@@ -565,6 +580,7 @@
       </button>
       <ul class="nav__links" id="navLinks">
         <li><a href="#ueber-uns">Über uns</a></li>
+        <li><a href="#video">Video</a></li>
         <li><a href="#vorstand">Vorstand</a></li>
         <li><a href="#ziele">Ziele</a></li>
         <li><a href="#mitglied">Mitglied werden</a></li>
@@ -640,8 +656,26 @@
     </div>
   </section>
 
+  <!-- Video -->
+  <section class="section section--alt" id="video">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Video</span>
+        <h2 class="section__title">Was ist BOS-ARSA?</h2>
+        <div class="section__rule"></div>
+        <p class="section__intro">Ein visueller Einblick in unseren Verein, unsere Ziele und unsere Arbeit im Dienst der Sicherheit.</p>
+      </div>
+      <div class="video-wrapper reveal">
+        <video class="video-player" controls preload="metadata" poster="/logo-web.png">
+          <source src="/bosarsavideo.mp4" type="video/mp4">
+          Dein Browser unterstützt keine Videowiedergabe.
+        </video>
+      </div>
+    </div>
+  </section>
+
   <!-- Vorstand -->
-  <section class="section section--alt" id="vorstand">
+  <section class="section" id="vorstand">
     <div class="container">
       <div class="section__header reveal">
         <span class="section__label">Vorstand</span>
