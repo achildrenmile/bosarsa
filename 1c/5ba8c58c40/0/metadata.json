@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "1c5ba8c58c40",
+  "session_id": "4c1e3894-0bc3-419e-9f2e-7e10e56c39fc",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-19T20:05:28.876384497Z",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "docker-compose.yml"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "afc2e365-d4c1-4256-8b0e-31145c5bb6c6",
+  "checkpoint_transcript_start": 1148,
+  "transcript_lines_at_start": 1148,
+  "token_usage": {
+    "input_tokens": 9,
+    "cache_creation_tokens": 19414,
+    "cache_read_tokens": 222049,
+    "output_tokens": 151,
+    "api_call_count": 7
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-19T20:05:28.408451227Z",
+    "agent_lines": 1,
+    "human_added": 118,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 119,
+    "agent_percentage": 0.8403361344537815
+  }
+}
