@@ -1,0 +1,234 @@
+# Claude Code Prompt: Modern BOS-ARSA Homepage
+
+## Context
+
+Build a modern, single-page homepage for **BOS-ARSA** (Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben — BOS-Amateur-Radio-Society-Austria). This is an Austrian amateur radio club specifically for members of police, fire, rescue, and other public safety organizations (BOS = Behörden und Organisationen mit Sicherheitsaufgaben).
+
+The current website (https://bos-arsa.at/) is a basic WordPress page with minimal design. We need a **professional, modern, authoritative** replacement that conveys trust, precision, and the dual identity of emergency services + amateur radio.
+
+## Tech Stack
+
+- **Single HTML file** with inline CSS and minimal JS (no build tools needed)
+- Use Google Fonts via CDN
+- Use Lucide Icons or similar via CDN
+- Responsive design (mobile-first)
+- German language throughout
+
+## Color Palette — "Police Blue" Theme
+
+Inspired by Austrian police/BOS emergency services aesthetics. Use these as the primary palette:
+
+```
+--bos-navy:        #0A1628;    /* Deep navy — header, footer, hero background */
+--bos-blue:        #003DA5;    /* Austrian police blue — primary brand color */
+--bos-blue-light:  #1A5FC7;    /* Lighter interactive blue — buttons, links */
+--bos-blue-bright: #2E7DE6;    /* Bright accent — hover states, highlights */
+--bos-silver:      #C0C8D4;    /* Cool silver — borders, subtle text */
+--bos-gold:        #C9A84C;    /* Authority gold — accents, badges, star elements */
+--bos-white:       #F0F2F5;    /* Cool off-white — backgrounds */
+--bos-red:         #CC2936;    /* Emergency red — alerts, important callouts */
+--bos-dark:        #0D1B2A;    /* Near-black — text */
+--bos-gray:        #374151;    /* Body text */
+```
+
+Additional design tokens:
+- Subtle blue gradient overlays on hero section
+- Dark backgrounds with light text for header/footer (authoritative feel)
+- Gold accents sparingly for badges and important highlights
+- Red only for emergency/CTA elements
+
+## Design Direction
+
+**Aesthetic: Authoritative & Technical — like a modern government agency site meets radio operations center**
+
+- Clean, structured grid layout with sharp edges (no rounded corners > 4px)
+- Subtle geometric patterns or radio wave motifs as background textures
+- Strong typography hierarchy with a condensed/bold display font
+- Professional photography placeholders (use gradient placeholders with radio/emergency icons)
+- Subtle animations on scroll (fade-in sections)
+- Dark hero section transitioning to lighter content areas
+
+## Page Structure & Content
+
+### 1. Navigation Bar (sticky)
+- BOS-ARSA logo area (left) — use text "BOS-ARSA" with a shield/radio icon
+- Nav links: Über uns | Vorstand | Ziele | Mitglied werden | Kontakt
+- Compact, dark background (`--bos-navy`)
+
+### 2. Hero Section
+- Full-width dark section with subtle radio wave animation or geometric pattern overlay
+- Main headline: **"Amateurfunk im Dienst der Sicherheit"**
+- Subtitle: "Der österreichische Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben"
+- Two CTA buttons: "Mitglied werden" (gold/bright) and "Mehr erfahren" (outline)
+- Subtle animated radio wave or signal pulse effect
+
+### 3. "Über uns" Section
+- Brief intro paragraph about BOS-ARSA
+- Text: "Der Verein bezweckt die Erhaltung, Förderung und Verbreitung des Amateurfunkwesens innerhalb des Wirkungsbereiches der Behörden und Organisationen mit Sicherheitsaufgaben (BOS)."
+- 3 feature cards in a row:
+  - 🛡️ **Sicherheit** — "Amateurfunk als verlässliche Kommunikation für BOS-Organisationen"
+  - 📡 **Vernetzung** — "Verbindung von Funkamateuren aus Polizei, Feuerwehr und Rettung"
+  - 🎓 **Ausbildung** — "Förderung der Amateurfunk-Kompetenz im BOS-Bereich"
+
+### 4. "Vorstand" Section (Board Members)
+- Clean card grid layout
+- Members with role, name, and a subtle rank/badge indicator:
+  - **Präsident** — Gabrutsch Wolfgang, BA MBA MBA DBA
+  - **Generalsekretär** — Londer Erich, BA
+  - **Kassier** — Ing. René Camaur
+  - **Kassier Stellvertreter** — Joham Thomas
+  - **Schriftführer** — Kugi Jürgen
+  - **Schriftführer Stellvertreter** — Weger Erwin
+- Use gold accent on the role label, shield/star icons for president
+
+### 5. "Ziele" (Goals) Section
+- Dark background section for contrast
+- Main goal text prominently displayed
+- Icon list of key objectives:
+  - Förderung des Amateurfunks in BOS-Organisationen
+  - Ausbildung und Weiterbildung von Funkamateuren
+  - Zusammenarbeit mit nationalen und internationalen Organisationen
+  - Unterstützung der Notfallkommunikation
+
+### 6. "Mitglied werden" (Join) Section
+- Eye-catching section with gold/blue gradient accent
+- Headline: "Werde Teil unseres Teams"
+- Subtext: "Du bist in einer BOS-Organisation tätig und hast eine Amateurfunklizenz? Dann bist du bei uns richtig!"
+- Requirements listed cleanly:
+  - Tätigkeit in einer BOS-Organisation (Polizei, Feuerwehr, Rettung, Bundesheer, etc.)
+  - Gültige Amateurfunklizenz
+- CTA button: "Kontakt aufnehmen" → mailto:office@bos-arsa.at
+
+### 7. "Partner" Section
+- Small section showing support:
+- "Mit freundlicher Unterstützung von:"
+- safeREACH.com logo area (placeholder)
+- Link to BOS-ARSA Logging Tool: bosarsalog.oeradio.at
+
+### 8. Footer
+- Dark (`--bos-navy`) footer
+- Impressum data:
+  - Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben – BOS-Amateur-Radio-Society-Austria (BOS-ARSA)
+  - c/o Wolfgang Gabrutsch
+  - Zuständige Vereinsbehörde: Landespolizeidirektion Kärnten
+  - 9020 Klagenfurt am Wörthersee, Buchengasse 3
+  - ZVR-Zahl: 1783847541
+  - office@bos-arsa.at
+- Copyright line: © 2025 BOS-ARSA. Alle Rechte vorbehalten.
+
+## Design Details
+
+### Typography
+- Display/Headlines: **"Barlow Condensed"** (bold, condensed — military/tactical feel) or similar condensed sans-serif
+- Body text: **"Source Sans 3"** (clean, professional, highly readable)
+- Monospace for any technical/callsign displays: **"JetBrains Mono"**
+
+### Key Visual Elements
+- Thin gold line separators between sections
+- Shield icon motif (combining radio waves + BOS authority)
+- Subtle CSS radio wave animation (concentric expanding circles, low opacity) in the hero
+- Card hover effects with subtle blue glow
+- Section entrance animations (fade-up on scroll using IntersectionObserver)
+
+### Responsive Behavior
+- Desktop: Full grid layouts, horizontal nav
+- Tablet: 2-column grids, same nav
+- Mobile: Single column, hamburger menu, stacked cards
+
+## Important Notes
+
+- All text in **German**
+- The tone should be **professional, authoritative, trustworthy** — this represents law enforcement and emergency service professionals
+- Avoid anything playful or casual — this is a serious organization
+- The blue color scheme should feel like Austrian police / Bundesheer official communications
+- Include proper HTML meta tags (charset, viewport, description, Open Graph basics)
+- Ensure accessibility: proper heading hierarchy, alt texts, sufficient contrast ratios, focus states
+- The page should feel like it could represent a real government-adjacent organization, not a hobby club
+
+## File Output
+
+Create a single `index.html` file that is self-contained and can be deployed to any static hosting (Cloudflare Pages, GitHub Pages, etc.).
+
+---
+
+looks aweful! use austrian police colors. add logo from https://bos-arsa.at/
+
+---
+
+remove bos-arsa logging tool aus untersützung
+
+---
+
+copyright should use always current year
+
+---
+
+dockerize to serve html
+
+---
+
+create a deploy scripot like ../bosarsalog and deploy to host-node-01. after deployment find the oeradio.at configuration on the host (docker container) and add a tunnel pointing to this container to bosarsademo.oeradio.at
+
+---
+
+check information for bosarsalog.oeradio.at
+
+---
+
+link
+
+---
+
+create a repo in github and push
+
+---
+
+add proprietary license
+
+---
+
+add favion. favicon (1).zip in home
+
+---
+
+use bosarsa.png in downloads as logos. remove all old and use only this
+
+---
+
+can you web optimize the logo, to enhance the loading time
+
+---
+
+the middle logo looks a bit off from the height
+
+---
+
+erstelle eine installanleitung auf deutsch und füge sie auch zum repo hinzu. hier soll beschrieben werden, wie man rein durch copy & paste das ganze auf eine bestehende hosting umgebung bringt (index austauschen, etc)
+
+---
+
+bei fragen zur installation an oe8yml@rednil.at
+
+---
+
+füge das bosarsa video hinzu. auch zur seite. Was ist BOS-ARSA / oder visuelle dekodierung. das video soll embedded sein.
+
+---
+
+have now added the tunnel for bosarsa.oeradio.at. how can i do a redirect to from bosarsademo.oeradio.at to bosarsa.oeradio.at
+
+---
+
+update the .env.production SITE_URL to bosarsa.oeradio.at push
+
+---
+
+jetzt mitglied werden => logo ist verzerrt
+
+---
+
+push again. i changed some tiny in text and roll out
+
+---
+
+add impressum and datenschutz from ../bosarsalog. further check also the links in bosarsalog in the footer and add. then also add a link to bosarsalog https://bosarsalog.oeradio.at
