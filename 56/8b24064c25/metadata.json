@@ -1,0 +1,27 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "568b24064c25",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "Dockerfile",
+    "index.html"
+  ],
+  "sessions": [
+    {
+      "metadata": "/56/8b24064c25/0/metadata.json",
+      "transcript": "/56/8b24064c25/0/full.jsonl",
+      "context": "/56/8b24064c25/0/context.md",
+      "content_hash": "/56/8b24064c25/0/content_hash.txt",
+      "prompt": "/56/8b24064c25/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 13,
+    "cache_creation_tokens": 23104,
+    "cache_read_tokens": 380318,
+    "output_tokens": 345,
+    "api_call_count": 12
+  }
+}
