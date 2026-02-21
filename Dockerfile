@@ -9,5 +9,8 @@ COPY logo.webp /usr/share/nginx/html/logo.webp
 COPY bosarsavideo.mp4 /usr/share/nginx/html/bosarsavideo.mp4
 COPY kommunikationwennnichtsmehrgeht.mp4 /usr/share/nginx/html/kommunikationwennnichtsmehrgeht.mp4
 COPY fonts/ /usr/share/nginx/html/fonts/
+COPY robots.txt /usr/share/nginx/html/robots.txt
+COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
+COPY llms.txt /usr/share/nginx/html/llms.txt
 COPY favicon/ /usr/share/nginx/html/
 EXPOSE 80

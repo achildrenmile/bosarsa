@@ -1,0 +1,41 @@
+# BOS-ARSA — Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben
+
+> BOS-Amateur-Radio-Society-Austria (BOS-ARSA) ist ein österreichischer Verein, der den Amateurfunk innerhalb der Behörden und Organisationen mit Sicherheitsaufgaben (BOS) fördert. Der Verein stellt sicher, dass Kommunikation auch dann funktioniert, wenn herkömmliche Infrastruktur ausfällt.
+
+## Über den Verein
+
+BOS-ARSA wurde gegründet, um den Amateurfunk als zuverlässige Notfall- und Sicherheitskommunikation in Österreich zu etablieren. Der Verein richtet sich an Mitglieder von Behörden und Organisationen mit Sicherheitsaufgaben (BOS), darunter Polizei, Feuerwehr, Rettungsdienste und Katastrophenschutz.
+
+## Zweck
+
+Der Verein bezweckt die Erhaltung, Förderung und Verbreitung des Amateurfunkwesens innerhalb des Wirkungsbereiches der Behörden und Organisationen mit Sicherheitsaufgaben (BOS).
+
+## Ziele
+
+- Ausbildung & Lizenzierung: Unterstützung bei der Erlangung von Amateurfunklizenzen für BOS-Angehörige
+- Notfallkommunikation: Aufbau redundanter Kommunikationswege für Krisensituationen
+- Netzwerkaufbau: Vernetzung von Funkamateuren im BOS-Bereich in ganz Österreich
+- Übungen & Training: Regelmäßige Funkübungen und Weiterbildungen
+- Zusammenarbeit: Kooperation mit Behörden, Einsatzorganisationen und verwandten Vereinen
+
+## Vorstand
+
+- Obmann: Wolfgang Gabrutsch, OE8WGK
+- Obmann-Stellvertreter: Patrick Holzer, OE8HPK
+- Kassier: Martin Pernull, OE8MPK
+- Kassier-Stellvertreterin: Elena Brandstätter, OE8ELB
+- Schriftführer: Michael Linder, OE8YML
+- Schriftführer-Stellvertreter: Peter Enengl, OE8PEQ
+
+## Kontakt
+
+- E-Mail: office@bos-arsa.at
+- Sitz: c/o Wolfgang Gabrutsch, Buchengasse 3, 9020 Klagenfurt am Wörthersee, Österreich
+- ZVR-Zahl: 1783847541
+
+## Links
+
+- Website: https://bosarsa.oeradio.at
+- Domain: https://bosarsa.at (leitet weiter auf bosarsa.oeradio.at)
+- BOS-ARSA Log: https://bosarsalog.oeradio.at
+- Dachverband ÖVSV: https://oevsv.at
