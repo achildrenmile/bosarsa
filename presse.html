@@ -55,10 +55,11 @@
     .subtitle { font-size: .85rem; color: var(--gray-500); margin-bottom: 40px; }
 
     .article {
-      margin-bottom: 24px; padding: 24px;
+      display: block; margin-bottom: 24px; padding: 24px;
       background: var(--white); border-radius: 8px;
       border: 1px solid var(--gray-100);
       transition: border-color .2s, box-shadow .2s;
+      text-decoration: none; color: inherit; cursor: pointer;
     }
     .article:hover {
       border-color: var(--polizei-mid);
@@ -81,8 +82,7 @@
       font-size: 1rem; font-weight: 700; color: var(--gray-900);
       margin-bottom: 8px; line-height: 1.4;
     }
-    .article__title a { color: var(--gray-900); }
-    .article__title a:hover { color: var(--polizei-mid); }
+    .article:hover .article__title { color: var(--polizei-mid); }
     .article__source {
       font-size: .8rem; color: var(--gray-500); margin-bottom: 10px;
     }
@@ -105,47 +105,47 @@
     <h1>Presse & Medien</h1>
     <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
 
-    <div class="article">
+    <a class="article" href="https://www.mh-is.at/?p=1158" target="_blank" rel="noopener noreferrer">
       <div class="article__date">22. April 2022 <span class="article__tag article__tag--blog">Blog</span></div>
-      <h2 class="article__title"><a href="https://www.mh-is.at/?p=1158" target="_blank" rel="noopener noreferrer">Not- und Katastrophenfunk — Verschiedene Notfunkkonzepte im Überblick</a></h2>
+      <h2 class="article__title">Not- und Katastrophenfunk — Verschiedene Notfunkkonzepte im Überblick</h2>
       <div class="article__source">mh-is.at — OE3EGH und OE3XEG</div>
       <p class="article__desc">Ausführlicher Überblick über verschiedene Notfunkkonzepte in Österreich mit einem eigenen Abschnitt über BOS-ARSA bzw. ADL820. Beschreibt, wie BOS-ARSA Angehörige von Rettungsorganisationen, Feuerwehr und Polizei als Funkamateurinnen und Funkamateure ausbildet.</p>
-    </div>
+    </a>
 
-    <div class="article">
+    <a class="article" href="https://podcasts.apple.com/at/podcast/bos-arsa-ausbildung/id1567406204?i=1000544591807" target="_blank" rel="noopener noreferrer">
       <div class="article__date">10. Dezember 2021 <span class="article__tag article__tag--podcast">Podcast</span></div>
-      <h2 class="article__title"><a href="https://podcasts.apple.com/at/podcast/bos-arsa-ausbildung/id1567406204?i=1000544591807" target="_blank" rel="noopener noreferrer">BOS-ARSA, Ausbildung</a></h2>
+      <h2 class="article__title">BOS-ARSA, Ausbildung</h2>
       <div class="article__source">ON AIR — Amateurfunk D-A-CH Podcast, Staffel 2, Folge 1 — Host: Michael Wurzinger (OE3CMW), Gast: Lukas Spitzer (OE8LSR)</div>
       <p class="article__desc">Lukas Spitzer berichtet über Aus- und Weiterbildung innerhalb der BOS-ARSA Gruppe und die Schnittstellen zwischen dem ÖVSV-Notfunksystem und den Leitstellen der Sicherheitsorganisationen.</p>
-    </div>
+    </a>
 
-    <div class="article">
+    <a class="article" href="https://podcasts.apple.com/at/podcast/bos-arsa-notfunkbr%C3%BCcke-zu-den-blaulichtorganisationen/id1567406204?i=1000543228793" target="_blank" rel="noopener noreferrer">
       <div class="article__date">27. November 2021 <span class="article__tag article__tag--podcast">Podcast</span></div>
-      <h2 class="article__title"><a href="https://podcasts.apple.com/at/podcast/bos-arsa-notfunkbr%C3%BCcke-zu-den-blaulichtorganisationen/id1567406204?i=1000543228793" target="_blank" rel="noopener noreferrer">BOS-ARSA, Notfunkbrücke zu den Blaulichtorganisationen</a></h2>
+      <h2 class="article__title">BOS-ARSA, Notfunkbrücke zu den Blaulichtorganisationen</h2>
       <div class="article__source">ON AIR — Amateurfunk D-A-CH Podcast, Staffel 1, Folge 12 — Host: Michael Wurzinger (OE3CMW), Gast: Wolfgang Gabrutsch (OE8GWQ)</div>
       <p class="article__desc">BOS-ARSA Obmann Wolfgang Gabrutsch stellt das Notfunkprojekt vor — eine Brücke zwischen dem Amateurfunk und den Funkdiensten der Blaulichtorganisationen für den Krisenfall.</p>
-    </div>
+    </a>
 
-    <div class="article">
+    <a class="article" href="https://www.oewr-kaernten.at/cms/blog/amateurfunkkurs-4963/" target="_blank" rel="noopener noreferrer">
       <div class="article__date">September 2021 <span class="article__tag article__tag--kurs">Ausbildung</span></div>
-      <h2 class="article__title"><a href="https://www.oewr-kaernten.at/cms/blog/amateurfunkkurs-4963/" target="_blank" rel="noopener noreferrer">Amateurfunkkurs — 8 Einsatzkräfte erfolgreich lizenziert</a></h2>
+      <h2 class="article__title">Amateurfunkkurs — 8 Einsatzkräfte erfolgreich lizenziert</h2>
       <div class="article__source">Österreichische Wasserrettung Kärnten</div>
       <p class="article__desc">BOS-ARSA organisierte einen fünftägigen Amateurfunkkurs bei der Rot-Kreuz-Rettungsstelle in Ferlach. Acht Einsatzkräfte der Wasserrettung bestanden die Prüfung und erhielten die CEPT-Lizenz. Die neuen Operatorinnen und Operatoren unterstützen künftig den Katastrophenschutz.</p>
-    </div>
+    </a>
 
-    <div class="article">
+    <a class="article" href="https://www.oevsv.at/oevsv/aktuelles/BOS-ARSA-und-NOTFUNK-Fachgespraech-in-Kaernten/" target="_blank" rel="noopener noreferrer">
       <div class="article__date">13. Juli 2021 <span class="article__tag article__tag--artikel">Artikel</span></div>
-      <h2 class="article__title"><a href="https://www.oevsv.at/oevsv/aktuelles/BOS-ARSA-und-NOTFUNK-Fachgespraech-in-Kaernten/" target="_blank" rel="noopener noreferrer">BOS-ARSA und NOTFUNK — Fachgespräch in Kärnten</a></h2>
+      <h2 class="article__title">BOS-ARSA und NOTFUNK — Fachgespräch in Kärnten</h2>
       <div class="article__source">ÖVSV — Österreichischer Versuchssenderverband — Kevin Mekul (OE8KKM)</div>
       <p class="article__desc">Bericht über ein Fachgespräch zum Thema Notfunk am Pressegger See. Beim Blaulicht-Stammtisch in Bleiburg wurde die Einrichtung einer Funkstelle im Krisenmanagementzentrum der Bezirkshauptmannschaft Völkermarkt besprochen.</p>
-    </div>
+    </a>
 
-    <div class="article">
+    <a class="article" href="https://www.meinbezirk.at/klagenfurt-land/c-leute/die-welt-der-funkamateure_a4596338" target="_blank" rel="noopener noreferrer">
       <div class="article__date">28. April 2021 <span class="article__tag article__tag--artikel">Artikel</span></div>
-      <h2 class="article__title"><a href="https://www.meinbezirk.at/klagenfurt-land/c-leute/die-welt-der-funkamateure_a4596338" target="_blank" rel="noopener noreferrer">Kurzwelle & Co: Die Welt der Funkamateure</a></h2>
+      <h2 class="article__title">Kurzwelle &amp; Co: Die Welt der Funkamateure</h2>
       <div class="article__source">MeinBezirk.at — Klagenfurt Land — Bernhard Knaus</div>
       <p class="article__desc">Regionaler Zeitungsartikel über die Welt des Amateurfunks mit Oberst Wolfgang Gabrutsch im Mittelpunkt. Berichtet über die Gründung von BOS-ARSA 2019, die rund 80 Mitglieder und den Aufbau von Relaisfunkstellen mit autonomer Stromversorgung für die Krisenkommunikation.</p>
-    </div>
+    </a>
 
   </div>
   <div class="footer">&copy; <script>document.write(new Date().getFullYear())</script> BOS-ARSA. Alle Rechte vorbehalten.</div>
