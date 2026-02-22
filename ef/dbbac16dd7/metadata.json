@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "efdbbac16dd7",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "eleventy.config.js",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/index.css",
+    "src/datenschutz.njk",
+    "src/index.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ef/dbbac16dd7/0/metadata.json",
+      "transcript": "/ef/dbbac16dd7/0/full.jsonl",
+      "context": "/ef/dbbac16dd7/0/context.md",
+      "content_hash": "/ef/dbbac16dd7/0/content_hash.txt",
+      "prompt": "/ef/dbbac16dd7/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 1816,
+    "cache_creation_tokens": 22323,
+    "cache_read_tokens": 3190924,
+    "output_tokens": 1207,
+    "api_call_count": 38
+  }
+}
