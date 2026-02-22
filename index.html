@@ -489,49 +489,82 @@
 
     /* ===== Join Section ===== */
     .join { position: relative; overflow: hidden; }
-    .join-content {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 56px; align-items: center;
-    }
     .join__title {
       font-size: clamp(1.5rem, 3vw, 2rem);
       font-weight: 800; color: var(--gray-900);
-      margin-bottom: 14px; line-height: 1.2;
+      margin-bottom: 14px; line-height: 1.2; text-align: center;
     }
     .join__subtitle {
-      color: var(--gray-500); font-size: 1rem; line-height: 1.7; margin-bottom: 28px;
+      color: var(--gray-500); font-size: 1rem; line-height: 1.7; margin-bottom: 40px; text-align: center;
+      max-width: 680px; margin-left: auto; margin-right: auto;
     }
-    .join__requirements { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 32px; }
-    .join__requirement {
-      display: flex; align-items: center; gap: 10px;
-      font-size: .92rem; color: var(--gray-700);
+    .join__orgs {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 16px; margin-bottom: 48px;
     }
-    .join__requirement i { color: var(--polizei-mid); flex-shrink: 0; }
+    .join__org {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      padding: 20px 12px; background: var(--white); border-radius: var(--radius);
+      border: 1px solid var(--gray-100); text-decoration: none;
+      transition: all .25s ease;
+    }
+    .join__org:hover {
+      border-color: var(--polizei-mid); box-shadow: 0 4px 16px rgba(59,90,140,.12);
+      transform: translateY(-2px);
+    }
+    .join__org-icon {
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .join__org-icon i { width: 22px; height: 22px; color: var(--white); }
+    .join__org-name {
+      font-size: .8rem; font-weight: 600; color: var(--gray-700);
+      text-align: center; line-height: 1.3;
+    }
 
-    .join__visual { display: flex; align-items: center; justify-content: center; }
-    .join__graphic {
-      width: 100%; max-width: 360px; aspect-ratio: 1;
+    .join__divider {
+      display: flex; align-items: center; gap: 16px; margin-bottom: 40px;
+    }
+    .join__divider::before, .join__divider::after {
+      content: ''; flex: 1; height: 1px; background: var(--gray-100);
+    }
+    .join__divider-text {
+      font-size: .78rem; font-weight: 600; color: var(--gray-300);
+      text-transform: uppercase; letter-spacing: 1.5px; white-space: nowrap;
+    }
+
+    .join__foerder {
       background: linear-gradient(135deg, var(--polizei-dark), var(--polizei-navy));
-      border-radius: var(--radius); display: flex; flex-direction: column;
-      align-items: center; justify-content: center; gap: 16px;
+      border-radius: var(--radius); padding: 36px 32px;
+      display: flex; align-items: center; gap: 24px;
       position: relative; overflow: hidden;
     }
-    .join__graphic::before {
+    .join__foerder::before {
       content: ''; position: absolute; inset: 0; opacity: .03;
       background-image:
         linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
       background-size: 40px 40px;
     }
-    .join__graphic-logo {
+    .join__foerder-icon {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: rgba(212,168,67,.15); display: flex;
+      align-items: center; justify-content: center; flex-shrink: 0;
       position: relative; z-index: 1;
-      width: 240px; height: auto; border-radius: 4px;
-      box-shadow: 0 4px 24px rgba(0,0,0,.3);
     }
-    .join__graphic-sub {
-      position: relative; z-index: 1;
-      font-family: var(--font-mono); font-size: .75rem;
-      color: var(--gray-300); letter-spacing: 1.5px; text-transform: uppercase;
+    .join__foerder-icon i { width: 26px; height: 26px; color: var(--bos-gold); }
+    .join__foerder-content { position: relative; z-index: 1; flex: 1; }
+    .join__foerder-title {
+      font-size: 1.05rem; font-weight: 700; color: var(--white); margin-bottom: 6px;
+    }
+    .join__foerder-text {
+      font-size: .88rem; color: var(--gray-300); line-height: 1.6; margin-bottom: 16px;
+    }
+    .join__foerder .btn { position: relative; z-index: 1; }
+
+    .join__cta {
+      text-align: center; margin-top: 40px;
     }
 
     /* ===== Partners ===== */
@@ -602,9 +635,8 @@
       .board-grid { grid-template-columns: repeat(2,1fr); }
       .goals-content { grid-template-columns: 1fr; gap: 36px; }
       .goals__statement { text-align: center; }
-      .join-content { grid-template-columns: 1fr; gap: 36px; }
-      .join__visual { order: -1; }
-      .join__graphic { max-width: 300px; aspect-ratio: 4/3; }
+      .join__orgs { grid-template-columns: repeat(3, 1fr); }
+      .join__foerder { flex-direction: column; text-align: center; }
       .footer__inner { grid-template-columns: 1fr; }
     }
 
@@ -633,7 +665,8 @@
       .partners-grid { flex-direction: column; gap: 16px; }
       .partner-item { width: 100%; max-width: 320px; justify-content: center; }
       .footer__bottom { flex-direction: column; gap: 6px; text-align: center; }
-      .join__graphic { max-width: 260px; }
+      .join__orgs { grid-template-columns: repeat(2, 1fr); }
+      .join__foerder { padding: 28px 20px; }
       .nav__brand-sub { display: none; }
     }
   </style>
@@ -865,35 +898,86 @@
   <!-- Mitglied werden -->
   <section class="section join" id="mitglied">
     <div class="container">
-      <div class="join-content">
-        <div class="reveal">
-          <span class="section__label">Mitglied werden</span>
-          <h2 class="join__title">Werde Teil unseres Teams</h2>
-          <p class="join__subtitle">Du bist in einer BOS-Organisation tätig und hast eine Amateurfunklizenz? Dann bist du bei uns richtig!</p>
-          <ul class="join__requirements">
-            <li class="join__requirement">
-              <i data-lucide="check-circle-2" style="width:18px;height:18px;"></i>
-              Tätigkeit in einer BOS-Organisation (Polizei, Feuerwehr, Rettung, Bundesheer etc.)
-            </li>
-            <li class="join__requirement">
-              <i data-lucide="check-circle-2" style="width:18px;height:18px;"></i>
-              Gültige Amateurfunklizenz
-            </li>
-          </ul>
-          <a href="mailto:office@bos-arsa.at" class="btn btn--polizei">
+      <div class="section__header reveal">
+        <span class="section__label">Mitglied werden</span>
+        <h2 class="join__title">Werde Teil unseres Teams</h2>
+        <p class="join__subtitle">Du bist in einer BOS-Organisation tätig und hast eine Amateurfunklizenz? Dann bist du bei uns richtig! Mitglieder aus folgenden Organisationen sind bei uns willkommen:</p>
+      </div>
+
+      <div class="join__orgs reveal">
+        <a href="https://www.polizei.gv.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#1B2A4A;">
+            <i data-lucide="shield" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Polizei</span>
+        </a>
+        <a href="https://www.bundesfeuerwehrverband.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#C8102E;">
+            <i data-lucide="flame" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Feuerwehr</span>
+        </a>
+        <a href="https://www.roteskreuz.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#DC2626;">
+            <i data-lucide="heart-pulse" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Rotes Kreuz</span>
+        </a>
+        <a href="https://www.samariterbund.net" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#F59E0B;">
+            <i data-lucide="ambulance" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Samariterbund</span>
+        </a>
+        <a href="https://www.bundesheer.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#4B5320;">
+            <i data-lucide="swords" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Bundesheer</span>
+        </a>
+        <a href="https://www.oesterreichische-wasserrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#0284C7;">
+            <i data-lucide="waves" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Wasserrettung</span>
+        </a>
+        <a href="https://www.rettungshunde.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#7C3AED;">
+            <i data-lucide="dog" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Rettungshunde&shy;staffel</span>
+        </a>
+        <a href="https://www.bergrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon" style="background:#059669;">
+            <i data-lucide="mountain" style="width:22px;height:22px;color:#fff;"></i>
+          </div>
+          <span class="join__org-name">Bergrettung</span>
+        </a>
+      </div>
+
+      <div class="join__divider reveal">
+        <span class="join__divider-text">oder</span>
+      </div>
+
+      <div class="join__foerder reveal">
+        <div class="join__foerder-icon">
+          <i data-lucide="hand-helping" style="width:26px;height:26px;color:var(--bos-gold);"></i>
+        </div>
+        <div class="join__foerder-content">
+          <div class="join__foerder-title">Förderndes Mitglied werden</div>
+          <p class="join__foerder-text">Du bist in keiner BOS-Organisation tätig, möchtest aber unsere Arbeit unterstützen? Dann werde förderndes Mitglied und hilf uns, sichere Kommunikation in Österreich zu stärken.</p>
+          <a href="mailto:office@bos-arsa.at" class="btn btn--gold">
             <i data-lucide="mail" style="width:17px;height:17px;"></i>
-            Kontakt aufnehmen
+            Jetzt Kontakt aufnehmen
           </a>
         </div>
-        <div class="join__visual reveal">
-          <div class="join__graphic">
-            <picture>
-              <source srcset="/logo.webp" type="image/webp">
-              <img src="/logo-web.png" alt="BOS-ARSA" class="join__graphic-logo" width="400" height="158">
-            </picture>
-            <span class="join__graphic-sub">Jetzt Mitglied werden</span>
-          </div>
-        </div>
+      </div>
+
+      <div class="join__cta reveal">
+        <a href="mailto:office@bos-arsa.at" class="btn btn--polizei">
+          <i data-lucide="mail" style="width:17px;height:17px;"></i>
+          Allgemeine Anfrage
+        </a>
       </div>
     </div>
   </section>
