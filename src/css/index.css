@@ -82,6 +82,20 @@
   display: block;
 }
 
+/* ===== About Image ===== */
+.about-image {
+  margin-bottom: 36px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(15,26,46,.12);
+  border: 1px solid var(--gray-100);
+}
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* ===== Feature Cards (Über uns) ===== */
 .features { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; }
 .feature-card {
