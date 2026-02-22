@@ -1,0 +1,42 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "37e2b22b3c12",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".env.production",
+    ".gitignore",
+    "Dockerfile",
+    "INSTALLATION.md",
+    "LICENSE",
+    "datenschutz.html",
+    "deploy-package/INSTALL.md",
+    "deploy-package/nginx-bos-arsa.conf",
+    "deploy-production.sh",
+    "docker-compose.yml",
+    "favicon/site.webmanifest",
+    "impressum.html",
+    "index.html",
+    "llms.txt",
+    "nginx.conf",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "sessions": [
+    {
+      "metadata": "/37/e2b22b3c12/0/metadata.json",
+      "transcript": "/37/e2b22b3c12/0/full.jsonl",
+      "context": "/37/e2b22b3c12/0/context.md",
+      "content_hash": "/37/e2b22b3c12/0/content_hash.txt",
+      "prompt": "/37/e2b22b3c12/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 19,
+    "cache_creation_tokens": 17811,
+    "cache_read_tokens": 2037406,
+    "output_tokens": 4868,
+    "api_call_count": 13
+  }
+}

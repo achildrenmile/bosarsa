@@ -1,0 +1,48 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "37e2b22b3c12",
+  "session_id": "4c1e3894-0bc3-419e-9f2e-7e10e56c39fc",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-22T09:43:00.060763039Z",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".env.production",
+    ".gitignore",
+    "Dockerfile",
+    "INSTALLATION.md",
+    "LICENSE",
+    "datenschutz.html",
+    "deploy-package/INSTALL.md",
+    "deploy-package/nginx-bos-arsa.conf",
+    "deploy-production.sh",
+    "docker-compose.yml",
+    "favicon/site.webmanifest",
+    "impressum.html",
+    "index.html",
+    "llms.txt",
+    "nginx.conf",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "32b96a90-9fd7-4c71-a7aa-575383f56cf7",
+  "checkpoint_transcript_start": 1993,
+  "transcript_lines_at_start": 1993,
+  "token_usage": {
+    "input_tokens": 19,
+    "cache_creation_tokens": 17811,
+    "cache_read_tokens": 2037406,
+    "output_tokens": 4868,
+    "api_call_count": 13
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-22T09:42:58.831760872Z",
+    "agent_lines": 0,
+    "human_added": 288,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 288,
+    "agent_percentage": 0
+  }
+}
