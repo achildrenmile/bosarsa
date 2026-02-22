@@ -1,0 +1,50 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9b486871f30a",
+  "session_id": "4849ecfe-4e93-422b-996b-b8f58af9f376",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-22T12:40:45.932555443Z",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    ".eleventy.js",
+    ".gitignore",
+    "Dockerfile",
+    "nginx.conf",
+    "package.json",
+    "src/_data/presse.json",
+    "src/_data/site.json",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/base.css",
+    "src/css/index.css",
+    "src/datenschutz.njk",
+    "src/impressum.njk",
+    "src/index.njk",
+    "src/llms.njk",
+    "src/presse.njk",
+    "src/robots.njk",
+    "src/sitemap.njk"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "7da40c3e-ba89-49ef-a01d-aea61bc9915c",
+  "checkpoint_transcript_start": 1217,
+  "transcript_lines_at_start": 1217,
+  "token_usage": {
+    "input_tokens": 1057,
+    "cache_creation_tokens": 17811,
+    "cache_read_tokens": 836710,
+    "output_tokens": 5937,
+    "api_call_count": 11
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-22T12:40:45.216213871Z",
+    "agent_lines": 109,
+    "human_added": 0,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 109,
+    "agent_percentage": 100
+  }
+}
