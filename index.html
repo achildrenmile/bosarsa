@@ -499,7 +499,7 @@
       max-width: 680px; margin-left: auto; margin-right: auto;
     }
     .join__orgs {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      display: grid; grid-template-columns: repeat(4, 1fr);
       gap: 16px; margin-bottom: 48px;
     }
     .join__org {
@@ -514,10 +514,13 @@
     }
     .join__org-icon {
       width: 44px; height: 44px; border-radius: 50%;
+      background: rgba(27,42,74,.08);
       display: flex; align-items: center; justify-content: center;
       flex-shrink: 0;
     }
-    .join__org-icon i { width: 22px; height: 22px; color: var(--white); }
+    .join__org-icon i { width: 22px; height: 22px; color: var(--polizei-mid); }
+    .join__org:hover .join__org-icon { background: var(--polizei-mid); }
+    .join__org:hover .join__org-icon i { color: var(--white); }
     .join__org-name {
       font-size: .8rem; font-weight: 600; color: var(--gray-700);
       text-align: center; line-height: 1.3;
@@ -635,7 +638,7 @@
       .board-grid { grid-template-columns: repeat(2,1fr); }
       .goals-content { grid-template-columns: 1fr; gap: 36px; }
       .goals__statement { text-align: center; }
-      .join__orgs { grid-template-columns: repeat(3, 1fr); }
+      .join__orgs { grid-template-columns: repeat(2, 1fr); }
       .join__foerder { flex-direction: column; text-align: center; }
       .footer__inner { grid-template-columns: 1fr; }
     }
@@ -906,51 +909,35 @@
 
       <div class="join__orgs reveal">
         <a href="https://www.polizei.gv.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#1B2A4A;">
-            <i data-lucide="shield" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="shield"></i></div>
           <span class="join__org-name">Polizei</span>
         </a>
         <a href="https://www.bundesfeuerwehrverband.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#C8102E;">
-            <i data-lucide="flame" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="flame"></i></div>
           <span class="join__org-name">Feuerwehr</span>
         </a>
         <a href="https://www.roteskreuz.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#DC2626;">
-            <i data-lucide="heart-pulse" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="heart-pulse"></i></div>
           <span class="join__org-name">Rotes Kreuz</span>
         </a>
         <a href="https://www.samariterbund.net" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#F59E0B;">
-            <i data-lucide="ambulance" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="ambulance"></i></div>
           <span class="join__org-name">Samariterbund</span>
         </a>
         <a href="https://www.bundesheer.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#4B5320;">
-            <i data-lucide="swords" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="swords"></i></div>
           <span class="join__org-name">Bundesheer</span>
         </a>
         <a href="https://www.oesterreichische-wasserrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#0284C7;">
-            <i data-lucide="waves" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="waves"></i></div>
           <span class="join__org-name">Wasserrettung</span>
         </a>
         <a href="https://www.rettungshunde.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#7C3AED;">
-            <i data-lucide="dog" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="dog"></i></div>
           <span class="join__org-name">Rettungshunde&shy;staffel</span>
         </a>
         <a href="https://www.bergrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
-          <div class="join__org-icon" style="background:#059669;">
-            <i data-lucide="mountain" style="width:22px;height:22px;color:#fff;"></i>
-          </div>
+          <div class="join__org-icon"><i data-lucide="mountain"></i></div>
           <span class="join__org-name">Bergrettung</span>
         </a>
       </div>
