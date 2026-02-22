@@ -11,6 +11,7 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <script src="https://unpkg.com/lucide@latest"></script>
   <style>
     @font-face {
       font-family: 'Inter'; font-style: normal; font-weight: 300 800; font-display: swap;
@@ -22,12 +23,21 @@
       src: url(/fonts/inter-latin-ext.woff2) format('woff2');
       unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
     }
+    @font-face {
+      font-family: 'JetBrains Mono'; font-style: normal; font-weight: 400 500; font-display: swap;
+      src: url(/fonts/jetbrains-mono-latin.woff2) format('woff2');
+      unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    }
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     :root {
       --polizei-dark: #0F1A2E;
       --polizei-navy: #1B2A4A;
+      --polizei-blue: #2B4370;
       --polizei-mid: #3A5A8C;
+      --polizei-light: #4A7AB5;
+      --polizei-pale: #6B9DD6;
       --bos-gold: #D4A843;
+      --bos-gold-light: #E0BE6A;
       --white: #FFFFFF;
       --off-white: #F4F6F9;
       --gray-100: #E8ECF1;
@@ -35,28 +45,88 @@
       --gray-500: #5C6B7F;
       --gray-700: #374151;
       --gray-900: #111827;
+      --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --nav-h: 72px;
+      --radius: 2px;
     }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: var(--font-main);
       color: var(--gray-700); background: var(--off-white);
       line-height: 1.65; -webkit-font-smoothing: antialiased;
     }
-    a { color: var(--polizei-mid); text-decoration: none; transition: color .2s; }
-    a:hover { color: var(--bos-gold); }
+    img { max-width: 100%; display: block; }
+    a { color: var(--polizei-light); text-decoration: none; transition: color .2s; }
+    a:hover { color: var(--polizei-pale); }
+    a:focus-visible { outline: 2px solid var(--polizei-light); outline-offset: 2px; }
+
+    /* ===== Nav ===== */
     .nav {
-      background: var(--polizei-dark); padding: 16px 24px;
-      display: flex; align-items: center; justify-content: space-between;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      background: var(--polizei-dark);
+      height: var(--nav-h);
+      transition: box-shadow .3s, background .3s;
+      border-bottom: 1px solid rgba(255,255,255,.04);
     }
-    .nav a { color: var(--gray-300); font-size: .875rem; font-weight: 500; }
-    .nav a:hover { color: var(--white); }
-    .nav__brand { color: var(--bos-gold); font-weight: 800; font-size: 1.1rem; }
-    .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+    .nav.scrolled { box-shadow: 0 4px 24px rgba(0,0,0,.35); }
+    .nav__inner {
+      max-width: 1140px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; height: 100%;
+    }
+    .nav__brand {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; color: var(--white);
+    }
+    .nav__brand:hover { color: var(--white); }
+    .nav__brand-logo {
+      height: 44px; width: auto; border-radius: var(--radius);
+    }
+    .nav__brand-text {
+      display: flex; flex-direction: column; line-height: 1.15;
+    }
+    .nav__brand-name {
+      font-weight: 800; font-size: 1.25rem; letter-spacing: .5px;
+      color: var(--bos-gold);
+    }
+    .nav__brand-sub {
+      font-size: .65rem; font-weight: 400; letter-spacing: .3px;
+      color: var(--gray-300); white-space: nowrap;
+    }
+    .nav__links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav__links a {
+      display: block; padding: 8px 16px;
+      color: var(--gray-300); font-size: .875rem; font-weight: 500;
+      letter-spacing: .2px; border-radius: var(--radius);
+      transition: color .2s, background .2s; text-decoration: none;
+    }
+    .nav__links a:hover { color: var(--white); background: rgba(255,255,255,.06); }
+    .nav__links a.active { color: var(--bos-gold); }
+    .nav__hamburger {
+      display: none; flex-direction: column; justify-content: center;
+      gap: 5px; width: 40px; height: 40px;
+      background: none; border: none; cursor: pointer; padding: 6px;
+    }
+    .nav__hamburger span {
+      display: block; width: 100%; height: 2px;
+      background: var(--gray-300); transition: transform .3s, opacity .3s;
+      border-radius: 1px;
+    }
+    .nav__hamburger.active span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav__hamburger.active span:nth-child(2) { opacity: 0; }
+    .nav__hamburger.active span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* ===== Page Content ===== */
+    .page-content {
+      max-width: 720px; margin: 0 auto;
+      padding: calc(var(--nav-h) + 48px) 24px 80px;
+    }
     h1 { font-size: 1.6rem; font-weight: 800; color: var(--gray-900); margin-bottom: 8px; }
     .subtitle { font-size: .85rem; color: var(--gray-500); margin-bottom: 40px; }
 
+    /* ===== Article Cards ===== */
     .article {
       display: block; margin-bottom: 24px; padding: 24px;
-      background: var(--white); border-radius: 8px;
+      background: var(--white); border-radius: var(--radius);
       border: 1px solid var(--gray-100);
       transition: border-color .2s, box-shadow .2s;
       text-decoration: none; color: inherit; cursor: pointer;
@@ -75,9 +145,9 @@
       letter-spacing: .3px; vertical-align: middle;
     }
     .article__tag--artikel { background: rgba(58,90,140,.1); color: var(--polizei-mid); }
-    .article__tag--podcast { background: rgba(212,168,67,.15); color: #A07D2E; }
-    .article__tag--blog { background: rgba(5,150,105,.1); color: #059669; }
-    .article__tag--kurs { background: rgba(124,58,237,.1); color: #7C3AED; }
+    .article__tag--podcast { background: rgba(212,168,67,.15); color: var(--bos-gold); }
+    .article__tag--blog { background: rgba(27,42,74,.08); color: var(--polizei-navy); }
+    .article__tag--kurs { background: rgba(74,122,181,.1); color: var(--polizei-light); }
     .article__title {
       font-size: 1rem; font-weight: 700; color: var(--gray-900);
       margin-bottom: 8px; line-height: 1.4;
@@ -90,18 +160,96 @@
       font-size: .85rem; color: var(--gray-700); line-height: 1.65;
     }
 
+    /* ===== Footer ===== */
     .footer {
-      background: var(--polizei-dark); padding: 20px 24px;
-      text-align: center; font-size: .78rem; color: rgba(168,180,194,.4);
+      background: var(--polizei-dark); color: var(--gray-300); padding: 56px 0 0;
+    }
+    .footer__container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
+    .footer__inner { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; }
+    .footer__brand {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 18px;
+    }
+    .footer__brand-logo { height: 40px; width: auto; border-radius: 2px; }
+    .footer__brand-name {
+      font-weight: 800; font-size: 1.1rem; color: var(--bos-gold); letter-spacing: .5px;
+    }
+    .footer__org-name {
+      font-size: .84rem; line-height: 1.6;
+      color: rgba(168,180,194,.6); margin-bottom: 16px;
+    }
+    .footer__details {
+      font-size: .82rem; line-height: 1.75; color: rgba(168,180,194,.5);
+    }
+    .footer__details a { color: var(--bos-gold); }
+    .footer__details a:hover { color: var(--bos-gold-light); }
+    .footer__links-title {
+      font-weight: 700; font-size: .85rem; color: var(--white);
+      letter-spacing: .5px; margin-bottom: 16px; text-transform: uppercase;
+    }
+    .footer__link-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer__link-list a {
+      color: rgba(168,180,194,.5); font-size: .85rem; transition: color .2s;
+    }
+    .footer__link-list a:hover { color: var(--white); }
+    .footer__bottom {
+      margin-top: 40px; padding: 18px 0;
+      border-top: 1px solid rgba(255,255,255,.05);
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: .78rem; color: rgba(168,180,194,.35);
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 1024px) {
+      .footer__inner { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      :root { --nav-h: 60px; }
+      .nav__links {
+        position: fixed; top: var(--nav-h); left: 0; right: 0; bottom: 0;
+        background: var(--polizei-dark);
+        flex-direction: column; align-items: stretch;
+        padding: 16px 24px; gap: 2px;
+        transform: translateX(100%);
+        transition: transform .3s ease;
+        overflow-y: auto;
+      }
+      .nav__links.open { transform: translateX(0); }
+      .nav__links a { font-size: 1rem; padding: 14px 16px; border-bottom: 1px solid rgba(255,255,255,.04); }
+      .nav__hamburger { display: flex; }
+      .footer__bottom { flex-direction: column; gap: 6px; text-align: center; }
+      .nav__brand-sub { display: none; }
     }
   </style>
 </head>
 <body>
-  <nav class="nav">
-    <a href="/" class="nav__brand">BOS-ARSA</a>
-    <a href="/">&larr; Zurück zur Startseite</a>
+
+  <!-- Nav -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
+    <div class="nav__inner">
+      <a href="/" class="nav__brand" aria-label="BOS-ARSA Startseite">
+        <img src="/logo.webp?v=2" alt="BOS-ARSA Logo" class="nav__brand-logo" width="176" height="70">
+        <span class="nav__brand-text">
+          <span class="nav__brand-name">BOS-ARSA</span>
+          <span class="nav__brand-sub">Amateur-Radio-Society-Austria</span>
+        </span>
+      </a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="/#ueber-uns">Über uns</a></li>
+        <li><a href="/#video">Videos</a></li>
+        <li><a href="/#vorstand">Vorstand</a></li>
+        <li><a href="/#ziele">Ziele</a></li>
+        <li><a href="/#mitglied">Mitglied werden</a></li>
+        <li><a href="/presse.html" class="active">Presse</a></li>
+        <li><a href="/#kontakt">Kontakt</a></li>
+      </ul>
+    </div>
   </nav>
-  <div class="container">
+
+  <!-- Content -->
+  <div class="page-content">
     <h1>Presse & Medien</h1>
     <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
 
@@ -146,8 +294,82 @@
       <div class="article__source">MeinBezirk.at — Klagenfurt Land — Bernhard Knaus</div>
       <p class="article__desc">Regionaler Zeitungsartikel über die Welt des Amateurfunks mit Oberst Wolfgang Gabrutsch im Mittelpunkt. Berichtet über die Gründung von BOS-ARSA 2019, die rund 80 Mitglieder und den Aufbau von Relaisfunkstellen mit autonomer Stromversorgung für die Krisenkommunikation.</p>
     </a>
-
   </div>
-  <div class="footer">&copy; <script>document.write(new Date().getFullYear())</script> BOS-ARSA. Alle Rechte vorbehalten.</div>
+
+  <!-- Footer -->
+  <footer class="footer" id="kontakt">
+    <div class="footer__container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">
+            <img src="/logo.webp?v=2" alt="BOS-ARSA" class="footer__brand-logo" width="160" height="63">
+            <span class="footer__brand-name">BOS-ARSA</span>
+          </div>
+          <p class="footer__org-name">Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben – BOS-Amateur-Radio-Society-Austria (BOS-ARSA)</p>
+          <div class="footer__details">
+            c/o Wolfgang Gabrutsch<br>
+            9020 Klagenfurt am Wörthersee, Buchengasse 3<br><br>
+            Zuständige Vereinsbehörde: Landespolizeidirektion Kärnten<br>
+            ZVR-Zahl: 1783847541<br><br>
+            <a href="mailto:office@bos-arsa.at">office@bos-arsa.at</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer__links-title">Navigation</div>
+          <ul class="footer__link-list">
+            <li><a href="/#ueber-uns">Über uns</a></li>
+            <li><a href="/#vorstand">Vorstand</a></li>
+            <li><a href="/#ziele">Ziele</a></li>
+            <li><a href="/#mitglied">Mitglied werden</a></li>
+            <li><a href="mailto:office@bos-arsa.at">Kontakt</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__links-title">Rechtliches & Links</div>
+          <ul class="footer__link-list">
+            <li><a href="/impressum.html">Impressum</a></li>
+            <li><a href="/datenschutz.html">Datenschutz</a></li>
+            <li><a href="/presse.html">Presse</a></li>
+            <li><a href="https://bosarsalog.oeradio.at" target="_blank" rel="noopener noreferrer">bosarsalog.oeradio.at</a></li>
+            <li><a href="https://oeradio.at" target="_blank" rel="noopener noreferrer">oeradio.at</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; <span id="year"></span> BOS-ARSA. Alle Rechte vorbehalten.</span>
+        <span>Amateurfunk im Dienst der Sicherheit</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Nav scroll shadow
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // Mobile menu
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+    navToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      navToggle.classList.toggle('active');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      navToggle.setAttribute('aria-label', isOpen ? 'Menü schließen' : 'Menü öffnen');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('active');
+        navToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+  </script>
 </body>
 </html>
