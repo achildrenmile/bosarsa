@@ -1,0 +1,29 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "64a0d29a428e",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 2,
+  "files_touched": [
+    ".eleventy.js",
+    "og-image.png",
+    "src/_includes/base.njk",
+    "src/index.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/64/a0d29a428e/0/metadata.json",
+      "transcript": "/64/a0d29a428e/0/full.jsonl",
+      "context": "/64/a0d29a428e/0/context.md",
+      "content_hash": "/64/a0d29a428e/0/content_hash.txt",
+      "prompt": "/64/a0d29a428e/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 33,
+    "cache_creation_tokens": 15994,
+    "cache_read_tokens": 3372946,
+    "output_tokens": 776,
+    "api_call_count": 24
+  }
+}
