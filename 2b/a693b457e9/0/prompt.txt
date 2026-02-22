@@ -1,0 +1,112 @@
+Implement the following plan:
+
+# Plan: Neue Sektion "Funkbetrieb" auf der Startseite
+
+## Context
+
+BOS-ARSA führt zwei regelmäßige Funkübungen durch, die auf der Website prominent dargestellt werden sollen:
+
+1. **BOS-ARSA Krisenkommunikationsübung** — Jeden Sonntag ab 18:45 Lokalzeit. Start am OE8XNK (Gerlitzen) auf 145.7625 MHz, -0.6 MHz Offset. Abfrage auf Kärntner Repeatern, dann Direktfrequenz. Österreichweit über den OE-Link-Verbund.
+
+2. **Notfunk Runde Österreich** — Jeden 1. Mittwoch im Monat, 17:15 UTC auf 3643 kHz ± QRM.
+
+## Platzierung
+
+Neue Sektion **zwischen "Ziele" (#ziele) und "Mitglied werden" (#mitglied)**. Logischer Fluss: "Wofür wir stehen" → "Was wir regelmäßig tun" → "Werde Teil davon".
+
+- Section-ID: `#funkbetrieb`
+- Stil: `.section section--alt` (leicht abgesetzter heller Hintergrund, da Ziele-Sektion davor dunkel ist)
+- Nav-Label: "Funkbetrieb" — zwischen "Ziele" und "Mitglied werden"
+
+## Design
+
+Zwei Karten nebeneinander im 2-Spalten-Grid:
+
+```
+┌──────────────────────────────┐  ┌──────────────────────────────┐
+│  📻  Krisenkommunikations-   │  │  🌐  Notfunk Runde           │
+│      übung                   │  │      Österreich               │
+│                              │  │                               │
+│  Jeden Sonntag               │  │  Jeden 1. Mittwoch/Monat      │
+│  ab 18:45 Lokalzeit          │  │  17:15h UTC                   │
+│                              │  │                               │
+│  ▸ OE8XNK 145.7625 MHz      │  │  ▸ 3643 kHz ± QRM            │
+│    -0.6 MHz Offset           │  │                               │
+│                              │  │  Monatliche Notfunk-Runde     │
+│  Start auf Gerlitzen 2m,     │  │  für ganz Österreich.         │
+│  weiter auf Kärntner          │  │                               │
+│  Repeatern, Direktfrequenz   │  │                               │
+│  und österreichweit via      │  │                               │
+│  OE-Link-Verbund.            │  │                               │
+└──────────────────────────────┘  └──────────────────────────────┘
+```
+
+Frequenz-Angaben in Monospace-Schrift, gold hervorgehoben. Karten mit Icon-Header (Lucide: `radio-tower` / `globe`), ähnlich den Feature-Cards.
+
+## Zu ändernde Dateien
+
+### 1. `src/index.njk`
+Neue `<section id="funkbetrieb">` zwischen Ziele und Mitglied werden einfügen:
+- Section-Header: Label "Funkbetrieb", Titel "Unsere Übungsrunden", kurzer Intro-Text
+- 2-Spalten-Grid mit zwei Karten (schedule-card)
+- Jede Karte: Icon, Titel, Zeitplan-Badge, Frequenz-Block, Beschreibung
+
+### 2. `src/css/index.css`
+Neue Styles:
+- `.schedule-grid` — 2-Spalten-Grid, gap 24px, responsive → 1 Spalte ab 768px
+- `.schedule-card` — Stil basierend auf `.feature-card` (border, radius, padding, hover-effekt)
+- `.schedule-card__freq` — Monospace-Font, gold Farbe, leicht abgesetzter Block
+- `.schedule-card__badge` — Kleiner Tag für Zeitplan (ähnlich article__tag)
+
+### 3. `src/_includes/nav.njk`
+Nav-Link `Funkbetrieb` hinzufügen zwischen "Ziele" und "Mitglied werden":
+```html
+<li><a href="{{ prefix }}funkbetrieb">Funkbetrieb</a></li>
+```
+
+## Verifikation
+
+1. `npx @11ty/eleventy` — Build erfolgreich
+2. Sektion sichtbar zwischen Ziele und Mitglied werden
+3. 2 Spalten auf Desktop, 1 Spalte auf Mobil
+4. Nav-Link "Funkbetrieb" scrollt korrekt
+5. Deploy und live prüfen
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+
+---
+
+commit deploy
+
+---
+
+[Request interrupted by user for tool use]
+
+---
+
+deploy to host!!
+
+---
+
+where did you define the krisenkommunikationsübung and the notfunkrunde
+
+---
+
+do not find it on production! bosarsa.oeradio.at
+
+---
+
+[Request interrupted by user]
+
+---
+
+you are wrong.. do not do it locally. via deploy script on achildrenmile@host-node-01!!!
+
+---
+
+kann man die runden etwas anders darstellen.. nebeneinander ählich wie werde teil nur mit text
+
+---
+
+in der navigation fehlt presse
