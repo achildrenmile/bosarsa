@@ -1,0 +1,32 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "313ef7181ae4",
+  "session_id": "4c1e3894-0bc3-419e-9f2e-7e10e56c39fc",
+  "strategy": "manual-commit",
+  "created_at": "2026-02-22T09:50:55.077478067Z",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "presse.html"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "d0b68e50-2a45-4e48-8bb0-d3d8726b8bb7",
+  "checkpoint_transcript_start": 2227,
+  "transcript_lines_at_start": 2227,
+  "token_usage": {
+    "input_tokens": 4319,
+    "cache_creation_tokens": 35174,
+    "cache_read_tokens": 354057,
+    "output_tokens": 7798,
+    "api_call_count": 6
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-02-22T09:50:53.835061055Z",
+    "agent_lines": 243,
+    "human_added": 127,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 370,
+    "agent_percentage": 65.67567567567568
+  }
+}
