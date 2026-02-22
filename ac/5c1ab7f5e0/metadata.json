@@ -1,0 +1,44 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "ac5c1ab7f5e0",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    ".eleventy.js",
+    ".gitignore",
+    "Dockerfile",
+    "nginx.conf",
+    "package.json",
+    "src/_data/presse.json",
+    "src/_data/site.json",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/base.css",
+    "src/css/index.css",
+    "src/datenschutz.njk",
+    "src/impressum.njk",
+    "src/index.njk",
+    "src/llms.njk",
+    "src/presse.njk",
+    "src/robots.njk",
+    "src/sitemap.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/ac/5c1ab7f5e0/0/metadata.json",
+      "transcript": "/ac/5c1ab7f5e0/0/full.jsonl",
+      "context": "/ac/5c1ab7f5e0/0/context.md",
+      "content_hash": "/ac/5c1ab7f5e0/0/content_hash.txt",
+      "prompt": "/ac/5c1ab7f5e0/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 6223,
+    "cache_creation_tokens": 66222,
+    "cache_read_tokens": 2132562,
+    "output_tokens": 6368,
+    "api_call_count": 24
+  }
+}
