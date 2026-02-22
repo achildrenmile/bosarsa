@@ -1,0 +1,56 @@
+[
+  {
+    "date": "22. April 2022",
+    "tag": "blog",
+    "tagLabel": "Blog",
+    "title": "Not- und Katastrophenfunk — Verschiedene Notfunkkonzepte im Überblick",
+    "url": "https://www.mh-is.at/?p=1158",
+    "source": "mh-is.at — OE3EGH und OE3XEG",
+    "desc": "Ausführlicher Überblick über verschiedene Notfunkkonzepte in Österreich mit einem eigenen Abschnitt über BOS-ARSA bzw. ADL820. Beschreibt, wie BOS-ARSA Angehörige von Rettungsorganisationen, Feuerwehr und Polizei als Funkamateurinnen und Funkamateure ausbildet."
+  },
+  {
+    "date": "10. Dezember 2021",
+    "tag": "podcast",
+    "tagLabel": "Podcast",
+    "title": "BOS-ARSA, Ausbildung",
+    "url": "https://podcasts.apple.com/at/podcast/bos-arsa-ausbildung/id1567406204?i=1000544591807",
+    "source": "ON AIR — Amateurfunk D-A-CH Podcast, Staffel 2, Folge 1 — Host: Michael Wurzinger (OE3CMW), Gast: Lukas Spitzer (OE8LSR)",
+    "desc": "Lukas Spitzer berichtet über Aus- und Weiterbildung innerhalb der BOS-ARSA Gruppe und die Schnittstellen zwischen dem ÖVSV-Notfunksystem und den Leitstellen der Sicherheitsorganisationen."
+  },
+  {
+    "date": "27. November 2021",
+    "tag": "podcast",
+    "tagLabel": "Podcast",
+    "title": "BOS-ARSA, Notfunkbrücke zu den Blaulichtorganisationen",
+    "url": "https://podcasts.apple.com/at/podcast/bos-arsa-notfunkbr%C3%BCcke-zu-den-blaulichtorganisationen/id1567406204?i=1000543228793",
+    "source": "ON AIR — Amateurfunk D-A-CH Podcast, Staffel 1, Folge 12 — Host: Michael Wurzinger (OE3CMW), Gast: Wolfgang Gabrutsch (OE8GWQ)",
+    "desc": "BOS-ARSA Obmann Wolfgang Gabrutsch stellt das Notfunkprojekt vor — eine Brücke zwischen dem Amateurfunk und den Funkdiensten der Blaulichtorganisationen für den Krisenfall."
+  },
+  {
+    "date": "September 2021",
+    "tag": "kurs",
+    "tagLabel": "Ausbildung",
+    "title": "Amateurfunkkurs — 8 Einsatzkräfte erfolgreich lizenziert",
+    "url": "https://www.oewr-kaernten.at/cms/blog/amateurfunkkurs-4963/",
+    "source": "Österreichische Wasserrettung Kärnten",
+    "desc": "BOS-ARSA organisierte einen fünftägigen Amateurfunkkurs bei der Rot-Kreuz-Rettungsstelle in Ferlach. Acht Einsatzkräfte der Wasserrettung bestanden die Prüfung und erhielten die CEPT-Lizenz. Die neuen Operatorinnen und Operatoren unterstützen künftig den Katastrophenschutz."
+  },
+  {
+    "date": "13. Juli 2021",
+    "tag": "artikel",
+    "tagLabel": "Artikel",
+    "title": "BOS-ARSA und NOTFUNK — Fachgespräch in Kärnten",
+    "url": "https://www.oevsv.at/oevsv/aktuelles/BOS-ARSA-und-NOTFUNK-Fachgespraech-in-Kaernten/",
+    "source": "ÖVSV — Österreichischer Versuchssenderverband — Kevin Mekul (OE8KKM)",
+    "desc": "Bericht über ein Fachgespräch zum Thema Notfunk am Pressegger See. Beim Blaulicht-Stammtisch in Bleiburg wurde die Einrichtung einer Funkstelle im Krisenmanagementzentrum der Bezirkshauptmannschaft Völkermarkt besprochen."
+  },
+  {
+    "date": "28. April 2021",
+    "tag": "artikel",
+    "tagLabel": "Artikel",
+    "title": "Kurzwelle & Co: Die Welt der Funkamateure",
+    "url": "https://www.meinbezirk.at/klagenfurt-land/c-leute/die-welt-der-funkamateure_a4596338",
+    "source": "MeinBezirk.at — Klagenfurt Land — Bernhard Knaus",
+    "desc": "Regionaler Zeitungsartikel über die Welt des Amateurfunks mit Oberst Wolfgang Gabrutsch im Mittelpunkt. Berichtet über die Gründung von BOS-ARSA 2019, die rund 80 Mitglieder und den Aufbau von Relaisfunkstellen mit autonomer Stromversorgung für die Krisenkommunikation."
+  }
+]

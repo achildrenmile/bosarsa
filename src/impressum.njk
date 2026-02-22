@@ -1,0 +1,58 @@
+---
+layout: base.njk
+title: "Impressum — BOS-ARSA"
+description: "Impressum des Österreichischen Amateurfunkvereins der Behörden und Organisationen mit Sicherheitsaufgaben"
+canonical: "https://bosarsa.oeradio.at/impressum/"
+activeNav: impressum
+permalink: /impressum/
+---
+
+<div class="page-content">
+  <h1>Impressum</h1>
+  <p class="subtitle">Angaben gemäß § 5 ECG und § 25 MedienG</p>
+
+  <section>
+    <h2>Verein</h2>
+    <p>
+      {{ site.fullName }} – {{ site.legalName }}<br>
+      ZVR-Zahl: {{ site.zvr }}<br>
+      Zuständige Vereinsbehörde: {{ site.vereinsbehoerde }}
+    </p>
+  </section>
+
+  <section>
+    <h2>Sitz</h2>
+    <p>
+      {{ site.address.care }}<br>
+      {{ site.address.street }}<br>
+      {{ site.address.zip }} {{ site.address.city }}<br>
+      {{ site.address.country }}
+    </p>
+  </section>
+
+  <section>
+    <h2>Kontakt</h2>
+    <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+  </section>
+
+  <section>
+    <h2>Website-Betreiber</h2>
+    <p>
+      {{ site.websiteBetreiber.name }}<br>
+      {{ site.websiteBetreiber.callsign }}<br>
+      {{ site.websiteBetreiber.address }}<br>
+      {{ site.websiteBetreiber.country }}<br>
+      <a href="mailto:{{ site.websiteBetreiber.email }}">{{ site.websiteBetreiber.email }}</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Haftung für Inhalte</h2>
+    <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr.</p>
+  </section>
+
+  <section>
+    <h2>Urheberrecht</h2>
+    <p>Die durch den Betreiber erstellten Inhalte und Werke auf dieser Website unterliegen dem österreichischen Urheberrecht.</p>
+  </section>
+</div>

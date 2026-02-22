@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: "Presse — BOS-ARSA"
+description: "Pressespiegel und Medienberichte über BOS-ARSA – Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben"
+canonical: "https://bosarsa.oeradio.at/presse/"
+activeNav: presse
+permalink: /presse/
+---
+
+<div class="page-content">
+  <h1>Presse & Medien</h1>
+  <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
+
+  {% for article in presse %}
+  <a class="article" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
+    <div class="article__date">{{ article.date }} <span class="article__tag article__tag--{{ article.tag }}">{{ article.tagLabel }}</span></div>
+    <h2 class="article__title">{{ article.title }}</h2>
+    <div class="article__source">{{ article.source }}</div>
+    <p class="article__desc">{{ article.desc }}</p>
+  </a>
+  {% endfor %}
+</div>

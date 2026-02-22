@@ -1,0 +1,308 @@
+---
+layout: base.njk
+title: "BOS-ARSA — Amateurfunk im Dienst der Sicherheit"
+description: "BOS-ARSA – Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben. Amateurfunk als Notfallkommunikation wenn herkömmliche Infrastruktur ausfällt."
+keywords: "BOS-ARSA, Amateurfunk, Österreich, BOS, Behörden, Sicherheit, Notfallkommunikation, Katastrophenschutz, Funkamateur, ÖVSV, Amateur Radio"
+canonical: "https://bosarsa.oeradio.at/"
+ogDescription: "Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben. Kommunikation, wenn nichts mehr geht."
+activeNav: home
+pageCSSFile: "/css/index.css"
+permalink: /index.html
+structuredData:
+  "@context": "https://schema.org"
+  "@type": "Organization"
+  name: "BOS-ARSA"
+  alternateName: "BOS-Amateur-Radio-Society-Austria"
+  description: "Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben"
+  url: "https://bosarsa.oeradio.at"
+  logo: "https://bosarsa.oeradio.at/logo.webp?v=2"
+  email: "office@bos-arsa.at"
+  address:
+    "@type": "PostalAddress"
+    streetAddress: "Buchengasse 3"
+    addressLocality: "Klagenfurt am Wörthersee"
+    postalCode: "9020"
+    addressCountry: "AT"
+  sameAs:
+    - "https://bosarsa.at"
+    - "https://bosarsalog.oeradio.at"
+  foundingLocation:
+    "@type": "Place"
+    name: "Klagenfurt am Wörthersee, Österreich"
+  memberOf:
+    "@type": "Organization"
+    name: "ÖVSV"
+    url: "https://oevsv.at"
+---
+
+  <!-- Hero -->
+  <header class="hero" id="hero">
+    <div class="hero__grid" aria-hidden="true"></div>
+    <div class="hero__waves" aria-hidden="true">
+      <div class="hero__wave"></div>
+      <div class="hero__wave"></div>
+      <div class="hero__wave"></div>
+      <div class="hero__wave"></div>
+    </div>
+    <div class="hero__content">
+      <img src="/logo.webp?v=2" alt="BOS-ARSA — {{ site.fullName }}" class="hero__logo" width="800" height="317">
+      <h1 class="hero__title">Amateurfunk im Dienst der <span>Sicherheit</span></h1>
+      <p class="hero__subtitle">Der österreichische Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben</p>
+      <div class="hero__actions">
+        <a href="#mitglied" class="btn btn--gold">
+          <i data-lucide="user-plus" style="width:17px;height:17px;"></i>
+          Mitglied werden
+        </a>
+        <a href="#ueber-uns" class="btn btn--outline-white">
+          <i data-lucide="chevron-down" style="width:17px;height:17px;"></i>
+          Mehr erfahren
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Austrian flag stripe -->
+  <div class="at-stripe" aria-hidden="true"></div>
+
+  <!-- Über uns -->
+  <section class="section" id="ueber-uns">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Über uns</span>
+        <h2 class="section__title">Wer wir sind</h2>
+        <div class="section__rule"></div>
+        <p class="section__intro">Der Verein bezweckt die Erhaltung, Förderung und Verbreitung des Amateurfunkwesens innerhalb des Wirkungsbereiches der Behörden und Organisationen mit Sicherheitsaufgaben (BOS).</p>
+      </div>
+      <div class="features">
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <i data-lucide="shield-check" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-card__title">Sicherheit</h3>
+          <p class="feature-card__text">Amateurfunk als verlässliche Kommunikation für BOS-Organisationen — auch dann, wenn andere Systeme ausfallen.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <i data-lucide="radio-tower" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-card__title">Vernetzung</h3>
+          <p class="feature-card__text">Verbindung von Funkamateurinnen und Funkamateuren aus Polizei, Feuerwehr und Rettung zu einer starken, übergreifenden Gemeinschaft.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-card__icon">
+            <i data-lucide="graduation-cap" style="width:24px;height:24px;"></i>
+          </div>
+          <h3 class="feature-card__title">Ausbildung</h3>
+          <p class="feature-card__text">Förderung der Amateurfunk-Kompetenz im BOS-Bereich durch gezielte Aus- und Weiterbildung.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="section section--alt" id="video">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Videos</span>
+        <h2 class="section__title">Was ist BOS-ARSA?</h2>
+        <div class="section__rule"></div>
+        <p class="section__intro">Ein visueller Einblick in unseren Verein, unsere Ziele und unsere Arbeit im Dienst der Sicherheit.</p>
+      </div>
+      <div class="video-wrapper reveal">
+        <video class="video-player" controls preload="metadata" poster="/logo.webp?v=2">
+          <source src="/bosarsavideo.mp4" type="video/mp4">
+          Dein Browser unterstützt keine Videowiedergabe.
+        </video>
+      </div>
+      <div class="section__header reveal" style="margin-top: 3rem;">
+        <h2 class="section__title">Kommunikation, wenn nichts mehr geht</h2>
+        <div class="section__rule"></div>
+        <p class="section__intro">BOS-ARSA – Im Sinne der Sicherheit</p>
+      </div>
+      <div class="video-wrapper reveal">
+        <video class="video-player" controls preload="metadata" poster="/logo.webp?v=2">
+          <source src="/kommunikationwennnichtsmehrgeht.mp4" type="video/mp4">
+          Dein Browser unterstützt keine Videowiedergabe.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vorstand -->
+  <section class="section" id="vorstand">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Vorstand</span>
+        <h2 class="section__title">Unser Vorstand</h2>
+        <div class="section__rule"></div>
+      </div>
+      <div class="board-grid">
+        <div class="board-card board-card--president reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="star" style="width:24px;height:24px;"></i>
+          </div>
+          <div class="board-card__role">Präsident</div>
+          <div class="board-card__name">Gabrutsch Wolfgang</div>
+          <div class="board-card__credentials">BA MBA MBA DBA</div>
+        </div>
+        <div class="board-card reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="user" style="width:22px;height:22px;"></i>
+          </div>
+          <div class="board-card__role">Generalsekretär</div>
+          <div class="board-card__name">Londer Erich</div>
+          <div class="board-card__credentials">BA</div>
+        </div>
+        <div class="board-card reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="user" style="width:22px;height:22px;"></i>
+          </div>
+          <div class="board-card__role">Kassier</div>
+          <div class="board-card__name">Ing. René Camaur</div>
+        </div>
+        <div class="board-card reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="user" style="width:22px;height:22px;"></i>
+          </div>
+          <div class="board-card__role">Kassier Stellvertreter</div>
+          <div class="board-card__name">Joham Thomas</div>
+        </div>
+        <div class="board-card reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="user" style="width:22px;height:22px;"></i>
+          </div>
+          <div class="board-card__role">Schriftführer</div>
+          <div class="board-card__name">Kugi Jürgen</div>
+        </div>
+        <div class="board-card reveal">
+          <div class="board-card__avatar">
+            <i data-lucide="user" style="width:22px;height:22px;"></i>
+          </div>
+          <div class="board-card__role">Schriftführer Stellvertreter</div>
+          <div class="board-card__name">Weger Erwin</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ziele -->
+  <section class="section section--dark" id="ziele">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Unsere Ziele</span>
+        <h2 class="section__title">Wofür wir stehen</h2>
+        <div class="section__rule"></div>
+      </div>
+      <div class="goals-content">
+        <div class="reveal">
+          <p class="goals__statement">Förderung des <span>Amateurfunks</span> als unverzichtbares Kommunikationsmittel für <span>Sicherheitsorganisationen</span> in Österreich.</p>
+        </div>
+        <ul class="goals-list reveal">
+          <li class="goals-list__item">
+            <div class="goals-list__icon">
+              <i data-lucide="radio" style="width:18px;height:18px;"></i>
+            </div>
+            <span class="goals-list__text">Förderung des Amateurfunks in BOS-Organisationen</span>
+          </li>
+          <li class="goals-list__item">
+            <div class="goals-list__icon">
+              <i data-lucide="book-open" style="width:18px;height:18px;"></i>
+            </div>
+            <span class="goals-list__text">Ausbildung und Weiterbildung von Funkamateurinnen und Funkamateuren</span>
+          </li>
+          <li class="goals-list__item">
+            <div class="goals-list__icon">
+              <i data-lucide="globe" style="width:18px;height:18px;"></i>
+            </div>
+            <span class="goals-list__text">Zusammenarbeit mit nationalen und internationalen Organisationen</span>
+          </li>
+          <li class="goals-list__item">
+            <div class="goals-list__icon">
+              <i data-lucide="siren" style="width:18px;height:18px;"></i>
+            </div>
+            <span class="goals-list__text">Unterstützung der Notfallkommunikation</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mitglied werden -->
+  <section class="section join" id="mitglied">
+    <div class="container">
+      <div class="section__header reveal">
+        <span class="section__label">Mitglied werden</span>
+        <h2 class="join__title">Werde Teil unseres Teams</h2>
+        <p class="join__subtitle">Du bist in einer BOS-Organisation tätig und hast eine Amateurfunklizenz? Dann bist du bei uns richtig! Mitglieder aus folgenden Organisationen sind bei uns willkommen:</p>
+      </div>
+
+      <div class="join__orgs reveal">
+        <a href="https://www.polizei.gv.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="shield"></i></div>
+          <span class="join__org-name">Polizei</span>
+        </a>
+        <a href="https://www.bundesfeuerwehrverband.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="flame"></i></div>
+          <span class="join__org-name">Feuerwehr</span>
+        </a>
+        <a href="https://www.roteskreuz.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="heart-pulse"></i></div>
+          <span class="join__org-name">Rotes Kreuz</span>
+        </a>
+        <a href="https://www.samariterbund.net" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="ambulance"></i></div>
+          <span class="join__org-name">Samariterbund</span>
+        </a>
+        <a href="https://www.bundesheer.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="swords"></i></div>
+          <span class="join__org-name">Bundesheer</span>
+        </a>
+        <a href="https://www.oesterreichische-wasserrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="waves"></i></div>
+          <span class="join__org-name">Wasserrettung</span>
+        </a>
+        <a href="https://www.rettungshunde.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="dog"></i></div>
+          <span class="join__org-name">Rettungshunde&shy;staffel</span>
+        </a>
+        <a href="https://www.bergrettung.at" target="_blank" rel="noopener noreferrer" class="join__org">
+          <div class="join__org-icon"><i data-lucide="mountain"></i></div>
+          <span class="join__org-name">Bergrettung</span>
+        </a>
+      </div>
+
+      <div class="join__divider reveal">
+        <span class="join__divider-text">oder</span>
+      </div>
+
+      <div class="join__foerder reveal">
+        <div class="join__foerder-icon">
+          <i data-lucide="hand-helping" style="width:26px;height:26px;color:var(--bos-gold);"></i>
+        </div>
+        <div class="join__foerder-content">
+          <div class="join__foerder-title">Förderndes Mitglied werden</div>
+          <p class="join__foerder-text">Du bist in keiner BOS-Organisation tätig, möchtest aber unsere Arbeit unterstützen? Dann werde förderndes Mitglied und hilf uns, sichere Kommunikation in Österreich zu stärken.</p>
+          <a href="mailto:{{ site.email }}" class="btn btn--gold">
+            <i data-lucide="mail" style="width:17px;height:17px;"></i>
+            Jetzt Kontakt aufnehmen
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partner -->
+  <section class="section partners" id="partner" style="padding:56px 0;">
+    <div class="container">
+      <p class="partners__label reveal">Mit freundlicher Unterstützung von</p>
+      <div class="partners-grid reveal">
+        <a href="https://safereach.com" target="_blank" rel="noopener noreferrer" class="partner-item" aria-label="safeREACH — Partner Website besuchen">
+          <i data-lucide="bell-ring" style="width:28px;height:28px;color:var(--polizei-mid);flex-shrink:0;"></i>
+          <span class="partner-item__info">
+            <span class="partner-item__name">safeREACH.com</span>
+            <span class="partner-item__desc">Alarmierungslösung</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>

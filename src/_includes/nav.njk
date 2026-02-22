@@ -1,0 +1,24 @@
+<nav class="nav" id="nav" role="navigation" aria-label="Hauptnavigation">
+  <div class="container nav__inner">
+    <a href="/" class="nav__brand" aria-label="BOS-ARSA Startseite">
+      <img src="/logo.webp?v=2" alt="BOS-ARSA Logo" class="nav__brand-logo" width="176" height="70">
+      <span class="nav__brand-text">
+        <span class="nav__brand-name">BOS-ARSA</span>
+        <span class="nav__brand-sub">Amateur-Radio-Society-Austria</span>
+      </span>
+    </a>
+    <button class="nav__hamburger" id="navToggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav__links" id="navLinks">
+      {% set prefix = "#" if activeNav == "home" else "/#" %}
+      <li><a href="{{ prefix }}ueber-uns">Über uns</a></li>
+      <li><a href="{{ prefix }}video">Videos</a></li>
+      <li><a href="{{ prefix }}vorstand">Vorstand</a></li>
+      <li><a href="{{ prefix }}ziele">Ziele</a></li>
+      <li><a href="{{ prefix }}mitglied">Mitglied werden</a></li>
+      <li><a href="/presse/"{% if activeNav == "presse" %} class="active"{% endif %}>Presse</a></li>
+      <li><a href="{{ prefix }}kontakt">Kontakt</a></li>
+    </ul>
+  </div>
+</nav>

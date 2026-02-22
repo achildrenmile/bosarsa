@@ -1,0 +1,23 @@
+{
+  "name": "BOS-ARSA",
+  "fullName": "Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben",
+  "legalName": "BOS-Amateur-Radio-Society-Austria (BOS-ARSA)",
+  "url": "https://bosarsa.oeradio.at",
+  "email": "office@bos-arsa.at",
+  "address": {
+    "care": "c/o Wolfgang Gabrutsch",
+    "street": "Buchengasse 3",
+    "city": "Klagenfurt am Wörthersee",
+    "zip": "9020",
+    "country": "Österreich"
+  },
+  "zvr": "1783847541",
+  "vereinsbehoerde": "Landespolizeidirektion Kärnten",
+  "websiteBetreiber": {
+    "name": "Michael Linder",
+    "callsign": "OE8YML",
+    "address": "Nötsch 219, 9611 Nötsch",
+    "country": "Österreich",
+    "email": "oe8yml@rednil.at"
+  }
+}

@@ -1,17 +1,12 @@
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+RUN npx @11ty/eleventy
+
 FROM nginx:alpine
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/bosarsa.conf
-COPY index.html /usr/share/nginx/html/index.html
-COPY impressum.html /usr/share/nginx/html/impressum.html
-COPY datenschutz.html /usr/share/nginx/html/datenschutz.html
-COPY presse.html /usr/share/nginx/html/presse.html
-COPY logo-web.png /usr/share/nginx/html/logo-web.png
-COPY logo.webp /usr/share/nginx/html/logo.webp
-COPY bosarsavideo.mp4 /usr/share/nginx/html/bosarsavideo.mp4
-COPY kommunikationwennnichtsmehrgeht.mp4 /usr/share/nginx/html/kommunikationwennnichtsmehrgeht.mp4
-COPY fonts/ /usr/share/nginx/html/fonts/
-COPY robots.txt /usr/share/nginx/html/robots.txt
-COPY sitemap.xml /usr/share/nginx/html/sitemap.xml
-COPY llms.txt /usr/share/nginx/html/llms.txt
-COPY favicon/ /usr/share/nginx/html/
+COPY --from=build /app/_site/ /usr/share/nginx/html/
 EXPOSE 80

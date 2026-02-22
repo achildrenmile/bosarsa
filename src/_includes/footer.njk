@@ -1,0 +1,44 @@
+<footer class="footer" id="kontakt">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <div class="footer__brand">
+          <img src="/logo.webp?v=2" alt="BOS-ARSA" class="footer__brand-logo" width="160" height="63">
+          <span class="footer__brand-name">BOS-ARSA</span>
+        </div>
+        <p class="footer__org-name">{{ site.fullName }} – {{ site.legalName }}</p>
+        <div class="footer__details">
+          {{ site.address.care }}<br>
+          {{ site.address.zip }} {{ site.address.city }}, {{ site.address.street }}<br><br>
+          Zuständige Vereinsbehörde: {{ site.vereinsbehoerde }}<br>
+          ZVR-Zahl: {{ site.zvr }}<br><br>
+          <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__links-title">Navigation</div>
+        <ul class="footer__link-list">
+          <li><a href="/#ueber-uns">Über uns</a></li>
+          <li><a href="/#vorstand">Vorstand</a></li>
+          <li><a href="/#ziele">Ziele</a></li>
+          <li><a href="/#mitglied">Mitglied werden</a></li>
+          <li><a href="mailto:{{ site.email }}">Kontakt</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer__links-title">Rechtliches & Links</div>
+        <ul class="footer__link-list">
+          <li><a href="/impressum/">Impressum</a></li>
+          <li><a href="/datenschutz/">Datenschutz</a></li>
+          <li><a href="/presse/">Presse</a></li>
+          <li><a href="https://bosarsalog.oeradio.at" target="_blank" rel="noopener noreferrer">bosarsalog.oeradio.at</a></li>
+          <li><a href="https://oeradio.at" target="_blank" rel="noopener noreferrer">oeradio.at</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; <span id="year"></span> BOS-ARSA. Alle Rechte vorbehalten.</span>
+      <span>Amateurfunk im Dienst der Sicherheit</span>
+    </div>
+  </div>
+</footer>
