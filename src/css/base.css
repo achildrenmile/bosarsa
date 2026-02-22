@@ -298,6 +298,7 @@ a:focus-visible { outline: 2px solid var(--polizei-light); outline-offset: 2px; 
 .article__tag--podcast { background: rgba(212,168,67,.15); color: var(--bos-gold); }
 .article__tag--blog { background: rgba(27,42,74,.08); color: var(--polizei-navy); }
 .article__tag--kurs { background: rgba(74,122,181,.1); color: var(--polizei-light); }
+.article__tag--qsp { background: rgba(180,50,50,.1); color: #b43232; }
 .article__title {
   font-size: 1rem; font-weight: 700; color: var(--gray-900);
   margin-bottom: 8px; line-height: 1.4;

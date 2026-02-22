@@ -1,5 +1,32 @@
 [
   {
+    "date": "Juni 2025",
+    "tag": "qsp",
+    "tagLabel": "QSP Magazin",
+    "title": "Aus dem ADL 820 BOS-ARSA — Sicherheitstag in Feldkirchen",
+    "url": "https://www.oevsv.at/export/shared/.content/.galleries/qsp_downloadgallery/2025_qsp_downloadgallery/QSP_06-2025.pdf",
+    "source": "QSP — Amateurfunkmagazin des ÖVSV, Ausgabe 06/2025",
+    "desc": "Bericht über den Sicherheitstag in Feldkirchen, bei dem OE8OPT einen Notfunk-Stand mit seinem umgebauten Bus, KW-Station (IC-7300) und UKW aufbaute. Polizeioberst Wolfgang OE8GWQ antwortete von der Landespolizeidirektion OE8XPQ. Mit Fotos des Notfunkkoffers und des BOS-ARSA Teams."
+  },
+  {
+    "date": "Dezember 2024",
+    "tag": "qsp",
+    "tagLabel": "QSP Magazin",
+    "title": "Ein neuer Notfunkreferent — Daniel OE8OPT für Kärnten",
+    "url": "https://www.oevsv.at/export/shared/.content/.galleries/qsp_downloadgallery/2024_qsp_downloadgallery/QSP_12-2024.pdf",
+    "source": "QSP — Amateurfunkmagazin des ÖVSV, Ausgabe 12/2024",
+    "desc": "Daniel OE8OPT wird neuer Notfunkreferent für den Landesverband Kärnten. Der Artikel hebt seine Tätigkeit im Abfrage-Team der BOS-ARSA hervor und dankt OE8GWQ vom ADL 820 für die Unterstützung."
+  },
+  {
+    "date": "Juli/August 2022",
+    "tag": "qsp",
+    "tagLabel": "QSP Magazin",
+    "title": "ADL 820 BOS-ARSA — Kommunikation wenn nichts anderes mehr funktioniert",
+    "url": "https://www.oevsv.at/export/shared/.content/.galleries/qsp_downloadgallery/2022_qsp_downloadgallery/QSP_07-08_2022.pdf",
+    "source": "QSP — Amateurfunkmagazin des ÖVSV, Ausgabe 07-08/2022 — Wolfgang Gabrutsch (OE8GWQ)",
+    "desc": "Ausführlicher Beitrag des BOS-ARSA Präsidenten über die Gründungsgeschichte, die Mission als Brücke zur Krisenkommunikation und das Wachstum auf 120 Mitglieder. Berichtet über die wöchentliche Krisenkommunikationsübung am Sonntag um 19:00 Uhr auf 145,7625 MHz mit rund 70 Teilnehmern."
+  },
+  {
     "date": "22. April 2022",
     "tag": "blog",
     "tagLabel": "Blog",
@@ -27,6 +54,15 @@
     "desc": "BOS-ARSA Obmann Wolfgang Gabrutsch stellt das Notfunkprojekt vor — eine Brücke zwischen dem Amateurfunk und den Funkdiensten der Blaulichtorganisationen für den Krisenfall."
   },
   {
+    "date": "Oktober 2021",
+    "tag": "artikel",
+    "tagLabel": "Artikel",
+    "title": "Funken im Katastrophenfall — Wasserrettung wird zu Funkamateuren",
+    "url": "https://www.oewr-kaernten.at/cms/faak/blog/funken-im-katastrophenfall-853/",
+    "source": "Österreichische Wasserrettung Kärnten — Einsatzstelle Faaker See",
+    "desc": "Bericht der Einsatzstelle Faaker See über den von BOS-ARSA organisierten Amateurfunkkurs bei der Rot-Kreuz-Rettungsstelle in Ferlach. Acht Einsatzkräfte bestanden die Prüfung und werden künftig bei Katastropheneinsätzen sowie Landes- und Bundestätigkeiten eingesetzt."
+  },
+  {
     "date": "September 2021",
     "tag": "kurs",
     "tagLabel": "Ausbildung",
@@ -43,6 +79,15 @@
     "url": "https://www.oevsv.at/oevsv/aktuelles/BOS-ARSA-und-NOTFUNK-Fachgespraech-in-Kaernten/",
     "source": "ÖVSV — Österreichischer Versuchssenderverband — Kevin Mekul (OE8KKM)",
     "desc": "Bericht über ein Fachgespräch zum Thema Notfunk am Pressegger See. Beim Blaulicht-Stammtisch in Bleiburg wurde die Einrichtung einer Funkstelle im Krisenmanagementzentrum der Bezirkshauptmannschaft Völkermarkt besprochen."
+  },
+  {
+    "date": "Juni 2021",
+    "tag": "qsp",
+    "tagLabel": "QSP Magazin",
+    "title": "Neue Ortsstelle im Landesverband Kärnten: ADL 820 BOS-ARSA",
+    "url": "https://www.oevsv.at/export/shared/.content/.galleries/qsp_downloadgallery/2021_qsp_downloadgallery/QSP_06_2021.pdf",
+    "source": "QSP — Amateurfunkmagazin des ÖVSV, Ausgabe 06/2021 — OE8 berichtet",
+    "desc": "Vorstellung der neuen ÖVSV-Ortsstelle ADL 820 BOS-ARSA im QSP-Magazin. Beschreibt die Gründung, den Zweck als Brücke zwischen ÖVSV-Notfunk und BOS-Leitstellen, sowie die Clubstationen bei LAWZ, ÖRK und Landespolizeidirektion. Mit Foto vom BOS-ARSA Aktionstag Ferlach 2020."
   },
   {
     "date": "28. April 2021",
