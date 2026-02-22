@@ -3,8 +3,9 @@
   "checkpoint_id": "5d78f4275f35",
   "strategy": "manual-commit",
   "branch": "master",
-  "checkpoints_count": 0,
+  "checkpoints_count": 4,
   "files_touched": [
+    ".eleventy.js",
     ".env.production",
     ".gitignore",
     "Dockerfile",
@@ -20,9 +21,25 @@
     "index.html",
     "llms.txt",
     "nginx.conf",
+    "package-lock.json",
+    "package.json",
     "presse.html",
     "robots.txt",
-    "sitemap.xml"
+    "sitemap.xml",
+    "src/_data/presse.json",
+    "src/_data/site.json",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/base.css",
+    "src/css/index.css",
+    "src/datenschutz.njk",
+    "src/impressum.njk",
+    "src/index.njk",
+    "src/llms.njk",
+    "src/presse.njk",
+    "src/robots.njk",
+    "src/sitemap.njk"
   ],
   "sessions": [
     {
@@ -31,13 +48,20 @@
       "context": "/5d/78f4275f35/0/context.md",
       "content_hash": "/5d/78f4275f35/0/content_hash.txt",
       "prompt": "/5d/78f4275f35/0/prompt.txt"
+    },
+    {
+      "metadata": "/5d/78f4275f35/1/metadata.json",
+      "transcript": "/5d/78f4275f35/1/full.jsonl",
+      "context": "/5d/78f4275f35/1/context.md",
+      "content_hash": "/5d/78f4275f35/1/content_hash.txt",
+      "prompt": "/5d/78f4275f35/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 9,
-    "cache_creation_tokens": 15648,
-    "cache_read_tokens": 393964,
-    "output_tokens": 4480,
-    "api_call_count": 5
+    "input_tokens": 222,
+    "cache_creation_tokens": 268723,
+    "cache_read_tokens": 5487949,
+    "output_tokens": 31539,
+    "api_call_count": 60
   }
 }

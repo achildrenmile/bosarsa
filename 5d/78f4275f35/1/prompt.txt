@@ -1,0 +1,209 @@
+Implement the following plan:
+
+# Plan: Migrate BOS-ARSA to Eleventy (11ty)
+
+## Context
+
+The BOS-ARSA website has 4 HTML pages with massive code duplication — nav, footer, CSS variables, font-face declarations, favicons, and JS are copy-pasted across every file. Adding a new page means copying 150+ lines of boilerplate. The press page has 6 hand-coded article cards that will grow over time. SEO files (robots.txt, sitemap.xml, llms.txt) are also manually maintained.
+
+**Goal:** Migrate to Eleventy (11ty) — a zero-config static site generator that outputs plain HTML. The nginx/Docker deployment stays identical, we just add a build step.
+
+## Why Eleventy
+
+- Zero-config, minimal dependencies (~1 npm package)
+- Nunjucks templating: layouts, partials, loops, data files
+- Output is plain static HTML — served by nginx exactly as before
+- JSON data files for press articles (add article = add JSON entry)
+- Can generate sitemap.xml, robots.txt, llms.txt from templates
+- No client-side framework — same HTML output as today
+
+## New Project Structure
+
+```
+bosarsa/
+├── src/
+│   ├── _includes/
+│   │   ├── base.njk              # Full HTML document shell
+│   │   ├── nav.njk               # Full navigation (logo, links, hamburger)
+│   │   └── footer.njk            # Full 3-column footer
+│   ├── _data/
+│   │   ├── site.json             # Global: name, url, email, address, ZVR, etc.
+│   │   └── presse.json           # Press articles array
+│   ├── css/
+│   │   └── base.css              # All shared CSS (vars, fonts, nav, footer, responsive)
+│   ├── index.njk                 # Homepage
+│   ├── presse.njk                # Press page (loops over presse.json)
+│   ├── impressum.njk             # Impressum (content only, layout from base)
+│   ├── datenschutz.njk           # Datenschutz (content only, layout from base)
+│   ├── robots.njk                # -> robots.txt
+│   ├── sitemap.njk               # -> sitemap.xml (auto-lists all pages)
+│   └── llms.njk                  # -> llms.txt (pulls from site.json)
+├── fonts/                         # Stays in root (passthrough copy)
+├── favicon/                       # Stays in root (passthrough copy)
+├── *.mp4, *.png, *.webp          # Static assets (passthrough copy)
+├── .eleventy.js                   # Eleventy config
+├── package.json                   # Just @11ty/eleventy
+├── Dockerfile                     # Multi-stage: node build -> nginx serve
+├── docker-compose.yml             # Unchanged
+├── deploy-production.sh           # Unchanged
+└── nginx.conf                     # Unchanged
+```
+
+## Key Files
+
+### 1. `src/_data/site.json` — Single source of truth
+```json
+{
+  "name": "BOS-ARSA",
+  "fullName": "Österreichischer Amateurfunkverein der Behörden und Organisationen mit Sicherheitsaufgaben",
+  "legalName": "BOS-Amateur-Radio-Society-Austria (BOS-ARSA)",
+  "url": "https://bosarsa.oeradio.at",
+  "email": "office@bos-arsa.at",
+  "address": { ... },
+  "zvr": "1783847541",
+  "vereinsbehoerde": "Landespolizeidirektion Kärnten"
+}
+```
+
+### 2. `src/_data/presse.json` — Data-driven press articles
+```json
+[
+  {
+    "date": "22. April 2022",
+    "tag": "blog",
+    "tagLabel": "Blog",
+    "title": "Not- und Katastrophenfunk — ...",
+    "url": "https://www.mh-is.at/?p=1158",
+    "source": "mh-is.at — OE3EGH und OE3XEG",
+    "desc": "Ausführlicher Überblick..."
+  }
+]
+```
+
+### 3. `src/_includes/base.njk` — Single layout for all pages
+- `<head>` with fonts, CSS, favicons, SEO meta (title, description, canonical, OG, Twitter)
+- Includes `nav.njk` and `footer.njk`
+- Content block for page-specific content
+- Shared JS at bottom (lucide, year, hamburger, scroll)
+- Front matter controls: `title`, `description`, `canonical`, `activeNav`, `pageCSS`
+
+### 4. `src/presse.njk` — Loop replaces 6 copy-pasted cards
+```nunjucks
+{% for article in presse %}
+  <a class="article" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
+    <div class="article__date">{{ article.date }}
+      <span class="article__tag article__tag--{{ article.tag }}">{{ article.tagLabel }}</span>
+    </div>
+    <h2 class="article__title">{{ article.title }}</h2>
+    <div class="article__source">{{ article.source }}</div>
+    <p class="article__desc">{{ article.desc }}</p>
+  </a>
+{% endfor %}
+```
+
+### 5. SEO files — Generated from data
+- **sitemap.njk**: Loops over 11ty's `collections.all` to auto-list all pages
+- **robots.njk**: Simple template referencing `site.url`
+- **llms.njk**: Pulls org info from `site.json`, board members, etc.
+
+### 6. `Dockerfile` — Multi-stage build
+```dockerfile
+FROM node:20-alpine AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+RUN npx @11ty/eleventy
+
+FROM nginx:alpine
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/bosarsa.conf
+COPY --from=build /app/_site/ /usr/share/nginx/html/
+EXPOSE 80
+```
+
+### 7. `.eleventy.js` — Config
+- Input: `src/`, Output: `_site/`
+- Passthrough copy: `fonts/`, `favicon/`, `*.mp4`, `*.png`, `*.webp`, `nginx.conf`
+- Nunjucks as template engine
+
+## Also update impressum & datenschutz
+
+Both currently have the old simple nav/footer. They'll get the full nav and full footer from the shared includes — consistent with presse.html and index.html.
+
+## What stays the same
+
+- `nginx.conf` — identical
+- `docker-compose.yml` — identical
+- `deploy-production.sh` — identical
+- All static assets (fonts, favicons, videos, images)
+- The final HTML output looks exactly the same to visitors
+
+## Implementation Steps
+
+1. `npm init` + install `@11ty/eleventy`
+2. Create `.eleventy.js` config
+3. Create `src/_data/site.json` and `src/_data/presse.json`
+4. Create `src/css/base.css` with all shared styles
+5. Create `src/_includes/base.njk`, `nav.njk`, `footer.njk`
+6. Convert `index.html` -> `src/index.njk`
+7. Convert `presse.html` -> `src/presse.njk` (data-driven loop)
+8. Convert `impressum.html` -> `src/impressum.njk`
+9. Convert `datenschutz.html` -> `src/datenschutz.njk`
+10. Create `src/robots.njk`, `src/sitemap.njk`, `src/llms.njk`
+11. Update `Dockerfile` to multi-stage build
+12. Update `.gitignore` (add `_site/`, `node_modules/`)
+13. Delete old root HTML files
+14. Test build locally, verify output matches current site
+15. Deploy
+
+## Verification
+
+1. Run `npx @11ty/eleventy` — should produce `_site/` with all files
+2. Compare `_site/index.html` output with current `index.html`
+3. Verify `_site/presse.html` renders all 6 articles
+4. Verify `_site/sitemap.xml`, `_site/robots.txt`, `_site/llms.txt` content
+5. Deploy and verify live site at https://bosarsa.oeradio.at
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+
+---
+
+[Request interrupted by user]
+
+---
+
+plan different technology
+
+---
+
+[Request interrupted by user]
+
+---
+
+keep elementy... go on with your plan
+
+---
+
+deploy
+
+---
+
+es elemetnly now live
+
+---
+
+not deployed, as presse.html still exists on prod
+
+---
+
+[Request interrupted by user]
+
+---
+
+do not want to have html files ... like presse.html... can we /presse instead
+
+---
+
+commit this and deploy
