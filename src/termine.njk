@@ -1,0 +1,64 @@
+---
+layout: base.njk
+title: "Termine — BOS-ARSA"
+description: "Aktuelle Termine, Übungen und Veranstaltungen von BOS-ARSA – Amateurfunk im Sinne der Sicherheit"
+canonical: "https://bosarsa.oeradio.at/termine/"
+activeNav: termine
+pageCSSFile: "/css/termine.css"
+permalink: /termine/
+---
+
+<div class="page-content page-content--wide">
+  <h1>Termine & Veranstaltungen</h1>
+  <p class="subtitle">Aktuelle Übungen, Schulungen und Events von BOS-ARSA</p>
+
+  {% for event in termine %}
+  <article class="event">
+    {% if event.image %}
+    <div class="event__image">
+      <img src="{{ event.image }}" alt="{{ event.imageAlt }}" loading="lazy">
+    </div>
+    {% endif %}
+    <div class="event__body">
+      <div class="event__meta">
+        <span class="event__date">{{ event.date }}</span>
+        <span class="article__tag article__tag--{{ event.tag }}">{{ event.tagLabel }}</span>
+      </div>
+      <h2 class="event__title">{{ event.title }}</h2>
+      <p class="event__intro">{{ event.intro }}</p>
+
+      {% for section in event.sections %}
+      <h3 class="event__heading">{{ section.heading }}</h3>
+      {% if section.type == "table" %}
+      <div class="event__table-wrap">
+        <table class="event__table">
+          <thead>
+            <tr>
+              {% for col in section.columns %}
+              <th>{{ col }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in section.rows %}
+            <tr>
+              {% for cell in row %}
+              <td>{{ cell }}</td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% elif section.type == "text" %}
+      <p class="event__text">{{ section.content }}</p>
+      {% endif %}
+      {% endfor %}
+
+      {% if event.author %}
+      <p class="event__author">73 de {{ event.author }}</p>
+      {% endif %}
+    </div>
+  </article>
+  {% endfor %}
+</div>

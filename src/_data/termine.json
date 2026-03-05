@@ -1,0 +1,40 @@
+[
+  {
+    "date": "10., 11., 17. & 18. März 2026",
+    "tag": "uebung",
+    "tagLabel": "Notfunkübung",
+    "title": "Notfunkübung Klagenfurt: Vier Leuchttürme, vier Termine im März",
+    "image": "/notfunk-header.webp",
+    "imageAlt": "Notfunkübung Klagenfurt — Vier Leuchttürme",
+    "intro": "Das Magistrat Klagenfurt übt den Ernstfall: An vier Terminen im März wird in vier verschiedenen \u201ELeuchttürmen\u201C der Notfallbetrieb geprobt. Funkamateure sind ausdrücklich eingeladen, dabei zu sein.",
+    "sections": [
+      {
+        "heading": "Die Termine",
+        "type": "table",
+        "columns": ["Datum", "Uhrzeit"],
+        "rows": [
+          ["Montag, 10. März 2026", "07:30 – 13:00 Uhr"],
+          ["Dienstag, 11. März 2026", "07:30 – 13:00 Uhr"],
+          ["Dienstag, 17. März 2026", "07:30 – 13:00 Uhr"],
+          ["Mittwoch, 18. März 2026", "07:30 – 13:00 Uhr"]
+        ]
+      },
+      {
+        "heading": "Was wird geübt?",
+        "type": "text",
+        "content": "Die Stadt Klagenfurt betreibt sogenannte \u201ELeuchttürme\u201C – vordefinierte Anlaufstellen, die im Katastrophenfall als Kommunikations- und Koordinationspunkte dienen. Bei dieser Übung wird der Betrieb an vier dieser Standorte durchgespielt. Die Stadt verfügt über eigene Notfunk-Koffer – eigene Ausrüstung ist nicht erforderlich."
+      },
+      {
+        "heading": "Für wen ist das interessant?",
+        "type": "text",
+        "content": "Für alle Funkamateure im Raum Klagenfurt und Umgebung, die sich für Notfunk interessieren oder einfach mal sehen möchten, wie eine solche Übung in der Praxis abläuft. Vorkenntnisse im Notfunk sind nicht nötig – Interesse genügt."
+      },
+      {
+        "heading": "Dabei sein?",
+        "type": "text",
+        "content": "Wer sich die Übung anschauen oder mitmachen möchte – einfach kurze Nachricht an office@bos-arsa.at. Wir koordinieren die Teilnahme und geben weitere Details zu den einzelnen Standorten."
+      }
+    ],
+    "author": "Daniel, OE8OPT – Notfunk-Referent OE8"
+  }
+]
