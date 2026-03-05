@@ -13,8 +13,8 @@
         "type": "table",
         "columns": ["Datum", "Uhrzeit"],
         "rows": [
-          ["Montag, 10. März 2026", "07:30 – 13:00 Uhr"],
-          ["Dienstag, 11. März 2026", "07:30 – 13:00 Uhr"],
+          ["Dienstag, 10. März 2026", "07:30 – 13:00 Uhr"],
+          ["Mittwoch, 11. März 2026", "07:30 – 13:00 Uhr"],
           ["Dienstag, 17. März 2026", "07:30 – 13:00 Uhr"],
           ["Mittwoch, 18. März 2026", "07:30 – 13:00 Uhr"]
         ]
