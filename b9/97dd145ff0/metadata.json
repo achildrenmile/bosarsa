@@ -1,0 +1,37 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "b997dd145ff0",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "eleventy.config.js",
+    "src/_data/termine.json",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/index.css",
+    "src/css/termine.css",
+    "src/datenschutz.njk",
+    "src/index.njk",
+    "src/llms.njk",
+    "src/sitemap.njk",
+    "src/termine.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/b9/97dd145ff0/0/metadata.json",
+      "transcript": "/b9/97dd145ff0/0/full.jsonl",
+      "context": "/b9/97dd145ff0/0/context.md",
+      "content_hash": "/b9/97dd145ff0/0/content_hash.txt",
+      "prompt": "/b9/97dd145ff0/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 25,
+    "cache_creation_tokens": 137849,
+    "cache_read_tokens": 3235139,
+    "output_tokens": 270,
+    "api_call_count": 23
+  }
+}
