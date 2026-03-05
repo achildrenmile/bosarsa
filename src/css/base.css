@@ -61,7 +61,7 @@
 
   --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
-  --container: 1140px;
+  --container: 1280px;
   --nav-h: 72px;
   --radius: 2px;
 }
@@ -124,10 +124,10 @@ a:focus-visible { outline: 2px solid var(--polizei-light); outline-offset: 2px; 
   color: var(--gray-300); white-space: nowrap;
 }
 
-.nav__links { display: flex; align-items: center; gap: 4px; list-style: none; }
+.nav__links { display: flex; align-items: center; gap: 2px; list-style: none; }
 .nav__links a {
-  display: block; padding: 8px 16px;
-  color: var(--gray-300); font-size: .875rem; font-weight: 500;
+  display: block; padding: 8px 12px;
+  color: var(--gray-300); font-size: .82rem; font-weight: 500;
   letter-spacing: .2px; border-radius: var(--radius);
   transition: color .2s, background .2s; text-decoration: none;
 }
