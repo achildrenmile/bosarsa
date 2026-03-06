@@ -1,5 +1,46 @@
 [
   {
+    "date": "April – Oktober 2026",
+    "tag": "veranstaltung",
+    "tagLabel": "Sicherheitstage",
+    "title": "Sicherheitstage 2026 in K\u00e4rnten mit BOS-ARSA und \u00d6VSV-Notfunk-Beteiligung",
+    "image": "/sicherheitstage-2026.webp",
+    "imageAlt": "Sicherheitstage 2026 – Terminkalender K\u00e4rnten",
+    "intro": "Der K\u00e4rntner Zivilschutzverband organisiert auch 2026 wieder Sicherheitstage in ganz K\u00e4rnten. BOS-ARSA ist als Partnerorganisation mit dabei. Hier alle Termine auf einen Blick.",
+    "sections": [
+      {
+        "heading": "Die Termine",
+        "type": "table",
+        "columns": ["Datum", "Ort"],
+        "rows": [
+          ["Samstag, 25. April 2026", "Bleiburg"],
+          ["Samstag, 23. Mai 2026", "Glanhofen"],
+          ["Samstag, 13. Juni 2026", "Preitenegg"],
+          ["Samstag, 20. Juni 2026", "K\u00f6tschach-Mauthen"],
+          ["Samstag, 27. Juni 2026", "Lendorf"],
+          ["Mittwoch, 1. Juli 2026", "Strandbad Greifenburg (Jugend-Wasser-Sicherheitstag)"],
+          ["Donnerstag, 2. Juli 2026", "Maltschacher See (Jugend-Wasser-Sicherheitstag)"],
+          ["Dienstag, 7. Juli 2026", "offen (Jugend-Wasser-Sicherheitstag)"],
+          ["Samstag, 12. September 2026", "N\u00f6tsch im Gailtal"],
+          ["Samstag, 19. September 2026", "M\u00f6lbling"],
+          ["Samstag, 26. September 2026", "Villach"],
+          ["Samstag, 3. Oktober 2026", "Magdalensberg"]
+        ]
+      },
+      {
+        "heading": "Was sind Sicherheitstage?",
+        "type": "text",
+        "content": "Sicherheitstage sind Veranstaltungen des K\u00e4rntner Zivilschutzverbandes, bei denen Einsatzorganisationen und Sicherheitseinrichtungen ihre Arbeit pr\u00e4sentieren. Besucher k\u00f6nnen Ausr\u00fcstung hautnah erleben, Vorf\u00fchrungen sehen und sich \u00fcber Sicherheitsthemen informieren."
+      },
+      {
+        "heading": "Hinweis",
+        "type": "text",
+        "content": "\u00c4nderungen und Erg\u00e4nzungen sind m\u00f6glich. Kontakt: K\u00e4rntner Zivilschutzverband, Tel. 050536-57080, zivilschutzverband@ktn.gv.at, www.siz.cc/kaernten"
+      }
+    ],
+    "author": "73 BOS-ARSA"
+  },
+  {
     "date": "10., 11., 17. & 18. März 2026",
     "tag": "uebung",
     "tagLabel": "Notfunkübung",
