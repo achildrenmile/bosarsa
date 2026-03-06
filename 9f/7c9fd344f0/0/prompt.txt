@@ -1,0 +1,423 @@
+Implement the following plan:
+
+# Plan: Neue Sektion "Funkbetrieb" auf der Startseite
+
+## Context
+
+BOS-ARSA führt zwei regelmäßige Funkübungen durch, die auf der Website prominent dargestellt werden sollen:
+
+1. **BOS-ARSA Krisenkommunikationsübung** — Jeden Sonntag ab 18:45 Lokalzeit. Start am OE8XNK (Gerlitzen) auf 145.7625 MHz, -0.6 MHz Offset. Abfrage auf Kärntner Repeatern, dann Direktfrequenz. Österreichweit über den OE-Link-Verbund.
+
+2. **Notfunk Runde Österreich** — Jeden 1. Mittwoch im Monat, 17:15 UTC auf 3643 kHz ± QRM.
+
+## Platzierung
+
+Neue Sektion **zwischen "Ziele" (#ziele) und "Mitglied werden" (#mitglied)**. Logischer Fluss: "Wofür wir stehen" → "Was wir regelmäßig tun" → "Werde Teil davon".
+
+- Section-ID: `#funkbetrieb`
+- Stil: `.section section--alt` (leicht abgesetzter heller Hintergrund, da Ziele-Sektion davor dunkel ist)
+- Nav-Label: "Funkbetrieb" — zwischen "Ziele" und "Mitglied werden"
+
+## Design
+
+Zwei Karten nebeneinander im 2-Spalten-Grid:
+
+```
+┌──────────────────────────────┐  ┌──────────────────────────────┐
+│  📻  Krisenkommunikations-   │  │  🌐  Notfunk Runde           │
+│      übung                   │  │      Österreich               │
+│                              │  │                               │
+│  Jeden Sonntag               │  │  Jeden 1. Mittwoch/Monat      │
+│  ab 18:45 Lokalzeit          │  │  17:15h UTC                   │
+│                              │  │                               │
+│  ▸ OE8XNK 145.7625 MHz      │  │  ▸ 3643 kHz ± QRM            │
+│    -0.6 MHz Offset           │  │                               │
+│                              │  │  Monatliche Notfunk-Runde     │
+│  Start auf Gerlitzen 2m,     │  │  für ganz Österreich.         │
+│  weiter auf Kärntner          │  │                               │
+│  Repeatern, Direktfrequenz   │  │                               │
+│  und österreichweit via      │  │                               │
+│  OE-Link-Verbund.            │  │                               │
+└──────────────────────────────┘  └──────────────────────────────┘
+```
+
+Frequenz-Angaben in Monospace-Schrift, gold hervorgehoben. Karten mit Icon-Header (Lucide: `radio-tower` / `globe`), ähnlich den Feature-Cards.
+
+## Zu ändernde Dateien
+
+### 1. `src/index.njk`
+Neue `<section id="funkbetrieb">` zwischen Ziele und Mitglied werden einfügen:
+- Section-Header: Label "Funkbetrieb", Titel "Unsere Übungsrunden", kurzer Intro-Text
+- 2-Spalten-Grid mit zwei Karten (schedule-card)
+- Jede Karte: Icon, Titel, Zeitplan-Badge, Frequenz-Block, Beschreibung
+
+### 2. `src/css/index.css`
+Neue Styles:
+- `.schedule-grid` — 2-Spalten-Grid, gap 24px, responsive → 1 Spalte ab 768px
+- `.schedule-card` — Stil basierend auf `.feature-card` (border, radius, padding, hover-effekt)
+- `.schedule-card__freq` — Monospace-Font, gold Farbe, leicht abgesetzter Block
+- `.schedule-card__badge` — Kleiner Tag für Zeitplan (ähnlich article__tag)
+
+### 3. `src/_includes/nav.njk`
+Nav-Link `Funkbetrieb` hinzufügen zwischen "Ziele" und "Mitglied werden":
+```html
+<li><a href="{{ prefix }}funkbetrieb">Funkbetrieb</a></li>
+```
+
+## Verifikation
+
+1. `npx @11ty/eleventy` — Build erfolgreich
+2. Sektion sichtbar zwischen Ziele und Mitglied werden
+3. 2 Spalten auf Desktop, 1 Spalte auf Mobil
+4. Nav-Link "Funkbetrieb" scrollt korrekt
+5. Deploy und live prüfen
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+
+---
+
+commit deploy
+
+---
+
+[Request interrupted by user for tool use]
+
+---
+
+deploy to host!!
+
+---
+
+where did you define the krisenkommunikationsübung and the notfunkrunde
+
+---
+
+do not find it on production! bosarsa.oeradio.at
+
+---
+
+[Request interrupted by user]
+
+---
+
+you are wrong.. do not do it locally. via deploy script on achildrenmile@host-node-01!!!
+
+---
+
+kann man die runden etwas anders darstellen.. nebeneinander ählich wie werde teil nur mit text
+
+---
+
+in der navigation fehlt presse
+
+---
+
+chck nochmals alle externen links. müssen wir die datenschutzerklärung oder impressum anpassen?
+
+---
+
+ja bitte beides ergänzen
+
+---
+
+https://oe8.oevsv.at/ortsstellen/adl820/ das ist der link der adl820 bos arsa innerhalb des övsv... wo platzieren?
+
+---
+
+bei click in presse & medien... wäre es gut noch einen hinweis zu setzen, dass der benutzer jetzt die seite verlässt, oder reicht das was wir in der datenschutzerklärung haben
+
+---
+
+llms.txt aktualisieren mit funkbetrieb
+
+---
+
+den vorstand in llms.txt aktualisieren, stimmt nicht mehr
+
+---
+
+sitemap aktualisieren
+
+---
+
+foto wird nicht geladen. runterladen und einbinden
+
+---
+
+suche den text im dienst der sicherheit... der sollte unbedingt im sinne der sicherheit sein überall
+
+---
+
+deploy
+
+---
+
+im og bitte auch im sinne der sicherheit
+
+---
+
+add termine page. it shall be possible to add termine including picture. first article is a 1:1 copy from my other side https://oeradio.at/notfunkuebung-klagenfurt-vier-leuchttuerme-vier-termine-im-maerz/
+
+---
+
+the header menu now does look off as the elements do not fit. lets give it more width
+
+---
+
+Dienstag, 10. März aund Mittwoch 11. März 2026
+
+---
+
+This session is being continued from a previous conversation that ran out of context. The summary below covers the earlier portion of the conversation.
+
+Analysis:
+Let me chronologically go through the entire conversation to capture all key details:
+
+1. **Funkbetrieb Section Implementation** - User asked to implement a plan for a new "Funkbetrieb" section on the homepage between Ziele and Mitglied werden sections.
+
+2. **Commit and Deploy** - User asked to commit and deploy. I initially tried to build/deploy locally with Docker which was WRONG. User corrected me: "deploy to host!! via deploy script on achildrenmile@host-node-01!!!" - Must use `bash deploy-production.sh`.
+
+3. **Schedule Card Style Change** - User wanted the two radio exercise rounds displayed differently - "schlichte Text-Spalten" (simple text columns) instead of heavy cards.
+
+4. **Footer Navigation** - User noticed "Presse" was missing from navigation. It was actually in the nav template but missing from footer navigation. Added Presse and Funkbetrieb to footer nav, removed duplicate Presse from "Rechtliches & Links".
+
+5. **External Links Check** - User asked to check all external links and whether Datenschutz/Impressum needed updates. Found two issues: CDN (unpkg/Lucide) not mentioned, external links disclaimer missing.
+
+6. **Datenschutz Updates** - Added CDN section and external links section to Datenschutzerklärung.
+
+7. **Lucide Self-hosting** - Decided to self-host Lucide instead of loading from unpkg CDN. Had issues with Eleventy not copying .js files. Eventually placed in root-level `js/` directory which worked. Removed CDN section from Datenschutz.
+
+8. **ADL820 Link** - User provided https://oe8.oevsv.at/ortsstellen/adl820/ - added to footer "Rechtliches & Links" and structured data sameAs.
+
+9. **llms.txt Updates** - Added Funkbetrieb section and ADL820 link, updated Vorstand to match current website.
+
+10. **Sitemap Update** - Added lastmod dates to all pages.
+
+11. **Über-uns Photo** - Downloaded group photo from ÖVSV, had to convert from JPG to WebP because Eleventy doesn't copy JPG files.
+
+12. **"im Sinne der Sicherheit"** - User wanted all instances of "im Dienst der Sicherheit" changed to "im Sinne der Sicherheit". Found and replaced in 4 places, plus the Hero title which was missed initially.
+
+13. **Termine Page** - User asked for a new Termine (events) page with picture support. First article copied from oeradio.at. Created data-driven page with termine.json, termine.njk, termine.css. Had JSON parsing error due to typographic quotes.
+
+14. **Nav Width** - Too many nav items caused overflow. Increased container from 1140px to 1280px, reduced nav link padding/gap/font-size.
+
+15. **Date Correction** - User corrected weekdays: "Dienstag, 10. März" and "Mittwoch, 11. März 2026" instead of Montag/Dienstag.
+
+Key errors:
+- Tried to deploy locally with Docker instead of using deploy script
+- JPG files not copied by Eleventy (converted to WebP)
+- JS files not copied by Eleventy in src/ dir (moved to root-level js/)
+- Tried eleventy config file but broke the build (input dir changed)
+- JSON typographic quotes caused parse error
+- Missed Hero title when replacing "im Dienst" → "im Sinne"
+- Wrong weekdays from original article
+
+Summary:
+1. Primary Request and Intent:
+   The user is developing and maintaining the BOS-ARSA website (Austrian amateur radio association for security organizations). The session involved multiple sequential tasks:
+   - Implement a new "Funkbetrieb" section on the homepage showing two regular radio exercises
+   - Restyle the section from cards to simple text columns
+   - Fix navigation (footer missing Presse/Funkbetrieb links)
+   - Audit external links and update Datenschutzerklärung
+   - Self-host Lucide icons (remove external CDN dependency)
+   - Add ADL820 ÖVSV link to footer and structured data
+   - Update llms.txt with Funkbetrieb section, correct Vorstand, ADL820 link
+   - Update sitemap with lastmod dates
+   - Add group photo to Über-uns section
+   - Replace "im Dienst der Sicherheit" with "im Sinne der Sicherheit" everywhere
+   - Create a new data-driven Termine (events) page with image support
+   - Fix nav overflow by increasing container width
+   - Correct weekdays in Notfunkübung dates
+
+2. Key Technical Concepts:
+   - **Eleventy (11ty) v3.1.2** with Nunjucks templates as SSG
+   - **Docker multi-stage build** (node build → nginx serve) with Cloudflare tunnel
+   - **Deployment**: MUST use `bash deploy-production.sh` which rsyncs to `achildrenmile@host-node-01` and builds remotely. NEVER build/deploy locally!
+   - **NixOS system**: Node available via `nix-shell -p nodejs_20`
+   - **Data-driven pages**: JSON files in `src/_data/` drive template loops (presse.json, termine.json)
+   - **Eleventy passthrough copy**: `.webp`, `.png`, `.mp4`, `.woff2` files are copied automatically; `.jpg` and `.js` files are NOT copied by Eleventy
+   - **Page-specific CSS**: via `pageCSSFile` front matter variable
+   - **Nav prefix logic**: `activeNav: "home"` → `#` anchors, other pages → `/#` anchors
+   - **Container width**: Changed from 1140px to 1280px to accommodate more nav items
+
+3. Files and Code Sections:
+   - **`src/index.njk`** — Main homepage template
+     - Added Funkbetrieb section between Ziele and Mitglied werden
+     - Changed schedule cards to simple text columns
+     - Added about-image div with ueber-uns.webp
+     - Replaced all "im Dienst der Sicherheit" with "im Sinne der Sicherheit"
+     - Added `https://oe8.oevsv.at/ortsstellen/adl820/` to sameAs structured data
+     ```html
+     <!-- Funkbetrieb section -->
+     <section class="section section--alt" id="funkbetrieb">
+       <div class="container">
+         <div class="section__header reveal">
+           <span class="section__label">Funkbetrieb</span>
+           <h2 class="section__title">Unsere Übungsrunden</h2>
+           <div class="section__rule"></div>
+           <p class="section__intro">Regelmäßige Funkübungen stärken die Einsatzbereitschaft — damit im Ernstfall jeder Handgriff sitzt.</p>
+         </div>
+         <div class="schedule-grid reveal">
+           <div class="schedule-item">
+             <h3 class="schedule-item__title">Krisenkommunikationsübung</h3>
+             <p class="schedule-item__time">Jeden Sonntag ab 18:45 Lokalzeit</p>
+             <p class="schedule-item__freq">OE8XNK — 145.7625 MHz · −0,6 MHz Offset</p>
+             <p class="schedule-item__desc">Start auf der Gerlitzen (2m), Abfrage auf Kärntner Repeatern, dann Direktfrequenz. Österreichweit über den OE-Link-Verbund.</p>
+           </div>
+           <div class="schedule-item">
+             <h3 class="schedule-item__title">Notfunk Runde Österreich</h3>
+             <p class="schedule-item__time">Jeden 1. Mittwoch im Monat, 17:15 UTC</p>
+             <p class="schedule-item__freq">3643 kHz ± QRM</p>
+             <p class="schedule-item__desc">Monatliche Notfunk-Runde für ganz Österreich auf der Kurzwelle.</p>
+           </div>
+         </div>
+       </div>
+     </section>
+     ```
+
+   - **`src/css/index.css`** — Homepage styles
+     - Added schedule-grid and schedule-item styles (simple text, no cards)
+     - Added about-image styles
+     - Responsive: schedule-grid collapses to 1 column at 1024px
+     ```css
+     .schedule-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px; }
+     .schedule-item__title { font-size: 1.05rem; font-weight: 700; color: var(--gray-900); margin-bottom: 6px; }
+     .schedule-item__time { font-size: .88rem; font-weight: 600; color: var(--polizei-mid); margin-bottom: 4px; }
+     .schedule-item__freq { font-family: var(--font-mono); font-size: .85rem; color: var(--bos-gold); font-weight: 600; margin-bottom: 10px; }
+     .schedule-item__desc { color: var(--gray-500); font-size: .88rem; line-height: 1.6; }
+     ```
+
+   - **`src/css/base.css`** — Global styles
+     - Changed `--container` from 1140px to 1280px
+     - Reduced nav link gap (4px→2px), padding (16px→12px), font-size (.875rem→.82rem)
+
+   - **`src/_includes/nav.njk`** — Navigation partial
+     - Added Funkbetrieb link between Ziele and Mitglied werden
+     - Added Termine link before Presse
+     ```html
+     <li><a href="{{ prefix }}funkbetrieb">Funkbetrieb</a></li>
+     <li><a href="/termine/"{% if activeNav == "termine" %} class="active"{% endif %}>Termine</a></li>
+     ```
+
+   - **`src/_includes/footer.njk`** — Footer partial
+     - Added Funkbetrieb, Termine, Presse to Navigation column
+     - Removed Presse from "Rechtliches & Links" (was duplicate)
+     - Added ADL820 im ÖVSV link
+     - Changed "im Dienst" to "im Sinne der Sicherheit"
+
+   - **`src/_includes/base.njk`** — Main layout
+     - Changed Lucide script from `https://unpkg.com/lucide@latest` to `/js/lucide.min.js`
+     - Changed OG image alt to "im Sinne der Sicherheit"
+
+   - **`src/datenschutz.njk`** — Privacy policy
+     - Added "Externe Links" section (kept)
+     - Added then removed CDN section (no longer needed after self-hosting Lucide)
+
+   - **`src/llms.njk`** — LLM-readable site info
+     - Added Funkbetrieb section with both radio exercises
+     - Updated Vorstand to current members (Präsident Gabrutsch Wolfgang, Generalsekretär Londer Erich, etc.)
+     - Added ADL820 im ÖVSV link
+
+   - **`src/sitemap.njk`** — XML sitemap
+     - Added lastmod dates (2026-02-22) to all pages
+     - Added Termine page entry with lastmod 2026-03-05
+
+   - **`src/termine.njk`** — NEW: Termine page template
+     - Data-driven from termine.json
+     - Supports images, tables, text sections per event
+     - Uses `pageCSSFile: "/css/termine.css"` and `activeNav: termine`
+     ```njk
+     {% for event in termine %}
+     <article class="event">
+       {% if event.image %}
+       <div class="event__image">
+         <img src="{{ event.image }}" alt="{{ event.imageAlt }}" loading="lazy">
+       </div>
+       {% endif %}
+       <div class="event__body">
+         <!-- meta, title, intro, sections (table or text), author -->
+       </div>
+     </article>
+     {% endfor %}
+     ```
+
+   - **`src/_data/termine.json`** — NEW: Events data
+     - Array of event objects with: date, tag, tagLabel, title, image, imageAlt, intro, sections (array of heading+type+content/table), author
+     - First event: Notfunkübung Klagenfurt with 4 dates (Di 10., Mi 11., Di 17., Mi 18. März 2026)
+     - Typographic quotes must use Unicode escapes (`\u201E` and `\u201C`) in JSON
+
+   - **`src/css/termine.css`** — NEW: Termine page styles
+     - `.page-content--wide` with max-width 860px
+     - Event card with image, body, table, author styles
+     - `.article__tag--uebung` green tag style
+
+   - **`js/lucide.min.js`** — Self-hosted Lucide icons (392KB, root-level directory)
+
+   - **`notfunk-header.webp`** — Event header image (153KB, converted from PNG)
+   - **`ueber-uns.webp`** — Group photo (198KB, converted from JPG)
+
+4. Errors and fixes:
+   - **Deployed locally instead of via deploy script**: Tried `docker compose up -d --build` locally. User corrected: "do not do it locally. via deploy script on achildrenmile@host-node-01!!!" Fixed by using `bash deploy-production.sh`. Saved to MEMORY.md.
+   - **JPG not copied by Eleventy**: `ueber-uns.jpg` was not in `_site/` output. Eleventy doesn't passthrough-copy `.jpg` files. Fixed by converting to `.webp` using ImageMagick.
+   - **JS not copied by Eleventy**: Placed `lucide.min.js` in `src/js/` but Eleventy ignored `.js` files. Tried creating `eleventy.config.js` but it broke the build (changed input directory, couldn't find layouts). Fixed by placing `js/` directory at root level (same as `fonts/`) which Eleventy copies as passthrough.
+   - **JSON parse error with typographic quotes**: `„Leuchttürmen"` in termine.json caused `SyntaxError: Expected ',' or '}'`. Fixed by replacing with Unicode escapes `\u201E` and `\u201C`.
+   - **Missed Hero title replacement**: When replacing "im Dienst der Sicherheit" → "im Sinne der Sicherheit", the Hero `<h1>` tag was missed because the text was split across HTML (`im Dienst der <span>Sicherheit</span>`). Found and fixed in subsequent pass.
+   - **Wrong weekdays from source article**: Original oeradio.at article had "Montag, 10. März" and "Dienstag, 11. März" but user corrected to "Dienstag, 10. März" and "Mittwoch, 11. März 2026".
+
+5. Problem Solving:
+   - Solved nav overflow with 9 links by increasing container width (1140→1280px) and reducing link padding/gap/font-size
+   - Solved external CDN privacy concern by self-hosting Lucide icons
+   - Solved Eleventy file type limitations by using appropriate formats (.webp instead of .jpg) and correct directory placement (root-level for .js)
+   - Determined Datenschutzerklärung needed external links section but NOT a popup/warning on Presse links (legally sufficient as-is)
+
+6. All user messages:
+   - "Implement the following plan: # Plan: Neue Sektion 'Funkbetrieb' auf der Startseite..." (detailed plan)
+   - "commit deploy"
+   - "deploy to host!! via deploy script on achildrenmile@host-node-01!!!"
+   - "kann man die runden etwas anders darstellen.. nebeneinander ähnlich wie werde teil nur mit text" (selected "Schlichte Text-Spalten")
+   - "in der navigation fehlt presse"
+   - "chck nochmals alle externen links. müssen wir die datenschutzerklärung oder impressum anpassen?"
+   - "ja bitte beides ergänzen" (CDN + external links in Datenschutz)
+   - "https://oe8.oevsv.at/ortsstellen/adl820/ das ist der link der adl820 bos arsa innerhalb des övsv... wo platzieren?" (selected "Footer Links (Empfohlen)")
+   - "llms.txt aktualisieren mit funkbetrieb"
+   - "den vorstand in llms.txt aktualisieren, stimmt nicht mehr"
+   - "sitemap aktualisieren"
+   - "foto wird nicht geladen. runterladen und einbinden"
+   - "suche den text im dienst der sicherheit... der sollte unbedingt im sinne der sicherheit sein überall"
+   - "deploy"
+   - "im og bitte auch im sinne der sicherheit"
+   - "add termine page. it shall be possible to add termine including picture. first article is a 1:1 copy from my other side https://oeradio.at/notfunkuebung-klagenfurt-vier-leuchttuerme-vier-termine-im-maerz/"
+   - "the header menu now does look off as the elements do not fit. lets give it more width"
+   - "Dienstag, 10. März aund Mittwoch 11. März 2026"
+   - "bei click in presse & medien... wäre es gut noch einen hinweis zu setzen, dass der benutzer jetzt die seite verlässt, oder reicht das was wir in der datenschutzerklärung haben" (answered: what we have is sufficient)
+   - "where did you define the krisenkommunikationsübung und die notfunkrunde" (answered: directly in src/index.njk HTML)
+   - "do not find it on production! bosarsa.oeradio.at" (container wasn't running, needed deploy script)
+
+7. Pending Tasks:
+   - No explicitly pending tasks. All user requests have been completed and deployed.
+
+8. Current Work:
+   The most recent work was correcting weekdays in the Notfunkübung event dates in `src/_data/termine.json`. The user said "Dienstag, 10. März aund Mittwoch 11. März 2026" — I changed "Montag, 10. März" → "Dienstag, 10. März" and "Dienstag, 11. März" → "Mittwoch, 11. März". This was committed, pushed, and deployed successfully.
+
+9. Optional Next Step:
+   No pending next step. All user requests have been completed and deployed. Waiting for user's next instruction.
+
+If you need specific details from before compaction (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+Please continue the conversation from where we left it off without asking the user any further questions. Continue with the last task that you were asked to work on.
+
+---
+
+add an termin. find the latest downloaded pdf, analyze and do it. also after this explain me how adding a termin can be done manually. document this too
+
+---
+
+have you rolled out the termin
+
+---
+
+change termin. add Sicherheitstage mit BOS-ARSA und ÖVSV-Notfunk-Beteiligung. 73 BOS-ARSA
+
+---
+
+deploy

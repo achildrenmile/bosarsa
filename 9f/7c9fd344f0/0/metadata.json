@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "9f7c9fd344f0",
+  "session_id": "8a03439b-e8b5-46d7-8cf2-f3d9c3ed625e",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-06T06:11:15.924386145Z",
+  "branch": "master",
+  "checkpoints_count": 2,
+  "files_touched": [
+    "TERMINE-HOWTO.md",
+    "sicherheitstage-2026.webp",
+    "src/_data/termine.json",
+    "src/css/termine.css",
+    "src/sitemap.njk"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "56616c7b-5001-4fb8-80f8-c6e935264cde",
+  "checkpoint_transcript_start": 941,
+  "transcript_lines_at_start": 941,
+  "token_usage": {
+    "input_tokens": 1053,
+    "cache_creation_tokens": 64477,
+    "cache_read_tokens": 1094078,
+    "output_tokens": 3446,
+    "api_call_count": 31
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-06T06:11:14.604053788Z",
+    "agent_lines": 217,
+    "human_added": 226,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 443,
+    "agent_percentage": 48.98419864559819
+  }
+}
