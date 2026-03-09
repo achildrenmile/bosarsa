@@ -1,0 +1,45 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "faef688b531a",
+  "session_id": "8a03439b-e8b5-46d7-8cf2-f3d9c3ed625e",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-09T13:16:35.040907847Z",
+  "branch": "master",
+  "checkpoints_count": 0,
+  "files_touched": [
+    "TERMINE-HOWTO.md",
+    "eleventy.config.js",
+    "src/_data/termine.json",
+    "src/_includes/base.njk",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/base.css",
+    "src/css/index.css",
+    "src/css/termine.css",
+    "src/datenschutz.njk",
+    "src/index.njk",
+    "src/llms.njk",
+    "src/sitemap.njk",
+    "src/termine.njk"
+  ],
+  "agent": "Claude Code",
+  "transcript_identifier_at_start": "2af0024f-f462-4f1d-a099-f043111847a8",
+  "checkpoint_transcript_start": 1158,
+  "transcript_lines_at_start": 1158,
+  "token_usage": {
+    "input_tokens": 902,
+    "cache_creation_tokens": 174298,
+    "cache_read_tokens": 4278738,
+    "output_tokens": 4367,
+    "api_call_count": 53
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-09T13:16:32.399402242Z",
+    "agent_lines": 15,
+    "human_added": 1230,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1245,
+    "agent_percentage": 1.2048192771084338
+  }
+}
