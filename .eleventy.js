@@ -5,6 +5,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "*.mp4": "/" });
   eleventyConfig.addPassthroughCopy({ "*.png": "/" });
   eleventyConfig.addPassthroughCopy({ "*.webp": "/" });
+  eleventyConfig.addPassthroughCopy({ "*.pdf": "/" });
+  eleventyConfig.addPassthroughCopy({ "js": "js" });
   eleventyConfig.addPassthroughCopy("src/css");
 
   return {

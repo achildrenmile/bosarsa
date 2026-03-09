@@ -1,0 +1,217 @@
+---
+layout: base.njk
+title: "Krisenkommunikation — BOS-ARSA"
+description: "Krisenkommunikation-Aufnahmeformular zum Download und Online-Ausfüllen. Strukturierte Erfassung von Notrufen für den BOS-Funkbetrieb."
+canonical: "https://bosarsa.oeradio.at/krisenkommunikation/"
+activeNav: krisenkommunikation
+pageCSSFile: "/css/krisenkommunikation.css?v=2"
+permalink: /krisenkommunikation/
+---
+
+<div class="krisen-page">
+  <h1>Krisenkommunikation</h1>
+  <p class="subtitle">Strukturierte Erfassung und Weitergabe von Notfallmeldungen im BOS-Funkbetrieb</p>
+
+  <p class="krisen-intro">
+    Im Notfunkbetrieb ist eine klare und strukturierte Kommunikation entscheidend.
+    Das Krisenkommunikation-Aufnahmeformular unterstützt Funkoperatoren bei der
+    systematischen Erfassung von Notrufen nach dem bewährten 7-W-Fragen-Schema und
+    stellt sicher, dass alle relevanten Informationen vollständig weitergegeben werden.
+  </p>
+
+  {# ===== Downloads ===== #}
+  <h2 class="krisen-section-title"><i data-lucide="folder-down"></i> Dokumente & Downloads</h2>
+
+  <div class="download-card">
+    <div class="download-card__info">
+      <h3>Notfunk-Konzept</h3>
+      <p>Konzeptdokument für den Notfunkbetrieb — Grundlagen, Abläufe und Organisation.</p>
+    </div>
+    <a href="/Notfunk-Konzept.pdf" download class="btn btn--polizei">
+      <i data-lucide="download"></i> PDF herunterladen
+    </a>
+  </div>
+
+  <div class="download-card" style="margin-top: 12px">
+    <div class="download-card__info">
+      <h3>Aufnahmeformular</h3>
+      <p>Druckfertige Version zum Ausfüllen per Hand — ideal für den Einsatz im Feld.</p>
+    </div>
+    <a href="/Krisenkommunikation-Aufnahmeformular.pdf" download class="btn btn--gold">
+      <i data-lucide="download"></i> PDF herunterladen
+    </a>
+  </div>
+
+  {# ===== Online-Formular ===== #}
+  <h2 class="krisen-section-title"><i data-lucide="file-pen"></i> Online-Aufnahmeformular</h2>
+  <p class="krisen-form-intro">Formular direkt im Browser ausfüllen und als PDF herunterladen.</p>
+
+  <form id="krisenForm" class="krisen-form" autocomplete="off">
+
+    {# --- Lfd. Nr. --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__row--2">
+        <div class="krisen-form__group">
+          <label for="lfdnr">Lfd. Nr.</label>
+          <input type="text" id="lfdnr" placeholder="z.B. 001">
+        </div>
+      </div>
+    </div>
+
+    {# --- Entgegennahme --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__section-title">Entgegennahme durch</div>
+      <div class="krisen-form__row--2">
+        <div class="krisen-form__group">
+          <label for="rufzeichen">Mein Rufzeichen</label>
+          <input type="text" id="rufzeichen" placeholder="z.B. OE8ABC">
+        </div>
+        <div class="krisen-form__group">
+          <label for="qth">Mein QTH</label>
+          <input type="text" id="qth" placeholder="z.B. Klagenfurt">
+        </div>
+      </div>
+      <div class="krisen-form__row--2">
+        <div class="krisen-form__group">
+          <label for="qrg">QRG</label>
+          <input type="text" id="qrg" placeholder="z.B. 145.7625 MHz">
+        </div>
+        <div class="krisen-form__group">
+          <label for="telefon">Telefon</label>
+          <input type="tel" id="telefon" placeholder="z.B. +43 664 ...">
+        </div>
+      </div>
+    </div>
+
+    {# --- Datum / Uhrzeit --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__row--2">
+        <div class="krisen-form__group">
+          <label for="datum">Aufnahmedatum</label>
+          <input type="date" id="datum">
+        </div>
+        <div class="krisen-form__group">
+          <label for="uhrzeit">Aufnahmeuhrzeit (MEZ)</label>
+          <input type="time" id="uhrzeit">
+        </div>
+      </div>
+    </div>
+
+    {# --- Notruf durch --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__group">
+        <label for="notruf-durch">Notruf durch</label>
+        <input type="text" id="notruf-durch" placeholder="Name / Rufzeichen des Meldenden">
+      </div>
+    </div>
+
+    {# --- 7 W-Fragen --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__section-title">7 W-Fragen</div>
+
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-wer">WER meldet?</label>
+        <textarea id="w-wer" rows="2" placeholder="Name, Funktion, Rufzeichen"></textarea>
+      </div>
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-was">WAS ist passiert?</label>
+        <textarea id="w-was" rows="3" placeholder="Art des Ereignisses"></textarea>
+      </div>
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-wann">WANN ist es passiert?</label>
+        <textarea id="w-wann" rows="2" placeholder="Datum, Uhrzeit"></textarea>
+      </div>
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-wo">WO ist es passiert?</label>
+        <textarea id="w-wo" rows="2" placeholder="Ort, Adresse, Koordinaten"></textarea>
+      </div>
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-wie">WIE viele Verletzte/Betroffene?</label>
+        <textarea id="w-wie" rows="2" placeholder="Anzahl, Art der Verletzungen"></textarea>
+      </div>
+      <div class="krisen-form__group" style="margin-bottom:16px">
+        <label for="w-womit">WOMIT kann geholfen werden?</label>
+        <textarea id="w-womit" rows="2" placeholder="Benötigte Ressourcen, Maßnahmen"></textarea>
+      </div>
+      <div class="krisen-form__group">
+        <label for="w-warum">WARUM ist es passiert?</label>
+        <textarea id="w-warum" rows="2" placeholder="Ursache (soweit bekannt)"></textarea>
+      </div>
+    </div>
+
+    {# --- Weitergabe --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__section-title">Weitergabe an</div>
+      <table class="weitergabe-table">
+        <thead>
+          <tr>
+            <th>Organisation</th>
+            <th>Ja</th>
+            <th>Wann</th>
+            <th>Aufnehmende/r</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="org-name">ÖRK-LZ (144)</td>
+            <td><input type="checkbox" id="wg-oerk"></td>
+            <td><input type="text" id="wg-oerk-wann"></td>
+            <td><input type="text" id="wg-oerk-aufn"></td>
+          </tr>
+          <tr>
+            <td class="org-name">LAWZ (122)</td>
+            <td><input type="checkbox" id="wg-lawz"></td>
+            <td><input type="text" id="wg-lawz-wann"></td>
+            <td><input type="text" id="wg-lawz-aufn"></td>
+          </tr>
+          <tr>
+            <td class="org-name">Polizei-LLZ (133)</td>
+            <td><input type="checkbox" id="wg-polizei"></td>
+            <td><input type="text" id="wg-polizei-wann"></td>
+            <td><input type="text" id="wg-polizei-aufn"></td>
+          </tr>
+          <tr>
+            <td class="org-name org-name--custom"><input type="text" id="wg-custom1-name" placeholder="Organisation ..."></td>
+            <td><input type="checkbox" id="wg-custom1"></td>
+            <td><input type="text" id="wg-custom1-wann"></td>
+            <td><input type="text" id="wg-custom1-aufn"></td>
+          </tr>
+          <tr>
+            <td class="org-name org-name--custom"><input type="text" id="wg-custom2-name" placeholder="Organisation ..."></td>
+            <td><input type="checkbox" id="wg-custom2"></td>
+            <td><input type="text" id="wg-custom2-wann"></td>
+            <td><input type="text" id="wg-custom2-aufn"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {# --- Erledigt --- #}
+    <div class="krisen-form__section">
+      <div class="krisen-form__section-title">Erledigt</div>
+      <div class="krisen-form__row--2">
+        <div class="krisen-form__group">
+          <label for="erledigt-wann">Wann</label>
+          <input type="text" id="erledigt-wann" placeholder="Datum / Uhrzeit">
+        </div>
+        <div class="krisen-form__group">
+          <label for="erledigt-durch">Durch</label>
+          <input type="text" id="erledigt-durch" placeholder="Name / Rufzeichen">
+        </div>
+      </div>
+    </div>
+
+    {# --- Buttons --- #}
+    <div class="krisen-form__actions">
+      <button type="button" id="btnGeneratePdf" class="btn btn--gold">
+        <i data-lucide="file-down"></i> Als PDF herunterladen
+      </button>
+      <button type="button" id="btnClearForm" class="btn btn--outline-gray">
+        <i data-lucide="eraser"></i> Formular leeren
+      </button>
+    </div>
+  </form>
+</div>
+
+<script src="/js/jspdf.umd.min.js"></script>
+<script src="/js/krisenkommunikation-pdf.js"></script>
