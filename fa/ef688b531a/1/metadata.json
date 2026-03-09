@@ -1,0 +1,38 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "faef688b531a",
+  "session_id": "af7b3b86-8238-4ee0-8e9e-bf8a458d5fd6",
+  "strategy": "manual-commit",
+  "created_at": "2026-03-09T13:17:01.029248851Z",
+  "branch": "master",
+  "checkpoints_count": 9,
+  "files_touched": [
+    ".eleventy.js",
+    "Notfunk-Konzept.pdf",
+    "js/krisenkommunikation-pdf.js",
+    "src/_data/termine.json",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/css/krisenkommunikation.css",
+    "src/krisenkommunikation.njk",
+    "src/llms.njk",
+    "src/sitemap.njk"
+  ],
+  "agent": "Claude Code",
+  "token_usage": {
+    "input_tokens": 142,
+    "cache_creation_tokens": 371102,
+    "cache_read_tokens": 8342484,
+    "output_tokens": 8542,
+    "api_call_count": 120
+  },
+  "initial_attribution": {
+    "calculated_at": "2026-03-09T13:17:00.750304898Z",
+    "agent_lines": 847,
+    "human_added": 568,
+    "human_modified": 0,
+    "human_removed": 0,
+    "total_committed": 1415,
+    "agent_percentage": 59.858657243816246
+  }
+}
