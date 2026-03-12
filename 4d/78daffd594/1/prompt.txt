@@ -1,0 +1,118 @@
+Implement the following plan:
+
+# Plan: Krisenkommunikation-Seite mit PDF-Download & Online-Formular
+
+## Context
+Das Krisenkommunikation-Aufnahmeformular ist ein zentrales Dokument für den Notfunkbetrieb. Es soll als eigene Seite auf der BOS-ARSA-Website verfügbar sein — sowohl als druckbare PDF als auch als interaktives Online-Formular, das client-seitig ausgefüllt und als PDF heruntergeladen werden kann.
+
+## Neue Dateien (5)
+
+### 1. `src/krisenkommunikation.njk` — Seitentemplate
+- Layout: `base.njk`, `pageCSSFile: "/css/krisenkommunikation.css"`
+- **Abschnitt 1**: Download-Card mit Link zur statischen PDF
+- **Divider**: "oder online ausfüllen"
+- **Abschnitt 2**: HTML-Formular mit allen Feldern des Aufnahmeformulars:
+  - Lfd. Nr., Entgegennahme (Rufzeichen, QTH, QRG, Telefon), Datum/Uhrzeit
+  - Notruf durch, 7 W-Fragen (WER–WARUM) als Textareas
+  - Weitergabe-Tabelle (3 feste + 2 freie Organisationen mit Checkboxen)
+  - Erledigt (Wann, Durch)
+- **Buttons**: "Als PDF herunterladen" + "Formular leeren"
+- Scripts am Seitenende: `jspdf.umd.min.js` + `krisenkommunikation-pdf.js`
+
+### 2. `src/css/krisenkommunikation.css` — Seitenstile
+- Download-Card, Divider, Formularfelder, Weitergabe-Grid
+- Responsive: 4-Spalten → 2 → 1 auf Mobil; Weitergabe-Tabelle stapelt sich
+
+### 3. `js/jspdf.umd.min.js` — jsPDF-Bibliothek (self-hosted)
+- Download von cdnjs (~300KB), Root-`js/`-Ordner neben `lucide.min.js`
+
+### 4. `js/krisenkommunikation-pdf.js` — PDF-Generierung
+- Liest Formularwerte, erzeugt A4-PDF mit jsPDF
+- Logo (bosarsa.jpeg) wird beim Seitenaufruf als Base64 vorgeladen
+- Tabellenstruktur mit Linien/Rahmen wie das Original
+- Seitenumbruch bei langen Texten
+
+### 5. `Krisenkommunikation-Aufnahmeformular.pdf` — Statische PDF
+- Kopie der fertigen PDF (mit neuem Logo) ins Projekt-Root
+
+## Bestehende Dateien (4 Änderungen)
+
+### 6. `.eleventy.js` — Passthrough-Regeln ergänzen
+- `{ "js": "js" }` (behebt auch lokale Builds für lucide.min.js)
+- `{ "*.pdf": "/" }`
+
+### 7. `src/_includes/footer.njk` — Nav-Link
+- Nach "Presse": `Krisenkommunikation` Link
+- NICHT in die Top-Nav (bereits 9 Einträge)
+
+### 8. `src/sitemap.njk` — Neuer Eintrag
+- `/krisenkommunikation/`, lastmod 2026-03-08
+
+### 9. `src/llms.njk` — Beschreibung ergänzen
+
+## Reihenfolge
+1. PDF + jsPDF ins Projekt kopieren/downloaden
+2. `.eleventy.js` Passthrough-Regeln ergänzen
+3. CSS, PDF-Generator-JS, Seitentemplate erstellen
+4. Footer, Sitemap, llms.txt aktualisieren
+5. Build testen → Deploy
+
+## Verifikation
+```bash
+nix-shell -p nodejs_20 --run "npx @11ty/eleventy"
+# _site/krisenkommunikation/index.html existiert
+# _site/js/jspdf.umd.min.js existiert
+# _site/Krisenkommunikation-Aufnahmeformular.pdf existiert
+```
+Dann: `bash deploy-production.sh`
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+
+---
+
+deploy
+
+---
+
+telefon field does not fit on the formular space it is overlapping into grey area.
+
+---
+
+not visible. see latest screenshot
+
+---
+
+Bitte auch dieses Dokument auf die BOS-ARSA-Seite hochladen. downloads folder
+
+---
+
+besser formatieren. text pickt zu sehr zusammen
+
+---
+
+see latest screenshot. still the same!
+
+---
+
+pdf herunterladen für notfunk konzept needs 2 lines. see aufnahmeformular link
+
+---
+
+screenshot is in latest. see the 2 buttons and the differences
+
+---
+
+update sicherheitstage veranstaltung based on Terminkalender 2026 (SiTage) (1) in downloads folder. change picture and text accordingly!
+
+---
+
+push
+
+---
+
+need a new page where all the events like Sicherheitstage 2026 in Kärnten mit BOS-ARSA und ÖVSV-Notfunk-Beteiligung. so to write about topics, like a blog, or so. come up with ideas
+
+---
+
+[Request interrupted by user for tool use]

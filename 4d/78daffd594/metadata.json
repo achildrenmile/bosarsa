@@ -5,12 +5,17 @@
   "branch": "master",
   "checkpoints_count": 3,
   "files_touched": [
+    ".eleventy.js",
+    "js/krisenkommunikation-pdf.js",
     "src/_data/aktuelles.json",
+    "src/_data/termine.json",
     "src/_includes/footer.njk",
     "src/_includes/nav.njk",
     "src/aktuelles/artikel.njk",
     "src/aktuelles/index.njk",
     "src/css/aktuelles.css",
+    "src/css/krisenkommunikation.css",
+    "src/krisenkommunikation.njk",
     "src/llms.njk",
     "src/sitemap.njk"
   ],
@@ -21,13 +26,20 @@
       "context": "/4d/78daffd594/0/context.md",
       "content_hash": "/4d/78daffd594/0/content_hash.txt",
       "prompt": "/4d/78daffd594/0/prompt.txt"
+    },
+    {
+      "metadata": "/4d/78daffd594/1/metadata.json",
+      "transcript": "/4d/78daffd594/1/full.jsonl",
+      "context": "/4d/78daffd594/1/context.md",
+      "content_hash": "/4d/78daffd594/1/content_hash.txt",
+      "prompt": "/4d/78daffd594/1/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 51,
-    "cache_creation_tokens": 113909,
-    "cache_read_tokens": 1711688,
-    "output_tokens": 1118,
-    "api_call_count": 42
+    "input_tokens": 63,
+    "cache_creation_tokens": 258253,
+    "cache_read_tokens": 3064035,
+    "output_tokens": 1270,
+    "api_call_count": 53
   }
 }
