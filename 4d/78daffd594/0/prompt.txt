@@ -1,0 +1,86 @@
+Implement the following plan:
+
+# Plan: "Aktuelles" Seite mit Einzelartikeln
+
+## Context
+BOS-ARSA braucht eine eigene Seite für Vereinsnachrichten, Veranstaltungsberichte und Wissensartikel. Die aktuelle Termine-Seite enthält z.B. den Sicherheitstage-Beitrag, der eigentlich eher ein Artikel als eine reine Terminliste ist. `/aktuelles/` wird die zentrale Anlaufstelle für solche Inhalte, mit eigenen Unterseiten pro Beitrag.
+
+## Neue Dateien (4)
+
+### 1. `src/_data/aktuelles.json`
+Array von Artikeln (neueste zuerst). Erster Eintrag: Sicherheitstage 2026 (adaptiert aus termine.json).
+
+Felder: `slug`, `date` (ISO), `dateDisplay`, `tag`, `tagLabel`, `title`, `image`, `imageAlt`, `intro`, `sections[]`, `author`
+
+Section-Typen: `text`, `table`, `image` (figure+caption), `list` (ul/li)
+
+### 2. `src/aktuelles/index.njk` — Listing `/aktuelles/`
+- Layout base.njk, `activeNav: aktuelles`, `pageCSSFile: "/css/aktuelles.css"`
+- Karten mit: Bild-Thumbnail, Datum+Tag, Titel, Teaser, "Weiterlesen →"
+- Jede Karte verlinkt zu `/aktuelles/{slug}/`
+
+### 3. `src/aktuelles/artikel.njk` — Einzelartikel (Pagination)
+- Eleventy Pagination im Front Matter (kein .eleventy.js nötig):
+  ```yaml
+  pagination:
+    data: aktuelles
+    size: 1
+    alias: article
+  permalink: /aktuelles/{{ article.slug }}/
+  eleventyComputed:
+    title: "{{ article.title }} — BOS-ARSA"
+  ```
+- "← Zurück zu Aktuelles" Link, Hero-Bild, Meta, Sections-Rendering
+- Wiederverwendung der event__* Styles (kopiert in aktuelles.css)
+
+### 4. `src/css/aktuelles.css`
+- Listing-Karten (`.aktuelles-card`): Bild oben, Body unten, Hover
+- Artikel-Detail (`.aktuelles-article`): Hero-Bild, Body mit Sections
+- Zurück-Link, figure/figcaption, ul/li Styles
+- Event-Styles aus termine.css kopiert (event__meta, table, heading, etc.)
+- Tag-Farben: bericht, news, wissen + uebung, veranstaltung
+- Responsive Breakpoints
+
+## Bestehende Dateien (4 Änderungen)
+
+### 5. `src/_includes/nav.njk` — "Aktuelles" vor Termine
+### 6. `src/_includes/footer.njk` — "Aktuelles" vor Termine
+### 7. `src/sitemap.njk` — Statisch `/aktuelles/` + dynamisch per `{% for %}` Einzelseiten
+### 8. `src/llms.njk` — Aktuelles-Abschnitt
+
+## Reihenfolge
+1. `aktuelles.json` erstellen
+2. `aktuelles.css` erstellen
+3. `index.njk` + `artikel.njk` erstellen
+4. Nav, Footer, Sitemap, llms.txt aktualisieren
+5. Build testen → Deploy
+
+## Verifikation
+```bash
+nix-shell -p nodejs_20 --run "npx @11ty/eleventy"
+# _site/aktuelles/index.html
+# _site/aktuelles/sicherheitstage-2026/index.html
+```
+
+
+If you need specific details from before exiting plan mode (like exact code snippets, error messages, or content you generated), read the full transcript at: /home/achildrenmile/.REDACTED.jsonl
+
+---
+
+go on
+
+---
+
+deploy
+
+---
+
+hide aktuelles in navigation for the time being. bericht will be done next week. and also... do you have an idea how to group the navigation. if aktuelles is also in then the place fully occupied. for the time being only hide the aktuelles. just come up with an idea.
+
+---
+
+mach das
+
+---
+
+[Request interrupted by user for tool use]

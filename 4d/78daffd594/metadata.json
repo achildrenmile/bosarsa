@@ -1,0 +1,33 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "4d78daffd594",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 3,
+  "files_touched": [
+    "src/_data/aktuelles.json",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/aktuelles/artikel.njk",
+    "src/aktuelles/index.njk",
+    "src/css/aktuelles.css",
+    "src/llms.njk",
+    "src/sitemap.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/4d/78daffd594/0/metadata.json",
+      "transcript": "/4d/78daffd594/0/full.jsonl",
+      "context": "/4d/78daffd594/0/context.md",
+      "content_hash": "/4d/78daffd594/0/content_hash.txt",
+      "prompt": "/4d/78daffd594/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 51,
+    "cache_creation_tokens": 113909,
+    "cache_read_tokens": 1711688,
+    "output_tokens": 1118,
+    "api_call_count": 42
+  }
+}
