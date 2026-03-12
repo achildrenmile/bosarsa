@@ -12,15 +12,29 @@
     </button>
     <ul class="nav__links" id="navLinks">
       {% set prefix = "#" if activeNav == "home" else "/#" %}
-      <li><a href="{{ prefix }}ueber-uns">Über uns</a></li>
-      <li><a href="{{ prefix }}video">Videos</a></li>
-      <li><a href="{{ prefix }}vorstand">Vorstand</a></li>
-      <li><a href="{{ prefix }}ziele">Ziele</a></li>
-      <li><a href="{{ prefix }}funkbetrieb">Funkbetrieb</a></li>
-      <li><a href="{{ prefix }}mitglied">Mitglied werden</a></li>
+
+      <li class="nav__dropdown">
+        <button class="nav__dropdown-toggle" aria-expanded="false">Verein <span class="nav__chevron">&#9662;</span></button>
+        <ul class="nav__dropdown-menu">
+          <li><a href="{{ prefix }}ueber-uns">Über uns</a></li>
+          <li><a href="{{ prefix }}video">Videos</a></li>
+          <li><a href="{{ prefix }}vorstand">Vorstand</a></li>
+          <li><a href="{{ prefix }}ziele">Ziele</a></li>
+          <li><a href="{{ prefix }}mitglied">Mitglied werden</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__dropdown">
+        <button class="nav__dropdown-toggle" aria-expanded="false">Funk <span class="nav__chevron">&#9662;</span></button>
+        <ul class="nav__dropdown-menu">
+          <li><a href="{{ prefix }}funkbetrieb">Funkbetrieb</a></li>
+          <li><a href="/krisenkommunikation/"{% if activeNav == "krisenkommunikation" %} class="active"{% endif %}>Krisenkommunikation</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/aktuelles/"{% if activeNav == "aktuelles" %} class="active"{% endif %}>Aktuelles</a></li>
       <li><a href="/termine/"{% if activeNav == "termine" %} class="active"{% endif %}>Termine</a></li>
       <li><a href="/presse/"{% if activeNav == "presse" %} class="active"{% endif %}>Presse</a></li>
-      <li><a href="/krisenkommunikation/"{% if activeNav == "krisenkommunikation" %} class="active"{% endif %}>Krisenkommunikation</a></li>
       <li><a href="{{ prefix }}kontakt">Kontakt</a></li>
     </ul>
   </div>

@@ -37,7 +37,7 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <script src="/js/lucide.min.js"></script>
-  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/base.css?v=3">
   {% if pageCSSFile %}<link rel="stylesheet" href="{{ pageCSSFile }}">{% endif %}
 </head>
 <body>
@@ -75,6 +75,31 @@
         navToggle.setAttribute('aria-expanded', 'false');
         document.body.style.overflow = '';
       });
+    });
+
+    // Dropdown toggles (touch + keyboard)
+    document.querySelectorAll('.nav__dropdown-toggle').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const dd = btn.parentElement;
+        const isOpen = dd.classList.toggle('open');
+        btn.setAttribute('aria-expanded', isOpen);
+        // close other dropdowns
+        document.querySelectorAll('.nav__dropdown').forEach(other => {
+          if (other !== dd) {
+            other.classList.remove('open');
+            other.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded', 'false');
+          }
+        });
+      });
+    });
+    // Close dropdowns on outside click
+    document.addEventListener('click', e => {
+      if (!e.target.closest('.nav__dropdown')) {
+        document.querySelectorAll('.nav__dropdown').forEach(dd => {
+          dd.classList.remove('open');
+          dd.querySelector('.nav__dropdown-toggle').setAttribute('aria-expanded', 'false');
+        });
+      }
     });
 
     // Scroll reveal

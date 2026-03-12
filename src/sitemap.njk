@@ -17,6 +17,20 @@ eleventyExcludeFromCollections: true
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>{{ site.url }}/aktuelles/</loc>
+    <lastmod>2026-03-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% for article in aktuelles %}
+  <url>
+    <loc>{{ site.url }}/aktuelles/{{ article.slug }}/</loc>
+    <lastmod>{{ article.date }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endfor %}
+  <url>
     <loc>{{ site.url }}/termine/</loc>
     <lastmod>2026-03-06</lastmod>
     <changefreq>weekly</changefreq>
