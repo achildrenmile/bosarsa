@@ -3,17 +3,19 @@
   "checkpoint_id": "4d78daffd594",
   "strategy": "manual-commit",
   "branch": "master",
-  "checkpoints_count": 3,
+  "checkpoints_count": 6,
   "files_touched": [
     ".eleventy.js",
     "js/krisenkommunikation-pdf.js",
     "src/_data/aktuelles.json",
     "src/_data/termine.json",
+    "src/_includes/base.njk",
     "src/_includes/footer.njk",
     "src/_includes/nav.njk",
     "src/aktuelles/artikel.njk",
     "src/aktuelles/index.njk",
     "src/css/aktuelles.css",
+    "src/css/base.css",
     "src/css/krisenkommunikation.css",
     "src/krisenkommunikation.njk",
     "src/llms.njk",
@@ -33,13 +35,20 @@
       "context": "/4d/78daffd594/1/context.md",
       "content_hash": "/4d/78daffd594/1/content_hash.txt",
       "prompt": "/4d/78daffd594/1/prompt.txt"
+    },
+    {
+      "metadata": "/4d/78daffd594/2/metadata.json",
+      "transcript": "/4d/78daffd594/2/full.jsonl",
+      "context": "/4d/78daffd594/2/context.md",
+      "content_hash": "/4d/78daffd594/2/content_hash.txt",
+      "prompt": "/4d/78daffd594/2/prompt.txt"
     }
   ],
   "token_usage": {
-    "input_tokens": 63,
-    "cache_creation_tokens": 258253,
-    "cache_read_tokens": 3064035,
-    "output_tokens": 1270,
-    "api_call_count": 53
+    "input_tokens": 142,
+    "cache_creation_tokens": 391308,
+    "cache_read_tokens": 7854396,
+    "output_tokens": 21723,
+    "api_call_count": 120
   }
 }
