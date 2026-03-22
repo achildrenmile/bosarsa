@@ -12,11 +12,19 @@ permalink: /presse/
   <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
 
   {% for article in presse %}
-  <a class="article" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
-    <div class="article__date">{{ article.date }} <span class="article__tag article__tag--{{ article.tag }}">{{ article.tagLabel }}</span></div>
-    <h2 class="article__title">{{ article.title }}</h2>
-    <div class="article__source">{{ article.source }}</div>
-    <p class="article__desc">{{ article.desc }}</p>
+  <a class="article{% if article.image %} article--has-image{% endif %}" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
+    {% if article.image %}
+    <div class="article__image">
+      <img src="{{ article.image }}" alt="{{ article.imageAlt }}" loading="lazy">
+      {% if article.imageCredit %}<span class="article__image-credit">Foto: {{ article.imageCredit }}</span>{% endif %}
+    </div>
+    {% endif %}
+    <div class="article__body">
+      <div class="article__date">{{ article.date }} <span class="article__tag article__tag--{{ article.tag }}">{{ article.tagLabel }}</span></div>
+      <h2 class="article__title">{{ article.title }}</h2>
+      <div class="article__source">{{ article.source }}</div>
+      <p class="article__desc">{{ article.desc }}</p>
+    </div>
   </a>
   {% endfor %}
 </div>

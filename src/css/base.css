@@ -344,6 +344,23 @@ a:focus-visible { outline: 2px solid var(--polizei-light); outline-offset: 2px; 
 .article__desc {
   font-size: .85rem; color: var(--gray-700); line-height: 1.65;
 }
+.article--has-image {
+  display: flex; gap: 24px; align-items: flex-start;
+}
+.article__image {
+  flex: 0 0 240px; position: relative;
+}
+.article__image img {
+  width: 100%; border-radius: var(--radius); display: block;
+}
+.article__image-credit {
+  display: block; font-size: .65rem; color: var(--gray-500); margin-top: 4px;
+}
+.article__body { flex: 1; min-width: 0; }
+@media (max-width: 640px) {
+  .article--has-image { flex-direction: column; }
+  .article__image { flex: none; width: 100%; }
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 1024px) {
