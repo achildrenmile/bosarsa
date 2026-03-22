@@ -16,7 +16,6 @@ permalink: /presse/
     {% if article.image %}
     <div class="article__image">
       <img src="{{ article.image }}" alt="{{ article.imageAlt }}" loading="lazy">
-      {% if article.imageCredit %}<span class="article__image-credit">Foto: {{ article.imageCredit }}</span>{% endif %}
     </div>
     {% endif %}
     <div class="article__body">
