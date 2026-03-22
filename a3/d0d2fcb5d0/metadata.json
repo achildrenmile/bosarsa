@@ -1,0 +1,36 @@
+{
+  "cli_version": "0.4.2",
+  "checkpoint_id": "a3d0d2fcb5d0",
+  "strategy": "manual-commit",
+  "branch": "master",
+  "checkpoints_count": 1,
+  "files_touched": [
+    "presseaussendungen/blackout-uebung-klagenfurt-2026.jpg",
+    "presseaussendungen/blackout-uebung-klagenfurt-2026.pdf",
+    "src/_data/aktuelles.json",
+    "src/_data/presse.json",
+    "src/_includes/footer.njk",
+    "src/_includes/nav.njk",
+    "src/aktuelles/artikel.njk",
+    "src/aktuelles/index.njk",
+    "src/css/aktuelles.css",
+    "src/llms.njk",
+    "src/sitemap.njk"
+  ],
+  "sessions": [
+    {
+      "metadata": "/a3/d0d2fcb5d0/0/metadata.json",
+      "transcript": "/a3/d0d2fcb5d0/0/full.jsonl",
+      "context": "/a3/d0d2fcb5d0/0/context.md",
+      "content_hash": "/a3/d0d2fcb5d0/0/content_hash.txt",
+      "prompt": "/a3/d0d2fcb5d0/0/prompt.txt"
+    }
+  ],
+  "token_usage": {
+    "input_tokens": 25,
+    "cache_creation_tokens": 37277,
+    "cache_read_tokens": 550270,
+    "output_tokens": 4929,
+    "api_call_count": 17
+  }
+}
