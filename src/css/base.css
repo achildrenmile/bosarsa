@@ -348,7 +348,7 @@ a:focus-visible { outline: 2px solid var(--polizei-light); outline-offset: 2px; 
   display: flex; gap: 24px; align-items: flex-start;
 }
 .article__image {
-  flex: 0 0 180px; position: relative;
+  flex: 0 0 240px; position: relative;
 }
 .article__image img {
   width: 100%; border-radius: var(--radius); display: block;
