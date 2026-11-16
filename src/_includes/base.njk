@@ -16,7 +16,7 @@
   <meta property="og:url" content="{{ canonical }}">
   <meta property="og:locale" content="de_AT">
   <meta property="og:site_name" content="BOS-ARSA">
-  <meta property="og:image" content="{{ site.url }}{{ ogImage | default("/og-image.png") }}">
+  <meta property="og:image" content="{{ site.url }}{{ ogImage | default("/og-image.png", true) }}">
   {% if not ogImage %}<meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">{% endif %}
   <meta property="og:image:alt" content="{{ ogImageAlt if ogImageAlt is defined else "BOS-ARSA — Amateurfunk im Sinne der Sicherheit" }}">
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ ogDescription | default(description) }}">
-  <meta name="twitter:image" content="{{ site.url }}{{ ogImage | default("/og-image.png") }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ ogImage | default("/og-image.png", true) }}">
   {% if structuredData %}
   <!-- Structured Data -->
   <script type="application/ld+json">
