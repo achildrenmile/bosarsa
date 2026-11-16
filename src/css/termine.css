@@ -189,3 +189,7 @@
 .page-content .bericht__closing { margin: 40px 0 0; padding: 24px 26px; border-left: 4px solid var(--bos-gold); background: var(--off-white); border-radius: 0 var(--radius) var(--radius) 0; }
 .bericht__motto { margin: 16px 0 0; font-size: 1.05rem; font-weight: 800; color: var(--polizei-navy); }
 .bericht__signoff { margin: 4px 0 0; font-size: .85rem; font-weight: 600; color: var(--polizei-mid); }
+.bericht__roster { margin-top: 20px; }
+.bericht__roster time { min-width: 23em; }
+.bericht__note { margin: 10px 0 0; font-size: .75rem; color: var(--gray-500); }
+@media (max-width: 600px) { .bericht__roster time { min-width: 0; } }

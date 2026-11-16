@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 activeNav: presse
-pageCSSFile: "/css/termine.css?v=4"
+pageCSSFile: "/css/termine.css?v=6"
 pagination:
   data: berichte
   size: 1
@@ -63,6 +63,13 @@ eleventyComputed:
         <h4>{{ d.day }}</h4>
         <ul>{% for i in d.items %}<li><time>{{ i.t }}</time> {{ i.e }}</li>{% endfor %}</ul>
         {% endfor %}
+      </section>
+      {% endif %}
+      {% if loop.first and bericht.roster %}
+      <section class="bericht__section bericht__timeline bericht__roster">
+        <h3 class="event__heading">Wer war wo</h3>
+        <ul>{% for r in bericht.roster %}<li><time>{{ r.where }}</time> {{ r.who }}</li>{% endfor %}</ul>
+        {% if bericht.rosterNote %}<p class="bericht__note">{{ bericht.rosterNote }}</p>{% endif %}
       </section>
       {% endif %}
       {% endfor %}

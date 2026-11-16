@@ -100,6 +100,7 @@
         "type": "text",
         "content": [
           "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar.",
+          "Am Freitag von 17 bis 18 Uhr löste ihn Christian OE8AGV im Krisenstab ab.",
           "Kurzwelle war im Dachboden des Rathauses nicht möglich.",
           "Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitzen auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören."
         ],
@@ -123,7 +124,7 @@
         "heading": "Leuchtturm Wernberg",
         "type": "text",
         "content": [
-          "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Am Leuchtturm war OE8MAQ im Einsatz. Er war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei.",
+          "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Am Leuchtturm war OE8MAQ von 11 bis 14 Uhr eingeteilt, aktiv war der Leuchtturm am Freitag ab etwa 11 Uhr für einige Stunden. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei.",
           "Präsident Wolfgang OE8GWQ besuchte den Standort."
         ],
         "figures": [
@@ -158,7 +159,7 @@
         "heading": "Leuchtturm Föderlach",
         "type": "text",
         "content": [
-          "Der Leuchtturm Föderlach (OE8JDI) arbeitete mit dem Team vor Ort zusammen.",
+          "Der Leuchtturm Föderlach war am Freitag von 11 bis 14 Uhr mit OE8JDI besetzt und arbeitete mit dem Team vor Ort zusammen.",
           "Der Funkplatz mit der BOS-ARSA-Funkeinsatzmappe wurde über eine Batterie versorgt."
         ],
         "figures": [
@@ -193,7 +194,7 @@
         "heading": "Leuchtturm Ossiach",
         "type": "text",
         "content": [
-          "Erwin OE8ETW war schon am Freitagmorgen QRV. Der Leuchtturm Ossiach ging ab 10 Uhr in Betrieb.",
+          "Erwin OE8ETW war schon am Freitagmorgen QRV und von 7 bis 14 Uhr eingeteilt. Der Leuchtturm Ossiach ging ab 10 Uhr in Betrieb.",
           "Um 10:30 Uhr trat der Krisenstab der Gemeinde Ossiach auf Einberufung der Bezirkshauptmannschaft Feldkirchen zusammen."
         ],
         "layout": "grid"
@@ -309,6 +310,45 @@
       ],
       "motto": "BOS-ARSA: Kommunikation, wenn nichts mehr geht.",
       "signoff": "73 de BOS-ARSA"
-    }
+    },
+    "roster": [
+      {
+        "where": "Krisenstab Magistrat Klagenfurt, Rathaus",
+        "who": "OE8OPT, Freitag 17 bis 18 Uhr auch OE8AGV"
+      },
+      {
+        "where": "Leuchtturm Feldkirchner Straße",
+        "who": "OE8YYY, OE8AGV"
+      },
+      {
+        "where": "Leuchtturm Welzenegg",
+        "who": "OE8OJK"
+      },
+      {
+        "where": "Leuchtturm Wernberg",
+        "who": "OE8MAQ"
+      },
+      {
+        "where": "Leuchtturm Föderlach",
+        "who": "OE8JDI"
+      },
+      {
+        "where": "Leuchtturm Ossiach",
+        "who": "OE8ETW"
+      },
+      {
+        "where": "Bezirkskrisenstab Feistritz im Rosental",
+        "who": "OE8GWQ, OE8AWZ"
+      },
+      {
+        "where": "Gemeindekrisenstab Ludmannsdorf",
+        "who": "OE8GWQ, OE8MIQ"
+      },
+      {
+        "where": "Landesalarmzentrale",
+        "who": "OE8HHG"
+      }
+    ],
+    "rosterNote": "Nach dem Dienstplan (Stand 11.11.2026) und den Rückmeldungen in der Chatgruppe."
   }
 ]
