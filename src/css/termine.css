@@ -144,3 +144,9 @@
   .event__body { padding: 20px; }
   .event__title { font-size: 1.1rem; }
 }
+
+.bericht__figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; margin: 1rem 0 1.5rem; }
+.bericht__figure { margin: 0; }
+.bericht__figure img { width: 100%; height: auto; border-radius: 6px; display: block; }
+.bericht__figure figcaption { font-size: 0.85rem; margin-top: 0.4rem; }
+.bericht__credit { opacity: 0.7; }

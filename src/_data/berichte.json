@@ -19,27 +19,109 @@
       {
         "heading": "Leuchtturm Feldkirchner Straße, Klagenfurt",
         "type": "text",
-        "content": "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest. Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten. Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar."
+        "content": "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest. Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten. Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar.",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-wegweiser.webp",
+            "alt": "Wegweiser mit Leuchtturm-Symbol und der Aufschrift „Notrufe/Funker“ im Gebäude.",
+            "caption": "Der Weg zu den Funkern im Leuchtturm Feldkirchner Straße.",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-station.webp",
+            "alt": "Funkgerät auf rotem Tuch neben Telefon, Notizzettel und einem Teller mit Kuchen.",
+            "caption": "Funkplatz mit Verpflegung aus der Kantine. [Bildunterschrift bestätigen]",
+            "credit": "[Fotograf bestätigen]"
+          }
+        ]
       },
       {
         "heading": "Leuchtturm Welzenegg, Klagenfurt",
         "type": "text",
-        "content": "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz. [Eigener Bericht von OE8OJK abwarten: Anekdoten, Meldungen, Besonderheiten]"
+        "content": "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz. [Eigener Bericht von OE8OJK abwarten: Anekdoten, Meldungen, Besonderheiten]",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-welzenegg.webp",
+            "alt": "Schreibtisch mit Funkgerät, Laptop und Unterlagen im Leuchtturm Welzenegg.",
+            "caption": "Leuchtturm Welzenegg, Funkplatz von OE8OJK.",
+            "credit": "OE8OJK"
+          }
+        ]
       },
       {
         "heading": "Krisenstab Magistrat Klagenfurt, Rathaus",
         "type": "text",
-        "content": "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar. Kurzwelle war im Dachboden des Rathauses nicht möglich. Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitze auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören. [Ablösung durch OE8AGV und Dauer bestätigen]"
+        "content": "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar. Kurzwelle war im Dachboden des Rathauses nicht möglich. Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitze auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören. [Ablösung durch OE8AGV und Dauer bestätigen]",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-rathaus-freitag.webp",
+            "alt": "Funkstation mit Notstromgerät und Unterlagen im Rathaus Klagenfurt.",
+            "caption": "Magistrat Klagenfurt, Station von OE8OPT.",
+            "credit": "OE8OPT"
+          },
+          {
+            "src": "/bericht-cs2026-rathaus-samstag.webp",
+            "alt": "Funkstation im Rathaus Klagenfurt mit Funkgeräten in Transportkoffern und einer BOS-ARSA-Kappe.",
+            "caption": "„Schöne Grüße aus dem Rathaus Klagenfurt“: Station am Samstagmorgen.",
+            "credit": "OE8OPT"
+          }
+        ]
       },
       {
         "heading": "Leuchtturm Wernberg",
         "type": "text",
-        "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. [Besetzung und Besonderheiten ergänzen]"
+        "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. [Besetzung und Besonderheiten ergänzen]",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-wernberg-station1.webp",
+            "alt": "Notfunk-Warnweste mit BOS-ARSA-Aufschrift über einer Stuhllehne, daneben ein Funkgerät.",
+            "caption": "Station 1 im Leuchtturm Wernberg.",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-wernberg-station2.webp",
+            "alt": "Schreibtisch im Gemeindeamt mit Funkgerät, Handfunkgerät und Funkprotokoll.",
+            "caption": "Station 2 im Gemeindeamt Wernberg.",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-wernberg-praesident.webp",
+            "alt": "Saal mit mehreren Personen an Tischen, Beamer im Hintergrund.",
+            "caption": "Besuch des Präsidenten OE8GWQ im Leuchtturm Wernberg. [Einverständnis der abgebildeten Personen klären]",
+            "credit": "[Fotograf bestätigen]"
+          }
+        ]
       },
       {
         "heading": "Leuchtturm Föderlach",
         "type": "text",
-        "content": "Der Leuchtturm Föderlach (OE8JDI) arbeitete mit dem Team vor Ort zusammen. [Bericht und Fotos ausstehend]"
+        "content": "Der Leuchtturm Föderlach (OE8JDI) arbeitete mit dem Team vor Ort zusammen. [Bericht und Fotos ausstehend]",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-foederlach-raum.webp",
+            "alt": "Tisch mit Funkgerät, gelbem Notfallkoffer, Handfunkgerät, Kochtopf und Konserven.",
+            "caption": "Leuchtturm Föderlach.",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-foederlach-aufsteller.webp",
+            "alt": "Aufsteller „Der FF Föderlach – Der Leuchtturm“ vor einem Feuerwehrfahrzeug.",
+            "caption": "Vor dem Rüsthaus: Aufsteller der Freiwilligen Feuerwehr Föderlach zum Leuchtturm. [Bildunterschrift bestätigen]",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-foederlach-station.webp",
+            "alt": "Funkgerät, Handfunkgerät und BOS-ARSA-Funkeinsatzmappe auf einem Tisch, daneben eine Autobatterie.",
+            "caption": "Funkplatz mit BOS-ARSA-Funkeinsatzmappe, über eine Batterie versorgt. [Bildunterschrift bestätigen]",
+            "credit": "[Fotograf bestätigen]"
+          },
+          {
+            "src": "/bericht-cs2026-foederlach-team.webp",
+            "alt": "Mehrere Personen sitzen in einer Gaststube an einem Tisch mit Funkgerät.",
+            "caption": "Leuchtturm Föderlach: die Zusammenarbeit. [Einverständnis der abgebildeten Personen klären]",
+            "credit": "[Fotograf bestätigen]"
+          }
+        ]
       },
       {
         "heading": "Leuchtturm Ossiach",
@@ -49,7 +131,15 @@
       {
         "heading": "Landesalarmzentrale und Bezirkskrisenstäbe",
         "type": "text",
-        "content": "Hannes OE8HHG war als Verbindungsoffizier in der Landesalarmzentrale. Bei der Lagebesprechung am Freitag war zunächst nur von drei aktivierten Leuchttürmen die Rede, danach zeigte sich, dass die Funkamateure mehr Standorte betreuten. Am Samstag war der Bezirkskrisenstab Klagenfurt wieder besetzt, die Übung in Klagenfurt endete taktisch um 13:05 Uhr. [Rosental (OE8MIQ) und Villach ergänzen]"
+        "content": "Hannes OE8HHG war als Verbindungsoffizier in der Landesalarmzentrale. Bei der Lagebesprechung am Freitag war zunächst nur von drei aktivierten Leuchttürmen die Rede, danach zeigte sich, dass die Funkamateure mehr Standorte betreuten. Am Samstag war der Bezirkskrisenstab Klagenfurt wieder besetzt, die Übung in Klagenfurt endete taktisch um 13:05 Uhr. [Rosental (OE8MIQ) und Villach ergänzen]",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-lawz.webp",
+            "alt": "Besprechungsraum mit mehreren Personen an einem langen Tisch.",
+            "caption": "Landesalarmzentrale: Verbindungsoffizier OE8HHG (Hannes). [Einverständnis der abgebildeten Personen klären]",
+            "credit": "OE8HHG"
+          }
+        ]
       },
       {
         "heading": "Rückmeldungen",

@@ -38,6 +38,16 @@ eleventyComputed:
       {% for section in bericht.sections %}
       <h3 class="event__heading">{{ section.heading }}</h3>
       <p class="event__text">{{ section.content }}</p>
+      {% if section.figures %}
+      <div class="bericht__figures">
+        {% for f in section.figures %}
+        <figure class="bericht__figure">
+          <img src="{{ f.src }}" alt="{{ f.alt }}" loading="lazy">
+          <figcaption>{{ f.caption }}{% if f.credit %} <span class="bericht__credit">Foto: {{ f.credit }}</span>{% endif %}</figcaption>
+        </figure>
+        {% endfor %}
+      </div>
+      {% endif %}
       {% endfor %}
 
       {% if bericht.author %}
