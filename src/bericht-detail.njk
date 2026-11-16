@@ -1,0 +1,48 @@
+---
+layout: base.njk
+activeNav: presse
+pageCSSFile: "/css/termine.css"
+pagination:
+  data: berichte
+  size: 1
+  alias: bericht
+permalink: "/bericht/{{ bericht.slug }}/"
+eleventyComputed:
+  title: "{{ bericht.title }} — BOS-ARSA"
+  description: "{{ bericht.intro }}"
+  canonical: "https://bosarsa.oeradio.at/bericht/{{ bericht.slug }}/"
+  robots: "{{ 'noindex, nofollow' if bericht.draft else 'index, follow' }}"
+  ogImage: "{{ bericht.image }}"
+  ogImageAlt: "{{ bericht.imageAlt }}"
+---
+
+<div class="page-content page-content--wide">
+  <p class="back-link"><a href="/presse/">← Presse &amp; Medien</a></p>
+
+  <article class="event">
+    {% if bericht.draft %}<p class="event__text"><strong>ENTWURF, nicht öffentlich.</strong> Texte in [eckigen Klammern] sind noch zu klären.</p>{% endif %}
+    {% if bericht.image %}
+    <div class="event__image">
+      <img src="{{ bericht.image }}" alt="{{ bericht.imageAlt }}" loading="lazy">
+      {% if bericht.imageCredit %}<span class="article__image-credit">Foto: {{ bericht.imageCredit }}</span>{% endif %}
+    </div>
+    {% endif %}
+    <div class="event__body">
+      <div class="event__meta">
+        <span class="event__date">{{ bericht.date }}</span>
+        <span class="article__tag article__tag--{{ bericht.tag }}">{{ bericht.tagLabel }}</span>
+      </div>
+      <h1 class="event__title">{{ bericht.title }}</h1>
+      <p class="event__intro">{{ bericht.intro }}</p>
+
+      {% for section in bericht.sections %}
+      <h3 class="event__heading">{{ section.heading }}</h3>
+      <p class="event__text">{{ section.content }}</p>
+      {% endfor %}
+
+      {% if bericht.author %}
+      <p class="event__author">73 de {{ bericht.author }}</p>
+      {% endif %}
+    </div>
+  </article>
+</div>

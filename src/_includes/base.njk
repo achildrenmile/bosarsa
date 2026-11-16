@@ -7,7 +7,7 @@
   <meta name="description" content="{{ description }}">
   {% if keywords %}<meta name="keywords" content="{{ keywords }}">{% endif %}
   <meta name="author" content="BOS-ARSA">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{{ robots | default("index, follow") }}">
   <link rel="canonical" href="{{ canonical }}">
   <!-- Open Graph -->
   <meta property="og:title" content="{{ title }}">
