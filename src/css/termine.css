@@ -103,6 +103,33 @@
   color: var(--gray-300);
 }
 
+/* ===== Event Link (Overview) ===== */
+.event-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.event-link .event__title {
+  transition: color .2s;
+}
+.event-link:hover .event__title {
+  color: var(--polizei-mid);
+}
+
+/* ===== Back Link (Detail) ===== */
+.back-link {
+  margin-bottom: 24px;
+  font-size: .88rem;
+}
+.back-link a {
+  color: var(--polizei-mid);
+  text-decoration: none;
+  font-weight: 600;
+}
+.back-link a:hover {
+  text-decoration: underline;
+}
+
 /* ===== Tag: Übung ===== */
 .article__tag--uebung {
   background: rgba(34,139,34,.1);

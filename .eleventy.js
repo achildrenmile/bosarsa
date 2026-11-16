@@ -9,6 +9,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "presseaussendungen": "presseaussendungen" });
   eleventyConfig.addPassthroughCopy({ "js": "js" });
   eleventyConfig.addPassthroughCopy("src/css");
+  // Altbestand: auf der Live-Seite ausgeliefert, nicht verlinkt, ohne Quell-Template (siehe SYNC-LIVE-2026-11.md)
+  eleventyConfig.addPassthroughCopy({ "legacy/aktuelles": "aktuelles" });
 
   return {
     dir: {

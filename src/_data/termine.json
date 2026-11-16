@@ -1,8 +1,70 @@
 [
   {
+    "slug": "sommerpause-2026",
+    "date": "19. Juli – 13. September 2026",
+    "tag": "uebung",
+    "tagLabel": "Sommerpause",
+    "title": "BOS-ARSA Sommerpause 2026 nach der Krisenkommunikationsübung",
+    "image": "/sommerpause-2026.webp",
+    "imageAlt": "BOS-ARSA Sommerpause 2026",
+    "intro": "Nach der Krisenkommunikationsübung am 19.07.2026 geht die BOS-ARSA in die Sommerpause. Der reguläre Betrieb startet wieder am 13.09.2026. Wir wünschen euch einen angenehmen, krisenfreien Sommer!",
+    "sections": [
+      {
+        "heading": "Eckdaten",
+        "type": "table",
+        "columns": ["", ""],
+        "rows": [
+          ["Letzte Übung vor der Pause", "Sonntag, 19. Juli 2026 (Krisenkommunikationsübung)"],
+          ["Sommerpause", "20. Juli – 12. September 2026"],
+          ["Start nach der Pause", "Sonntag, 13. September 2026"]
+        ]
+      },
+      {
+        "heading": "",
+        "type": "text",
+        "content": "Wir wünschen euch einen angenehmen, krisenfreien Sommer! 73 de OE8GWQ"
+      }
+    ],
+    "author": "Wolfgang, OE8GWQ"
+  },
+  {
+    "slug": "freizeitmesse-2026",
+    "date": "Samstag, 11. April 2026",
+    "tag": "veranstaltung",
+    "tagLabel": "Messe",
+    "title": "BOS-ARSA bei der Freizeitmesse Klagenfurt 2026",
+    "intro": "Im Zuge der Freizeitmesse Klagenfurt (10.–12. April 2026) betreibt der ÖVSV-Landesverband Kärnten (OE8) einen Messestand, an dem das Team des Landesverbandes den Amateurfunk einem breiten Publikum vorstellt. Unter den Mitwirkenden ist auch BOS-ARSA-Mitglied Daniel, OE8OPT, der als Notfunk-Referent des Landesverbandes am Samstag mit dabei ist.",
+    "sections": [
+      {
+        "heading": "Eckdaten",
+        "type": "table",
+        "columns": ["", ""],
+        "rows": [
+          ["Veranstaltung", "Kärntner Freizeitmesse 2026"],
+          ["Datum (gesamt)", "10.–12. April 2026, täglich 9–18 Uhr"],
+          ["Daniel (OE8OPT) vor Ort", "Samstag, 11. April 2026"],
+          ["Ort", "Klagenfurter Messe, Halle 3, Stand D11"],
+          ["Adresse", "Messeplatz 1, 9020 Klagenfurt am Wörthersee"]
+        ]
+      },
+      {
+        "heading": "Weitere Infos",
+        "type": "text",
+        "content": "Details zur Gesamtveranstaltung des ÖVSV-Landesverbandes OE8 gibt es unter oe8.oevsv.at. Infos zur Freizeitmesse selbst unter kaerntnermessen.at."
+      },
+      {
+        "heading": "",
+        "type": "text",
+        "content": "Wer am Samstag auf der Freizeitmesse unterwegs ist – schaut gerne am Stand des Landesverbandes vorbei."
+      }
+    ],
+    "author": "BOS-ARSA"
+  },
+  {
     "date": "April – Oktober 2026",
     "tag": "veranstaltung",
     "tagLabel": "Sicherheitstage",
+    "slug": "sicherheitstage-2026",
     "title": "Sicherheitstage 2026 in K\u00e4rnten mit BOS-ARSA und \u00d6VSV-Notfunk-Beteiligung",
     "image": "/sicherheitstage-2026.webp",
     "imageAlt": "Sicherheitstage 2026 – Terminkalender K\u00e4rnten",
@@ -44,6 +106,7 @@
     "date": "10., 11., 17. & 18. März 2026",
     "tag": "uebung",
     "tagLabel": "Notfunkübung",
+    "slug": "notfunkuebung-klagenfurt-2026",
     "title": "Notfunkübung Klagenfurt: Vier Leuchttürme, vier Termine im März",
     "image": "/notfunk-header.webp",
     "imageAlt": "Notfunkübung Klagenfurt — Vier Leuchttürme",

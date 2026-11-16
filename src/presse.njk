@@ -12,7 +12,7 @@ permalink: /presse/
   <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
 
   {% for article in presse %}
-  <a class="article{% if article.image %} article--has-image{% endif %}" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
+  <a class="article{% if article.image %} article--has-image{% endif %}" href="/presse/{{ article.slug }}/">
     {% if article.image %}
     <div class="article__image">
       <img src="{{ article.image }}" alt="{{ article.imageAlt }}" loading="lazy">

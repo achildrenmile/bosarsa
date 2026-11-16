@@ -1,0 +1,39 @@
+---
+layout: base.njk
+activeNav: presse
+pagination:
+  data: presse
+  size: 1
+  alias: article
+permalink: "/presse/{{ article.slug }}/"
+eleventyComputed:
+  title: "{{ article.title }} — BOS-ARSA Presse"
+  description: "{{ article.desc | truncate(160) }}"
+  ogDescription: "{{ article.desc | truncate(200) }}"
+  canonical: "https://bosarsa.oeradio.at/presse/{{ article.slug }}/"
+  ogImage: "{{ article.image }}"
+  ogImageAlt: "{{ article.imageAlt if article.image else article.title }}"
+---
+
+<div class="page-content">
+  <p class="back-link"><a href="/presse/">← Alle Presseberichte</a></p>
+
+  <article class="article-detail">
+    {% if article.image %}
+    <div class="article__image">
+      <img src="{{ article.image }}" alt="{{ article.imageAlt }}">
+      {% if article.imageCredit %}<span class="article__image-credit">Foto: {{ article.imageCredit }}</span>{% endif %}
+    </div>
+    {% endif %}
+
+    <div class="article__date">{{ article.date }} <span class="article__tag article__tag--{{ article.tag }}">{{ article.tagLabel }}</span></div>
+    <h1 class="article-detail__title">{{ article.title }}</h1>
+    <div class="article__source">Quelle: {{ article.source }}</div>
+    <p class="article-detail__desc">{{ article.desc }}</p>
+
+    <a class="article-detail__cta" href="{{ article.url }}" target="_blank" rel="noopener noreferrer">
+      Zum Original-Bericht
+      <i data-lucide="external-link"></i>
+    </a>
+  </article>
+</div>
