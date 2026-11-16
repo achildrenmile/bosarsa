@@ -27,7 +27,7 @@
       {
         "heading": "Leuchtturm Feldkirchner Straße, Klagenfurt",
         "type": "text",
-        "content": "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest. Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten. Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar.",
+        "content": "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest. Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten. Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar.",
         "figures": [
           {
             "src": "/bericht-cs2026-wegweiser.webp",
@@ -46,7 +46,7 @@
       {
         "heading": "Leuchtturm Welzenegg, Klagenfurt",
         "type": "text",
-        "content": "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitze und auf 145.525 MHz. [Eigener Bericht von OE8OJK abwarten: Anekdoten, Meldungen, Besonderheiten]",
+        "content": "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz. [Eigener Bericht von OE8OJK abwarten: Anekdoten, Meldungen, Besonderheiten]",
         "figures": [
           {
             "src": "/bericht-cs2026-welzenegg.webp",
@@ -59,7 +59,7 @@
       {
         "heading": "Krisenstab Magistrat Klagenfurt, Rathaus",
         "type": "text",
-        "content": "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar. Kurzwelle war im Dachboden des Rathauses nicht möglich. Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitze auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören. [Ablösung durch OE8AGV und Dauer bestätigen]",
+        "content": "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar. Kurzwelle war im Dachboden des Rathauses nicht möglich. Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitzen auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören. [Ablösung durch OE8AGV und Dauer bestätigen]",
         "figures": [
           {
             "src": "/bericht-cs2026-rathaus-freitag.webp",
@@ -78,31 +78,31 @@
       {
         "heading": "Leuchtturm Wernberg",
         "type": "text",
-        "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. [Besetzung und Besonderheiten ergänzen]",
+        "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. Am Leuchtturm war OE8MAQ im Einsatz. [Besetzung und Besonderheiten ergänzen]",
         "figures": [
           {
             "src": "/bericht-cs2026-wernberg-alarm.webp",
             "alt": "Screenshot der Alarm-App: Einberufung des Gemeindekrisenstabs Wernberg am 13.11.2026 um 10:50 Uhr, Lage „Starkes Erdbeben“.",
             "caption": "Alarmierung des Gemeindekrisenstabs Wernberg am 13.11.2026, 10:50 Uhr. Übungslage: „Starkes Erdbeben“. Namen unkenntlich gemacht.",
-            "credit": "[Rufzeichen klären]"
+            "credit": "OE8MAQ"
           },
           {
             "src": "/bericht-cs2026-wernberg-station1.webp",
             "alt": "Notfunk-Warnweste mit BOS-ARSA-Aufschrift über einer Stuhllehne, daneben ein Funkgerät.",
             "caption": "Station 1 im Leuchtturm Wernberg.",
-            "credit": "[Rufzeichen klären]"
+            "credit": "OE8MAQ"
           },
           {
             "src": "/bericht-cs2026-wernberg-station2.webp",
             "alt": "Schreibtisch im Gemeindeamt mit Funkgerät, Handfunkgerät und Funkprotokoll.",
             "caption": "Station 2 im Gemeindeamt Wernberg.",
-            "credit": "[Rufzeichen klären]"
+            "credit": "OE8MAQ"
           },
           {
             "src": "/bericht-cs2026-wernberg-praesident.webp",
             "alt": "Saal mit mehreren Personen an Tischen, Beamer im Hintergrund.",
             "caption": "Besuch des Präsidenten OE8GWQ im Leuchtturm Wernberg. Personen unkenntlich gemacht.",
-            "credit": "[Rufzeichen klären]"
+            "credit": "OE8MAQ"
           }
         ]
       },
