@@ -26,7 +26,8 @@
             "caption": "Dienstplan der BOS-ARSA, Stand 11.11.2026, 13:30 Uhr. Rufzeichen unkenntlich gemacht.",
             "credit": "OE8GWQ"
           }
-        ]
+        ],
+        "layout": "plain"
       },
       {
         "heading": "Leuchtturm Feldkirchner Straße, Klagenfurt",
@@ -40,7 +41,7 @@
           {
             "src": "/bericht-cs2026-wegweiser.webp",
             "alt": "Wegweiser mit Leuchtturm-Symbol und der Aufschrift „Notrufe/Funker“ im Gebäude.",
-            "caption": "Der Weg zu den Funkern im Leuchtturm Feldkirchner Straße.",
+            "caption": "Wegweiser zu den Funkern im Leuchtturm Feldkirchner Straße.",
             "credit": "OE8YYY"
           },
           {
@@ -52,28 +53,29 @@
           {
             "src": "/bericht-cs2026-feldkirchner-arbeitsplatz1.webp",
             "alt": "Lächelnde Person am Funkplatz an einem Tisch mit Funkgeräten, Funkprotokoll und Klemmbrett.",
-            "caption": "Funkbetrieb am Leuchtturm Feldkirchner Straße. Person unkenntlich gemacht.",
+            "caption": "Am Funkplatz. Person unkenntlich gemacht.",
             "credit": "OE8YYY"
           },
           {
             "src": "/bericht-cs2026-feldkirchner-arbeitsplatz2.webp",
             "alt": "Person sitzt am Tisch mit Funkgeräten, im Vordergrund eine Jacke über einer Stuhllehne.",
-            "caption": "Am Funkplatz des Leuchtturms. Person unkenntlich gemacht.",
+            "caption": "Beim Funkbetrieb. Person unkenntlich gemacht.",
             "credit": "OE8YYY"
           },
           {
             "src": "/bericht-cs2026-feldkirchner-besuch.webp",
             "alt": "Blick in den Raum des Leuchtturms: mehrere Personen im Gespräch, eine davon in Warnweste.",
-            "caption": "Besuch im Leuchtturm: Gespräch am Funkplatz. Personen unkenntlich gemacht.",
+            "caption": "Besuch im Leuchtturm. Personen unkenntlich gemacht.",
             "credit": "OE8YYY"
           },
           {
             "src": "/bericht-cs2026-feldkirchner-wegweiser2.webp",
             "alt": "Wegweiser an einem Schrank: Arzt, Erste Hilfe, Apotheker und Polizei, daneben Kinderzeichnungen.",
-            "caption": "Wegweiser im Leuchtturm: Arzt, Erste Hilfe, Apotheker, Polizei.",
+            "caption": "Wegweiser zu Arzt, Erste Hilfe, Apotheker und Polizei.",
             "credit": "OE8YYY"
           }
-        ]
+        ],
+        "layout": "grid"
       },
       {
         "heading": "Leuchtturm Welzenegg, Klagenfurt",
@@ -86,10 +88,12 @@
           {
             "src": "/bericht-cs2026-welzenegg.webp",
             "alt": "Schreibtisch mit Funkgerät, Laptop und Unterlagen im Leuchtturm Welzenegg.",
-            "caption": "Leuchtturm Welzenegg, Funkplatz von OE8OJK.",
-            "credit": "OE8OJK"
+            "caption": "Funkplatz im Leuchtturm Welzenegg.",
+            "credit": "OE8OJK",
+            "pos": "50% 38%"
           }
-        ]
+        ],
+        "layout": "single"
       },
       {
         "heading": "Krisenstab Magistrat Klagenfurt, Rathaus",
@@ -103,16 +107,17 @@
           {
             "src": "/bericht-cs2026-rathaus-freitag.webp",
             "alt": "Funkstation mit Notstromgerät und Unterlagen im Rathaus Klagenfurt.",
-            "caption": "Magistrat Klagenfurt, Station von OE8OPT.",
+            "caption": "Funkstation im Krisenstab Magistrat Klagenfurt am Freitag.",
             "credit": "OE8OPT"
           },
           {
             "src": "/bericht-cs2026-rathaus-samstag.webp",
             "alt": "Funkstation im Rathaus Klagenfurt mit Funkgeräten in Transportkoffern und einer BOS-ARSA-Kappe.",
-            "caption": "„Schöne Grüße aus dem Rathaus Klagenfurt“: Station am Samstagmorgen.",
+            "caption": "„Schöne Grüße aus dem Rathaus Klagenfurt“: Funkstation am Samstagmorgen.",
             "credit": "OE8OPT"
           }
-        ]
+        ],
+        "layout": "grid"
       },
       {
         "heading": "Leuchtturm Wernberg",
@@ -125,7 +130,7 @@
           {
             "src": "/bericht-cs2026-wernberg-alarm.webp",
             "alt": "Screenshot der Alarm-App: Einberufung des Gemeindekrisenstabs Wernberg am 13.11.2026 um 10:50 Uhr, Lage „Starkes Erdbeben“.",
-            "caption": "Alarmierung des Gemeindekrisenstabs Wernberg am 13.11.2026, 10:50 Uhr. Übungslage: „Starkes Erdbeben“. Namen unkenntlich gemacht.",
+            "caption": "Alarmierung des Gemeindekrisenstabs am 13.11.2026, 10:50 Uhr. Übungslage: „Starkes Erdbeben“. Namen unkenntlich gemacht.",
             "credit": "OE8MAQ"
           },
           {
@@ -143,10 +148,11 @@
           {
             "src": "/bericht-cs2026-wernberg-praesident.webp",
             "alt": "Saal mit mehreren Personen an Tischen, Beamer im Hintergrund.",
-            "caption": "Besuch des Präsidenten OE8GWQ im Leuchtturm Wernberg. Personen unkenntlich gemacht.",
+            "caption": "Besuch des Präsidenten OE8GWQ. Personen unkenntlich gemacht.",
             "credit": "OE8MAQ"
           }
-        ]
+        ],
+        "layout": "alarm"
       },
       {
         "heading": "Leuchtturm Föderlach",
@@ -159,28 +165,29 @@
           {
             "src": "/bericht-cs2026-foederlach-raum.webp",
             "alt": "Tisch mit Funkgerät, gelbem Notfallkoffer, Handfunkgerät, Kochtopf und Konserven.",
-            "caption": "Leuchtturm Föderlach.",
+            "caption": "Funkplatz mit Notfallkoffer und Vorräten.",
             "credit": "OE8JDI"
           },
           {
             "src": "/bericht-cs2026-foederlach-aufsteller.webp",
             "alt": "Aufsteller „Der FF Föderlach – Der Leuchtturm“ vor einem Feuerwehrfahrzeug.",
-            "caption": "Vor dem Rüsthaus: Aufsteller der Freiwilligen Feuerwehr Föderlach zum Leuchtturm.",
+            "caption": "Aufsteller der Freiwilligen Feuerwehr Föderlach vor dem Rüsthaus.",
             "credit": "OE8JDI"
           },
           {
             "src": "/bericht-cs2026-foederlach-station.webp",
             "alt": "Funkgerät, Handfunkgerät und BOS-ARSA-Funkeinsatzmappe auf einem Tisch, daneben eine Autobatterie.",
-            "caption": "Funkplatz mit BOS-ARSA-Funkeinsatzmappe, über eine Batterie versorgt.",
+            "caption": "Funkplatz mit Verpflegung aus der Kantine.",
             "credit": "OE8JDI"
           },
           {
             "src": "/bericht-cs2026-foederlach-team.webp",
             "alt": "Mehrere Personen sitzen in einer Gaststube an einem Tisch mit Funkgerät.",
-            "caption": "Leuchtturm Föderlach: die Zusammenarbeit. Personen unkenntlich gemacht.",
+            "caption": "Das Team im Leuchtturm Föderlach. Personen unkenntlich gemacht.",
             "credit": "OE8JDI"
           }
-        ]
+        ],
+        "layout": "grid"
       },
       {
         "heading": "Leuchtturm Ossiach",
@@ -188,7 +195,8 @@
         "content": [
           "Erwin OE8ETW war schon am Freitagmorgen QRV. Der Leuchtturm Ossiach ging ab 10 Uhr in Betrieb.",
           "Um 10:30 Uhr trat der Krisenstab der Gemeinde Ossiach auf Einberufung der Bezirkshauptmannschaft Feldkirchen zusammen."
-        ]
+        ],
+        "layout": "grid"
       },
       {
         "heading": "Landesalarmzentrale und Bezirkskrisenstäbe",
@@ -201,17 +209,19 @@
           {
             "src": "/bericht-cs2026-lawz.webp",
             "alt": "Besprechungsraum mit mehreren Personen an einem langen Tisch.",
-            "caption": "Landesalarmzentrale: Verbindungsoffizier OE8HHG (Hannes). Personen unkenntlich gemacht.",
+            "caption": "Verbindungsoffizier OE8HHG in der Landesalarmzentrale. Personen unkenntlich gemacht.",
             "credit": "OE8HHG"
           }
-        ]
+        ],
+        "layout": "single"
       },
       {
         "heading": "Rückmeldungen",
         "type": "text",
         "content": [
           "Der Krisenstab Klagenfurt bedankte sich für die gute Zusammenarbeit. Auch am Leuchtturm Feldkirchner Straße war sie durchgehend professionell und wertschätzend, die Funkverbindung über Gerlitzen war laut Rückmeldung während der Übung durchgehend gut lesbar."
-        ]
+        ],
+        "layout": "grid"
       }
     ],
     "facts": [
