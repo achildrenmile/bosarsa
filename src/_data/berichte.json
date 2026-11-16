@@ -14,7 +14,11 @@
       {
         "heading": "Der Rahmen",
         "type": "text",
-        "content": "In Klagenfurt waren der Krisenstab des Magistrats im Rathaus Neuer Platz sowie zwei Leuchttürme, Welzenegg und Feldkirchner Straße, funktechnisch besetzt. Der Krisenstab war am Freitag von 9 bis 21 Uhr und am Samstag von 8 bis 16 Uhr besetzt, die Leuchttürme am Freitag von 16:30 bis 21 Uhr und am Samstag von 8 bis 16 Uhr (jeweils Maximalzeiten). Außerhalb von Klagenfurt waren weitere Leuchttürme aktiv, darunter Wernberg, Föderlach und Ossiach, dazu Funkamateure in den Bezirkskrisenstäben und in der Landesalarmzentrale. Übungslage war ein starkes Erdbeben: In Wernberg wurde der Gemeindekrisenstab am Freitag um 10:50 Uhr per Alarm-App einberufen.",
+        "content": [
+          "In Klagenfurt waren der Krisenstab des Magistrats im Rathaus Neuer Platz sowie zwei Leuchttürme, Welzenegg und Feldkirchner Straße, funktechnisch besetzt. Der Krisenstab war am Freitag von 9 bis 21 Uhr und am Samstag von 8 bis 16 Uhr besetzt, die Leuchttürme am Freitag von 16:30 bis 21 Uhr und am Samstag von 8 bis 16 Uhr (jeweils Maximalzeiten).",
+          "Außerhalb von Klagenfurt waren weitere Leuchttürme aktiv, darunter Wernberg, Föderlach und Ossiach, dazu Funkamateure in den Bezirkskrisenstäben und in der Landesalarmzentrale.",
+          "Übungslage war ein starkes Erdbeben: In Wernberg wurde der Gemeindekrisenstab am Freitag um 10:50 Uhr per Alarm-App einberufen."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-dienstplan.webp",
@@ -27,7 +31,11 @@
       {
         "heading": "Leuchtturm Feldkirchner Straße, Klagenfurt",
         "type": "text",
-        "content": "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest. Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten. Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar.",
+        "content": [
+          "Christian OE8AGV und Christina OE8YYY übernahmen die Funk-Stationsverantwortung. Nach dem Kennenlernen des Standortteams, der Klärung der Zuständigkeiten und dem Aufbau der QRP-Funkgeräte gelang schon vor Übungsbeginn ein erster Verbindungstest.",
+          "Bis zum Übungsende wurden mehrere Meldungen und Anfragen übermittelt: Personalstand, Materialanforderungen, Rückfragen zum weiteren Vorgehen bei Problemen und Meldungen über Personen, die im Notquartier des Leuchtturms Welzenegg untergebracht und versorgt werden mussten.",
+          "Die Zusammenarbeit mit der Standortleitung und dem Team vor Ort war durchgehend professionell und wertschätzend. Dank der Kantine war auch für die Verpflegung gesorgt. Die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz war laut Rückmeldung während der Übung durchgehend gut lesbar."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-wegweiser.webp",
@@ -46,7 +54,10 @@
       {
         "heading": "Leuchtturm Welzenegg, Klagenfurt",
         "type": "text",
-        "content": "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz.",
+        "content": [
+          "Ossi OE8OJK aktivierte den Leuchtturm Welzenegg. Er hielt die Verbindung über den Umsetzer Gerlitzen und auf 145.525 MHz.",
+          "Welzenegg war zugleich Notquartier. Meldungen über die dort untergebrachten und versorgten Personen wurden aus der Feldkirchner Straße übermittelt."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-welzenegg.webp",
@@ -59,7 +70,11 @@
       {
         "heading": "Krisenstab Magistrat Klagenfurt, Rathaus",
         "type": "text",
-        "content": "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar. Kurzwelle war im Dachboden des Rathauses nicht möglich. Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitzen auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören.",
+        "content": [
+          "Daniel OE8OPT, Notfunkreferent des ÖVSV-Landesverbands Kärnten, betreute die Funkstation im Krisenstab im Gemeinderatssaal. Er war über die Umsetzer der Landesalarmzentrale auf der Gerlitzen (2 m und 70 cm, Umsetzer Fischl) und auf 145.525 sowie 145.550 MHz erreichbar.",
+          "Kurzwelle war im Dachboden des Rathauses nicht möglich.",
+          "Weil Stationen außerhalb Klagenfurts auf 145.525 MHz schlecht zu hören waren, wichen die Klagenfurter Leuchttürme neben Gerlitzen auf 145.550 MHz aus, damit sich die Standorte nicht gegenseitig stören."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-rathaus-freitag.webp",
@@ -78,7 +93,10 @@
       {
         "heading": "Leuchtturm Wernberg",
         "type": "text",
-        "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. Am Leuchtturm war OE8MAQ im Einsatz.",
+        "content": [
+          "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Am Leuchtturm war OE8MAQ im Einsatz. Er war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei.",
+          "Präsident Wolfgang OE8GWQ besuchte den Standort."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-wernberg-alarm.webp",
@@ -109,7 +127,10 @@
       {
         "heading": "Leuchtturm Föderlach",
         "type": "text",
-        "content": "Der Leuchtturm Föderlach (OE8JDI) arbeitete mit dem Team vor Ort zusammen.",
+        "content": [
+          "Der Leuchtturm Föderlach (OE8JDI) arbeitete mit dem Team vor Ort zusammen.",
+          "Der Funkplatz mit der BOS-ARSA-Funkeinsatzmappe wurde über eine Batterie versorgt."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-foederlach-raum.webp",
@@ -140,12 +161,18 @@
       {
         "heading": "Leuchtturm Ossiach",
         "type": "text",
-        "content": "Erwin OE8ETW war schon am Freitagmorgen QRV. Der Leuchtturm Ossiach ging ab 10 Uhr in Betrieb, um 10:30 Uhr trat der Krisenstab der Gemeinde Ossiach auf Einberufung der Bezirkshauptmannschaft Feldkirchen zusammen."
+        "content": [
+          "Erwin OE8ETW war schon am Freitagmorgen QRV. Der Leuchtturm Ossiach ging ab 10 Uhr in Betrieb.",
+          "Um 10:30 Uhr trat der Krisenstab der Gemeinde Ossiach auf Einberufung der Bezirkshauptmannschaft Feldkirchen zusammen."
+        ]
       },
       {
         "heading": "Landesalarmzentrale und Bezirkskrisenstäbe",
         "type": "text",
-        "content": "Hannes OE8HHG war als Verbindungsoffizier in der Landesalarmzentrale. Bei der Lagebesprechung am Freitag war zunächst nur von drei aktivierten Leuchttürmen die Rede, danach zeigte sich, dass die Funkamateure mehr Standorte betreuten. Am Samstag war der Bezirkskrisenstab Klagenfurt wieder besetzt, die Übung in Klagenfurt endete taktisch um 13:05 Uhr.",
+        "content": [
+          "Hannes OE8HHG war als Verbindungsoffizier in der Landesalarmzentrale. Bei der Lagebesprechung am Freitag war zunächst nur von drei aktivierten Leuchttürmen die Rede, danach zeigte sich, dass die Funkamateure mehr Standorte betreuten.",
+          "Am Samstag war der Bezirkskrisenstab Klagenfurt wieder besetzt, die Übung in Klagenfurt endete taktisch um 13:05 Uhr."
+        ],
         "figures": [
           {
             "src": "/bericht-cs2026-lawz.webp",
@@ -158,7 +185,71 @@
       {
         "heading": "Rückmeldungen",
         "type": "text",
-        "content": "Der Krisenstab Klagenfurt bedankte sich für die gute Zusammenarbeit."
+        "content": [
+          "Der Krisenstab Klagenfurt bedankte sich für die gute Zusammenarbeit. Auch am Leuchtturm Feldkirchner Straße war sie durchgehend professionell und wertschätzend, die Funkverbindung über Gerlitzen war laut Rückmeldung während der Übung durchgehend gut lesbar."
+        ]
+      }
+    ],
+    "facts": [
+      {
+        "k": "Wann",
+        "v": "13. und 14. November 2026"
+      },
+      {
+        "k": "Wo",
+        "v": "Klagenfurt, Wernberg, Föderlach, Ossiach und die Landesalarmzentrale"
+      },
+      {
+        "k": "Übungslage",
+        "v": "Starkes Erdbeben"
+      },
+      {
+        "k": "Funkverbindung",
+        "v": "145.525 und 145.550 MHz, Umsetzer Gerlitzen"
+      }
+    ],
+    "timeline": [
+      {
+        "day": "Freitag, 13.11.",
+        "items": [
+          {
+            "t": "ab 10:00",
+            "e": "Leuchtturm Ossiach in Betrieb"
+          },
+          {
+            "t": "10:30",
+            "e": "Krisenstab Ossiach tritt zusammen"
+          },
+          {
+            "t": "10:50",
+            "e": "Alarmierung des Gemeindekrisenstabs Wernberg"
+          },
+          {
+            "t": "ab ca. 11:00",
+            "e": "Leuchtturm Wernberg aktiv"
+          },
+          {
+            "t": "9:00 bis 21:00",
+            "e": "Krisenstab Magistrat Klagenfurt besetzt (Maximalzeit)"
+          },
+          {
+            "t": "16:30 bis 21:00",
+            "e": "Leuchttürme Klagenfurt besetzt (Maximalzeit)"
+          }
+        ]
+      },
+      {
+        "day": "Samstag, 14.11.",
+        "items": [
+          {
+            "t": "8:00 bis 16:00",
+            "e": "Krisenstab und Leuchttürme Klagenfurt besetzt (Maximalzeit)"
+          },
+          {
+            "t": "13:05",
+            "e": "Übung in Klagenfurt endet taktisch"
+          }
+        ]
       }
     ]
   }

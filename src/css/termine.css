@@ -150,3 +150,23 @@
 .bericht__figure img { width: 100%; height: auto; border-radius: 6px; display: block; }
 .bericht__figure figcaption { font-size: 0.85rem; margin-top: 0.4rem; }
 .bericht__credit { opacity: 0.7; }
+
+/* Berichte: Entwurfsband, Eckdaten, Ablauf, Abschnittsabstände */
+.draft-ribbon { border-radius: 6px; margin-bottom: 16px; background: var(--bos-gold); color: var(--polizei-dark); text-align: center; font-size: .82rem; font-weight: 600; padding: 8px 16px; letter-spacing: .2px; }
+.draft-ribbon__tag { background: var(--polizei-dark); color: var(--bos-gold-light); border-radius: 3px; padding: 2px 8px; margin-right: 8px; text-transform: uppercase; font-size: .72rem; letter-spacing: .6px; }
+.bericht__facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px; margin: 4px 0 28px; }
+.bericht__facts div { background: var(--off-white); border-left: 3px solid var(--bos-gold); border-radius: 4px; padding: 10px 14px; }
+.bericht__facts dt { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--polizei-mid); margin-bottom: 3px; }
+.bericht__facts dd { margin: 0; font-size: .88rem; color: var(--gray-900); line-height: 1.4; }
+.bericht__section { margin-top: 36px; padding-top: 28px; border-top: 1px solid var(--gray-100); }
+.bericht__section .event__heading { font-size: 1.1rem; margin-top: 0; margin-bottom: 12px; }
+.bericht__section .event__text + .event__text { margin-top: 12px; }
+.bericht__section .bericht__figures { margin-top: 20px; margin-bottom: 4px; gap: 16px; }
+.bericht__timeline { background: var(--off-white); border-radius: var(--radius); border-top: 0; padding: 22px 24px; }
+.bericht__timeline h4 { font-size: .8rem; text-transform: uppercase; letter-spacing: .6px; color: var(--polizei-mid); margin: 14px 0 6px; }
+.bericht__timeline ul { list-style: none; margin: 0; padding: 0; }
+.bericht__timeline li { font-size: .88rem; color: var(--gray-700); padding: 5px 0; border-bottom: 1px solid var(--gray-100); }
+.bericht__timeline li:last-child { border-bottom: 0; }
+.bericht__timeline time { display: inline-block; min-width: 9.5em; font-weight: 700; color: var(--gray-900); }
+@media (max-width: 600px) { .bericht__timeline time { display: block; min-width: 0; } }
+.page-content .bericht__section { margin-bottom: 0; }

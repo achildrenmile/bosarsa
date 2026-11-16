@@ -17,10 +17,10 @@ eleventyComputed:
 ---
 
 <div class="page-content page-content--wide">
+  {% if bericht.draft %}<div class="draft-ribbon" role="note"><span class="draft-ribbon__tag">Entwurf</span> Nicht öffentlich, nur über diesen Link erreichbar.</div>{% endif %}
   <p class="back-link"><a href="/presse/">← Presse &amp; Medien</a></p>
 
   <article class="event">
-    {% if bericht.draft %}<p class="event__text"><strong>ENTWURF, nicht öffentlich.</strong> Texte in [eckigen Klammern] sind noch zu klären.</p>{% endif %}
     {% if bericht.image %}
     <div class="event__image">
       <img src="{{ bericht.image }}" alt="{{ bericht.imageAlt }}" loading="lazy">
@@ -35,9 +35,16 @@ eleventyComputed:
       <h1 class="event__title">{{ bericht.title }}</h1>
       <p class="event__intro">{{ bericht.intro }}</p>
 
+      {% if bericht.facts %}
+      <dl class="bericht__facts">
+        {% for f in bericht.facts %}<div><dt>{{ f.k }}</dt><dd>{{ f.v }}</dd></div>{% endfor %}
+      </dl>
+      {% endif %}
+
       {% for section in bericht.sections %}
+      <section class="bericht__section">
       <h3 class="event__heading">{{ section.heading }}</h3>
-      <p class="event__text">{{ section.content }}</p>
+      {% if section.content is string %}<p class="event__text">{{ section.content }}</p>{% else %}{% for para in section.content %}<p class="event__text">{{ para }}</p>{% endfor %}{% endif %}
       {% if section.figures %}
       <div class="bericht__figures">
         {% for f in section.figures %}
@@ -47,6 +54,16 @@ eleventyComputed:
         </figure>
         {% endfor %}
       </div>
+      {% endif %}
+      </section>
+      {% if loop.first and bericht.timeline %}
+      <section class="bericht__section bericht__timeline">
+        <h3 class="event__heading">Der Ablauf im Überblick</h3>
+        {% for d in bericht.timeline %}
+        <h4>{{ d.day }}</h4>
+        <ul>{% for i in d.items %}<li><time>{{ i.t }}</time> {{ i.e }}</li>{% endfor %}</ul>
+        {% endfor %}
+      </section>
       {% endif %}
       {% endfor %}
 
