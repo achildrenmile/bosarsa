@@ -148,8 +148,8 @@
 .bericht__figures { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px 16px; margin: 20px 0 4px; }
 .bericht__figure { margin: 0; }
 .bericht__figure img { width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; display: block; background: var(--off-white); }
-.bericht__figure figcaption { font-size: 0.82rem; line-height: 1.45; color: var(--gray-700); margin-top: 8px; }
-.bericht__credit { display: block; margin-top: 2px; font-size: 0.74rem; color: var(--gray-500); }
+.bericht__figure figcaption { font-size: 0.75rem; line-height: 1.4; color: var(--gray-500); margin-top: 7px; }
+.bericht__credit { display: block; margin-top: 2px; font-size: 0.68rem; letter-spacing: .3px; text-transform: uppercase; color: var(--gray-300); }
 .bericht__figures--plain { grid-template-columns: 1fr; }
 .bericht__figures--plain img { aspect-ratio: auto; object-fit: contain; }
 .bericht__figures--single { grid-template-columns: minmax(0, 1fr); }
