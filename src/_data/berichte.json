@@ -14,7 +14,15 @@
       {
         "heading": "Der Rahmen",
         "type": "text",
-        "content": "In Klagenfurt waren der Krisenstab des Magistrats im Rathaus Neuer Platz sowie zwei Leuchttürme, Welzenegg und Feldkirchner Straße, funktechnisch besetzt. Der Krisenstab war am Freitag von 9 bis 21 Uhr und am Samstag von 8 bis 16 Uhr besetzt, die Leuchttürme am Freitag von 16:30 bis 21 Uhr und am Samstag von 8 bis 16 Uhr (jeweils Maximalzeiten). Außerhalb von Klagenfurt waren weitere Leuchttürme aktiv, darunter Wernberg, Föderlach und Ossiach, dazu Funkamateure in den Bezirkskrisenstäben und in der Landesalarmzentrale. [Gesamtzahl der Standorte und Beteiligten bestätigen]"
+        "content": "In Klagenfurt waren der Krisenstab des Magistrats im Rathaus Neuer Platz sowie zwei Leuchttürme, Welzenegg und Feldkirchner Straße, funktechnisch besetzt. Der Krisenstab war am Freitag von 9 bis 21 Uhr und am Samstag von 8 bis 16 Uhr besetzt, die Leuchttürme am Freitag von 16:30 bis 21 Uhr und am Samstag von 8 bis 16 Uhr (jeweils Maximalzeiten). Außerhalb von Klagenfurt waren weitere Leuchttürme aktiv, darunter Wernberg, Föderlach und Ossiach, dazu Funkamateure in den Bezirkskrisenstäben und in der Landesalarmzentrale. [Gesamtzahl der Standorte und Beteiligten bestätigen] Übungslage war ein starkes Erdbeben: In Wernberg wurde der Gemeindekrisenstab am Freitag um 10:50 Uhr per Alarm-App einberufen.",
+        "figures": [
+          {
+            "src": "/bericht-cs2026-dienstplan.webp",
+            "alt": "Tabelle „Combined Success 2026, Kräfte-, Raum-, Zeitkalkül“ mit den Besetzungszeiten der Standorte am 13. und 14.11.2026; die Rufzeichen sind unkenntlich gemacht.",
+            "caption": "Dienstplan der BOS-ARSA, Stand 11.11.2026, 13:30 Uhr. Rufzeichen unkenntlich gemacht.",
+            "credit": "OE8GWQ"
+          }
+        ]
       },
       {
         "heading": "Leuchtturm Feldkirchner Straße, Klagenfurt",
@@ -25,13 +33,13 @@
             "src": "/bericht-cs2026-wegweiser.webp",
             "alt": "Wegweiser mit Leuchtturm-Symbol und der Aufschrift „Notrufe/Funker“ im Gebäude.",
             "caption": "Der Weg zu den Funkern im Leuchtturm Feldkirchner Straße.",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "OE8YYY"
           },
           {
             "src": "/bericht-cs2026-station.webp",
             "alt": "Funkgerät auf rotem Tuch neben Telefon, Notizzettel und einem Teller mit Kuchen.",
             "caption": "Funkplatz mit Verpflegung aus der Kantine. [Bildunterschrift bestätigen]",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "OE8YYY"
           }
         ]
       },
@@ -73,22 +81,28 @@
         "content": "In Wernberg waren zwei Stationen aufgebaut, eine im Leuchtturm und eine im Gemeindeamt. Der Leuchtturm war am Freitag ab etwa 11 Uhr für einige Stunden aktiv. Nach dem Herunterfahren des Krisenstabs am Nachmittag wurde die Frequenz 145.525 MHz wieder frei. Präsident Wolfgang OE8GWQ besuchte den Standort. [Besetzung und Besonderheiten ergänzen]",
         "figures": [
           {
+            "src": "/bericht-cs2026-wernberg-alarm.webp",
+            "alt": "Screenshot der Alarm-App: Einberufung des Gemeindekrisenstabs Wernberg am 13.11.2026 um 10:50 Uhr, Lage „Starkes Erdbeben“.",
+            "caption": "Alarmierung des Gemeindekrisenstabs Wernberg am 13.11.2026, 10:50 Uhr. Übungslage: „Starkes Erdbeben“. Namen unkenntlich gemacht.",
+            "credit": "[Rufzeichen klären]"
+          },
+          {
             "src": "/bericht-cs2026-wernberg-station1.webp",
             "alt": "Notfunk-Warnweste mit BOS-ARSA-Aufschrift über einer Stuhllehne, daneben ein Funkgerät.",
             "caption": "Station 1 im Leuchtturm Wernberg.",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "[Rufzeichen klären]"
           },
           {
             "src": "/bericht-cs2026-wernberg-station2.webp",
             "alt": "Schreibtisch im Gemeindeamt mit Funkgerät, Handfunkgerät und Funkprotokoll.",
             "caption": "Station 2 im Gemeindeamt Wernberg.",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "[Rufzeichen klären]"
           },
           {
             "src": "/bericht-cs2026-wernberg-praesident.webp",
             "alt": "Saal mit mehreren Personen an Tischen, Beamer im Hintergrund.",
-            "caption": "Besuch des Präsidenten OE8GWQ im Leuchtturm Wernberg. [Einverständnis der abgebildeten Personen klären]",
-            "credit": "[Fotograf bestätigen]"
+            "caption": "Besuch des Präsidenten OE8GWQ im Leuchtturm Wernberg. Personen unkenntlich gemacht.",
+            "credit": "[Rufzeichen klären]"
           }
         ]
       },
@@ -101,25 +115,25 @@
             "src": "/bericht-cs2026-foederlach-raum.webp",
             "alt": "Tisch mit Funkgerät, gelbem Notfallkoffer, Handfunkgerät, Kochtopf und Konserven.",
             "caption": "Leuchtturm Föderlach.",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "[Rufzeichen klären]"
           },
           {
             "src": "/bericht-cs2026-foederlach-aufsteller.webp",
             "alt": "Aufsteller „Der FF Föderlach – Der Leuchtturm“ vor einem Feuerwehrfahrzeug.",
             "caption": "Vor dem Rüsthaus: Aufsteller der Freiwilligen Feuerwehr Föderlach zum Leuchtturm. [Bildunterschrift bestätigen]",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "[Rufzeichen klären]"
           },
           {
             "src": "/bericht-cs2026-foederlach-station.webp",
             "alt": "Funkgerät, Handfunkgerät und BOS-ARSA-Funkeinsatzmappe auf einem Tisch, daneben eine Autobatterie.",
             "caption": "Funkplatz mit BOS-ARSA-Funkeinsatzmappe, über eine Batterie versorgt. [Bildunterschrift bestätigen]",
-            "credit": "[Fotograf bestätigen]"
+            "credit": "[Rufzeichen klären]"
           },
           {
             "src": "/bericht-cs2026-foederlach-team.webp",
             "alt": "Mehrere Personen sitzen in einer Gaststube an einem Tisch mit Funkgerät.",
-            "caption": "Leuchtturm Föderlach: die Zusammenarbeit. [Einverständnis der abgebildeten Personen klären]",
-            "credit": "[Fotograf bestätigen]"
+            "caption": "Leuchtturm Föderlach: die Zusammenarbeit. Personen unkenntlich gemacht.",
+            "credit": "[Rufzeichen klären]"
           }
         ]
       },
@@ -136,7 +150,7 @@
           {
             "src": "/bericht-cs2026-lawz.webp",
             "alt": "Besprechungsraum mit mehreren Personen an einem langen Tisch.",
-            "caption": "Landesalarmzentrale: Verbindungsoffizier OE8HHG (Hannes). [Einverständnis der abgebildeten Personen klären]",
+            "caption": "Landesalarmzentrale: Verbindungsoffizier OE8HHG (Hannes). Personen unkenntlich gemacht.",
             "credit": "OE8HHG"
           }
         ]
