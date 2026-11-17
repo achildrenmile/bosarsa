@@ -16,6 +16,13 @@ eleventyExcludeFromCollections: true
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
+  {% for bericht in berichte %}{% if not bericht.draft %}
+  <url>
+    <loc>{{ site.url }}/bericht/{{ bericht.slug }}/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% endif %}{% endfor %}
   {% for article in presse %}
   <url>
     <loc>{{ site.url }}/presse/{{ article.slug }}/</loc>

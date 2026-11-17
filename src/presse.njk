@@ -11,6 +11,23 @@ permalink: /presse/
   <h1>Presse & Medien</h1>
   <p class="subtitle">Berichte, Artikel und Podcasts über BOS-ARSA in chronologischer Reihenfolge</p>
 
+  {% for bericht in berichte %}{% if not bericht.draft %}
+  <a class="article{% if bericht.image %} article--has-image{% endif %}" href="/bericht/{{ bericht.slug }}/">
+    {% if bericht.image %}
+    <div class="article__image">
+      <img src="{{ bericht.image }}" alt="{{ bericht.imageAlt }}" loading="lazy">
+      {% if bericht.imageCredit %}<span class="article__image-credit">Foto: {{ bericht.imageCredit }}</span>{% endif %}
+    </div>
+    {% endif %}
+    <div class="article__body">
+      <div class="article__date">{{ bericht.date }} <span class="article__tag article__tag--{{ bericht.tag }}">{{ bericht.tagLabel }}</span></div>
+      <h2 class="article__title">{{ bericht.title }}</h2>
+      <div class="article__source">BOS-ARSA</div>
+      <p class="article__desc">{{ bericht.intro }}</p>
+    </div>
+  </a>
+  {% endif %}{% endfor %}
+
   {% for article in presse %}
   <a class="article{% if article.image %} article--has-image{% endif %}" href="/presse/{{ article.slug }}/">
     {% if article.image %}
